@@ -1,0 +1,61 @@
+@import "./variables.scss";
+
+%centeraligned{
+    align-self: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    height:100%;
+}
+body{
+    background-color: $primaryWhite;
+
+    .navbar{
+        height: 50px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: $primaryWhite;
+
+        &__logo{
+            text-decoration: none;
+            font-family: $mainFontFamily;
+            color: $primaryBlack;
+            font-size: $largeFontSize;
+            font-weight: bolder;
+            span{
+                color: $primaryColor;
+            }
+        }
+        &__bars{
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            &_a{
+                text-decoration: none;
+                font-size: $mediumFontSize;
+                font-family: $mainFontFamily;
+                margin: 10px;
+                color: $primaryBlack;
+                &:hover{
+                    transform: scale(1.1);
+                    color: $primaryColor;
+                    transition: ease-in-out 0.7s;
+                }
+            }
+        }
+    }
+
+    // Hero Section
+    .hero{
+        height: 100vh;
+        background-color: aqua;
+    }
+    
+    // About Us Section
+    .aboutUs{
+        height: 100vh;
+        background-color: red;
+    }
+}
