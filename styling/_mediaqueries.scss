@@ -1,0 +1,13 @@
+// Mobile Media Query
+@mixin mobile {
+   @media screen and (max-width: 440px) {
+        @content;
+    } 
+}
+
+// Mobile Media Query
+@mixin tablet {
+    @media screen and (max-width: 770px) {
+     
+     } 
+ }

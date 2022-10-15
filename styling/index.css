@@ -1,51 +1,86 @@
-* {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  background-color: #ffffff;
-}
-body .navbar {
-  height: 50px;
+.navbar {
+  height: 40px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
 }
-body .navbar__logo {
+.navbar__logo {
   text-decoration: none;
   font-family: "Poppins";
   color: #000000;
   font-size: 30px;
   font-weight: bolder;
 }
-body .navbar__logo span {
-  color: #e29b00;
+.navbar__logo span {
+  color: #1740D8;
 }
-body .navbar__bars {
+.navbar__bars {
   display: flex;
   flex-direction: row;
-  width: auto;
+  align-items: center;
 }
-body .navbar__bars_a {
+.navbar__bars_a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   font-family: "Poppins";
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: #000000;
 }
-body .navbar__bars_a:hover {
-  transform: scale(1.1);
-  color: #e29b00;
-  transition: ease-in-out 0.7s;
+.navbar__bars_a:hover {
+  transform: scale(1.05);
+  color: #1740D8;
+  transition: 0.3s;
 }
-body .hero {
+
+.hero {
   height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+}
+.hero__headText {
+  text-align: center;
+  font-size: 72px;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+.hero__headText span {
+  color: #1740D8;
+}
+.hero__smallText {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Arial";
+}
+
+.aboutUs {
   background-color: aqua;
-}
-body .aboutUs {
   height: 100vh;
-  background-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("/assets/images/cta-bg.jpg");
+}
+body .backbutton {
+  width: 50px;
+  height: 50px;
+  background-color: #1740D8;
+  border-radius: 5px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+body .backbutton:hover {
+  transform: scale(1.2);
+  transition: 2s;
 }/*# sourceMappingURL=index.css.map */

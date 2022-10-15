@@ -1,0 +1,25 @@
+@import 'variables';
+
+.hero{
+    height: 100vh;
+    background: $primaryWhite;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+
+    &__headText{
+        text-align: center;
+        font-size: 72px;
+        font-family: $mainFontFamily;
+        font-weight: bold;
+        span{
+            color: $secondaryColor;
+        }
+    }
+    &__smallText{
+        text-align: center;
+        font-size: 32px;
+        font-family: $secondaryFontFamily;
+    }
+}
