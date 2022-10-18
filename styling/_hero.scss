@@ -2,24 +2,80 @@
 
 .hero{
     height: 100vh;
-    background: $primaryWhite;
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     justify-content: center;
 
     &__headText{
         text-align: center;
-        font-size: 72px;
+        font-size: 64px;
         font-family: $mainFontFamily;
         font-weight: bold;
+        color: $primaryWhite;
+        animation: scaling 2s infinite;
         span{
             color: $secondaryColor;
         }
+        @keyframes scaling {
+            0%{
+
+            }
+            100%{
+                transform: scale(1.05);
+            }
+        }
     }
+
     &__smallText{
         text-align: center;
-        font-size: 32px;
-        font-family: $secondaryFontFamily;
+        font-size: $mediumFontSize;
+        font-family: $mainFontFamily;
+        color: $light;
+    }
+
+    .userButtons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 30px;
+       .sup{
+        border-radius: 5px;
+        border-color: transparent;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: $primaryBlack;
+        height: 50px;
+        width: 150px;
+        font-family: $mainFontFamily;
+        font-size: $smallFontSize;
+        font-weight: bold;
+        &:hover{
+            transform: scale(1.2); 
+            transition: 1s;
+        }
+       }
+
+       .lin{
+        border-radius: 5px;
+        border-color: $primaryWhite;
+        border-width: 2px;
+        background-color: transparent;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 50px;
+        width: 150px;
+        font-weight: bold;
+        color: $primaryWhite;
+        font-family: $mainFontFamily;
+        font-size: $smallFontSize;
+        &:hover{
+            transform: scale(1.2); 
+            transition: 1s;
+        }
+       }
     }
 }

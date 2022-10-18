@@ -4,15 +4,17 @@
 @import 'navbar';
 @import 'hero';
 @import 'aboutUs';
+@import 'iadvices';
 
 *{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
-    background-image: url("/assets/images/cta-bg.jpg");
-
+    background-image: url("/assets/images/bg_hero.JPG");
+    background-color: opacity($color: #000000);
     // Back to top Button
     .backbutton{
         width: 50px;

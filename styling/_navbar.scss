@@ -1,21 +1,28 @@
 @import 'variables';
 
 .navbar{
-    height: 40px;
     padding: 10px;
+    nav-index: auto;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
     display: flex;
     justify-content: space-between;
-    background-color: $primaryWhite;
+    background: rgba(0, 0, 0, 0.5);
+
     &__logo{
+        overflow-y: hidden;
         text-decoration: none;
         font-family: $mainFontFamily;
-        color: $primaryBlack;
-        font-size: $largeFontSize;
+        color: $primaryWhite;
+        font-size: 32px;
         font-weight: bolder;
         span{
             color: $secondaryColor;
         }
     }
+
     &__bars{
         display: flex;
         flex-direction: row;
@@ -26,7 +33,7 @@
             font-family: $mainFontFamily;
             margin-left: 10px;
             margin-right: 10px;
-            color: $primaryBlack;
+            color: $primaryWhite;
             &:hover{
                 transform: scale(1.05);
                 color: $secondaryColor;
