@@ -1,6 +1,55 @@
 @import 'variables';
 
 .iadvices{
-    background-color: aqua;
-    height: 100vh;
+    background-color: $primaryWhite;
+    height: 70vh;
+    overflow: hidden;
+    padding: 30px;
+    &_head{
+        display: flex;
+        @extend %centerVertical;
+        text-transform: uppercase;
+        font-family: $mainFontFamily;
+        font-size: $largestFontSize;
+        font-weight: bold;
+        color: $primaryBlack;
+    }
+    &_title{
+        display: flex;
+        @extend %centerVertical;
+        font-family: $mainFontFamily;
+        font-size: $smallFontSize;
+        color: $primaryGrey;
+    }
+    &_row1{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 100%;
+        .starterPack{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 100%;
+            border-radius: 20px;
+            background-color: orange;
+        }
+        .advancePack{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 100%;
+            border-radius: 20px;
+            background-color: orange;
+        }
+        .goldPack{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 100%;
+            border-radius: 20px;
+            background-color: orange;
+        }
+    }
 }

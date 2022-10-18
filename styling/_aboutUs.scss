@@ -28,7 +28,7 @@
         .company_profile{
             width: 400px;
             border-style: solid;
-            border-radius: 5px;
+            border-radius: 10px;
             border-width: 1px;
             border-color: $secondaryGrey;
             .img{
@@ -57,7 +57,7 @@
             }
             &:hover{
                 transform: translateY(-10px);
-                transition: 0.5s;
+                transition: 1s;
                 box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.377);
             }
         }
@@ -68,7 +68,7 @@
             overflow: hidden;
             width: 350px;
             border-style: solid;
-            border-radius: 5px;
+            border-radius: 10px;
             border-width: 1px;
             border-color: $secondaryGrey;
             .img{
@@ -96,7 +96,7 @@
             }
             &:hover{
                 transform: translateY(-10px);
-                transition: 0.5s;
+                transition: 1s;
                 box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.377);
             }
             &:hover.title{
@@ -110,7 +110,7 @@
         .company_vision{
             width: 350px;
             border-style: solid;
-            border-radius: 5px;
+            border-radius: 10px;
             overflow: hidden;
             border-width: 1px;
             border-color: $secondaryGrey;
@@ -139,7 +139,7 @@
             }
             &:hover{
                 transform: translateY(-10px);
-                transition: 0.5s;
+                transition: 1s;
                 box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.377);
             }
         }
