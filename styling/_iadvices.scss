@@ -2,7 +2,7 @@
 
 .iadvices{
     background-color: $primaryWhite;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
     padding: 30px;
     &_head{
@@ -16,40 +16,56 @@
     }
     &_title{
         display: flex;
+        text-align: center;
         @extend %centerVertical;
         font-family: $mainFontFamily;
         font-size: $smallFontSize;
         color: $primaryGrey;
     }
+
     &_row1{
         display: flex;
-        margin-top: 20px;
-        justify-content: space-between;
+        margin-top: 50px;
+        justify-content: space-evenly;
         flex-direction: row;
-        height: 100%;
+        height: 400px;
         .starterPack{
-            display: flex;
-            flex-direction: column;
-            width: 400px;
-            height: 100%;
-            border-radius: 20px;
-            background-color: orange;
+            border-style: solid;
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: $primaryGrey;
+            width: 300px;
+            .starterPack_img{
+                background-color: aqua;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img{
+                    height: 100px;
+                    width: 100px;
+                    background-color: red;
+                }
+            }
         }
         .advancePack{
-            display: flex;
-            flex-direction: column;
-            width: 400px;
-            height: 100%;
-            border-radius: 20px;
-            background-color: orange;
+            width: 300px;
+            border-style: solid;
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: $primaryGrey;
         }
         .goldPack{
-            display: flex;
-            flex-direction: column;
-            width: 400px;
-            height: 100%;
-            border-radius: 20px;
-            background-color: orange;
+            width: 300px;
+            border-style: solid;
+            border-radius: 10px;
+            border-width: 1px;
+            border-color: $primaryGrey;
         }
+    }
+
+    .footer{
+        background-color: orange;
+        height: 30%;
     }
 }

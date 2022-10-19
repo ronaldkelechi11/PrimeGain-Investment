@@ -284,7 +284,7 @@
 
 .iadvices {
   background-color: #ffffff;
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
   padding: 30px;
 }
@@ -298,40 +298,64 @@
 }
 .iadvices_title {
   display: flex;
+  text-align: center;
   font-family: "Poppins";
   font-size: 16px;
   color: #727272;
 }
 .iadvices_row1 {
   display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
+  margin-top: 50px;
+  justify-content: space-evenly;
   flex-direction: row;
-  height: 100%;
+  height: 400px;
 }
 .iadvices_row1 .starterPack {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #727272;
+  width: 300px;
+}
+.iadvices_row1 .starterPack .starterPack_img {
+  background-color: aqua;
+  height: 50%;
   display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 100%;
-  border-radius: 20px;
-  background-color: orange;
+  justify-content: center;
+  align-items: center;
+}
+.iadvices_row1 .starterPack .starterPack_img .img {
+  height: 100px;
+  width: 100px;
+  background-color: red;
 }
 .iadvices_row1 .advancePack {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 100%;
-  border-radius: 20px;
-  background-color: orange;
+  width: 300px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #727272;
 }
 .iadvices_row1 .goldPack {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 100%;
-  border-radius: 20px;
+  width: 300px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #727272;
+}
+.iadvices .footer {
   background-color: orange;
+  height: 30%;
+}
+
+.iadvices_head, .iadvices_title {
+  display: flex;
+  justify-content: center;
+}
+
+.faq {
+  height: 100vh;
+  background-color: pink;
 }
 
 * {
