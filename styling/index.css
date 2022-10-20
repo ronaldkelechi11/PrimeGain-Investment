@@ -297,55 +297,26 @@
   color: #000000;
 }
 .iadvices_title {
+  margin-top: 10px;
   display: flex;
   text-align: center;
   font-family: "Poppins";
   font-size: 16px;
   color: #727272;
 }
-.iadvices_row1 {
+.iadvices .starterPack {
+  width: 100%;
+  height: 45%;
+  padding: 10px;
+  margin-top: 20px;
   display: flex;
-  margin-top: 50px;
-  justify-content: space-evenly;
   flex-direction: row;
-  height: 400px;
+  background-color: pink;
 }
-.iadvices_row1 .starterPack {
-  border-style: solid;
-  border-radius: 10px;
-  border-width: 1px;
-  border-color: #727272;
-  width: 300px;
-}
-.iadvices_row1 .starterPack .starterPack_img {
+.iadvices .starterPack .writeUp {
+  height: 100%;
+  width: 50%;
   background-color: aqua;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.iadvices_row1 .starterPack .starterPack_img .img {
-  height: 100px;
-  width: 100px;
-  background-color: red;
-}
-.iadvices_row1 .advancePack {
-  width: 300px;
-  border-style: solid;
-  border-radius: 10px;
-  border-width: 1px;
-  border-color: #727272;
-}
-.iadvices_row1 .goldPack {
-  width: 300px;
-  border-style: solid;
-  border-radius: 10px;
-  border-width: 1px;
-  border-color: #727272;
-}
-.iadvices .footer {
-  background-color: orange;
-  height: 30%;
 }
 
 .iadvices_head, .iadvices_title {
@@ -373,12 +344,17 @@ body .backbutton {
   width: 50px;
   height: 50px;
   background-color: #1740D8;
+  background-image: url("/assets/images/no_left.png");
+  transform: rotate(90deg);
   border-radius: 5px;
   position: fixed;
   right: 15px;
   bottom: 15px;
+  display: flex;
+  z-index: 100;
 }
 body .backbutton:hover {
   transform: scale(1.2);
-  transition: 2s;
+  transform: rotate(450deg);
+  transition: ease-out 1s;
 }/*# sourceMappingURL=index.css.map */
