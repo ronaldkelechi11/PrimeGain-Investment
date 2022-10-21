@@ -151,6 +151,10 @@
   font-size: 16px;
   color: #c9c9c9;
 }
+.aboutUs_head .slah {
+  margin-left: 10px;
+  color: #1740D8;
+}
 .aboutUs_title {
   font-size: 40px;
   color: #000000;
@@ -202,7 +206,7 @@
 }
 .aboutUs_aboutus1 .company_mission {
   overflow: hidden;
-  width: 350px;
+  width: 400px;
   border-style: solid;
   border-radius: 10px;
   border-width: 1px;
@@ -241,7 +245,7 @@
   border-color: #ebebeb;
 }
 .aboutUs_aboutus1 .company_vision {
-  width: 350px;
+  width: 400px;
   border-style: solid;
   border-radius: 10px;
   overflow: hidden;
@@ -311,30 +315,26 @@
   display: flex;
   flex-direction: row;
 }
-.iadvices .starterPack .writeUp {
-  height: 100%;
-  width: 50%;
-  border-radius: 10px;
-  background-image: url("/assets/images/counts-img.jpg");
-  background-position: center;
-  background-size: cover;
-}
 .iadvices .starterPack .image {
-  margin-left: 10px;
+  width: 50%;
+  height: 100%;
+  background-image: url("/assets/images/logo.JPG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.iadvices .starterPack .writeUp {
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
-.iadvices .starterPack .image h1 {
+.iadvices .starterPack .writeUp h1 {
+  color: #000000;
   font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
   font-family: "Poppins";
-  text-transform: uppercase;
-}
-.iadvices .starterPack .image h4 {
-  font-size: 16px;
-  color: #727272;
-  font-family: "Arial";
 }
 
 .iadvices_head, .iadvices_title {

@@ -29,29 +29,25 @@
         margin-top: 20px;
         display: flex;
         flex-direction: row;
-        .writeUp{
-            height: 100%;
-            width: 50%;
-            border-radius: 10px;
-            background-image: url("/assets/images/counts-img.jpg");
-            background-position: center;
-            background-size: cover;
-        }
         .image{
-            margin-left: 10px;
+            width: 50%;
+            height: 100%;
+            background-image: url("/assets/images/logo.JPG");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .writeUp{
+            width: 50%;
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
             h1{
+                color: $primaryBlack;
                 font-size: $largeFontSize;
+                text-align: center;
+                margin-top: 10px;
                 font-family: $mainFontFamily;
-                text-transform: uppercase;
-            }
-            h4{
-                font-size: $smallFontSize;
-                color: $primaryGrey;
-                font-family: $secondaryFontFamily;
             }
         }
     }
