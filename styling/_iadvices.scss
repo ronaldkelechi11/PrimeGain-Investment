@@ -2,7 +2,7 @@
 
 .iadvices{
     background-color: $primaryWhite;
-    height: 100vh;
+    height: 160vh;
     overflow: hidden;
     padding: 30px;
     &_head{
@@ -25,7 +25,58 @@
     }
     .starterPack{
         width: 100%;
-        height: 45%;
+        height: 25%;
+        margin-top: 20px;
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        .image{
+            width: 50%;
+            height: 100%;
+            background-image: url("/assets/images/logo.JPG");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .writeUp{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                color: $primaryBlack;
+                font-size: $largestFontSize; 
+                text-align: center;
+                margin-top: 10px;
+                font-family: $mainFontFamily;
+                text-transform: uppercase;
+                padding: 5px;
+                text-decoration: dashed;
+            }
+            h4{
+                color: $primaryGrey;
+                font-size: $mediumFontSize;
+                margin-top: 10px;
+                font-family: $mainFontFamily; 
+                span{
+                    color: $errorColor;
+                    margin-left: 10px;
+                } 
+                .max{
+                    color: $successColor;
+                }
+                .normal{
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+
+    .advancePack{
+        width: 100%;
+        height: 25%;
         margin-top: 20px;
         display: flex;
         flex-direction: row;
@@ -41,22 +92,24 @@
             width: 50%;
             height: 100%;
             display: flex;
+            justify-content: center;
             flex-direction: column;
+            align-items: center;
             h1{
                 color: $primaryBlack;
-                font-size: $largeFontSize; 
+                font-size: $largestFontSize; 
                 text-align: center;
                 margin-top: 10px;
                 font-family: $mainFontFamily;
                 text-transform: uppercase;
                 padding: 5px;
+                text-decoration: dashed;
             }
             h4{
                 color: $primaryGrey;
-                font-size: $smallFontSize; 
-                text-align: center;
+                font-size: $mediumFontSize;
                 margin-top: 10px;
-                font-family: $secondaryFontFamily; 
+                font-family: $mainFontFamily; 
                 span{
                     color: $errorColor;
                     margin-left: 10px;
@@ -64,9 +117,63 @@
                 .max{
                     color: $successColor;
                 }
+                .normal{
+                    color: $secondaryColor;
+                }
             }
         }
     }
 
+    .goldPack{
+        width: 100%;
+        height: 25%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        .image{
+            width: 50%;
+            height: 100%;
+            background-image: url("/assets/images/logo.JPG");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .writeUp{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                color: $primaryBlack;
+                font-size: $largestFontSize; 
+                font-weight: bold;
+                text-align: center;
+                margin-top: 10px;
+                font-family: $mainFontFamily;
+                text-transform: uppercase;
+                padding: 5px;
+                text-decoration: dashed;
+            }
+            h4{
+                color: $primaryGrey;
+                font-size: $mediumFontSize;
+                margin-top: 10px;
+                font-family: $mainFontFamily; 
+                span{
+                    color: $errorColor;
+                    margin-left: 10px;
+                } 
+                .max{
+                    color: $successColor;
+                }
+                .normal{
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
 
+.advices
 }

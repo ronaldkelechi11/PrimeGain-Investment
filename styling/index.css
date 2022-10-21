@@ -288,7 +288,7 @@
 
 .iadvices {
   background-color: #ffffff;
-  height: 100vh;
+  height: 160vh;
   overflow: hidden;
   padding: 30px;
 }
@@ -310,9 +310,10 @@
 }
 .iadvices .starterPack {
   width: 100%;
-  height: 45%;
+  height: 25%;
   margin-top: 20px;
   display: flex;
+  overflow: hidden;
   flex-direction: row;
 }
 .iadvices .starterPack .image {
@@ -327,23 +328,26 @@
   width: 50%;
   height: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 .iadvices .starterPack .writeUp h1 {
   color: #000000;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   margin-top: 10px;
   font-family: "Poppins";
   text-transform: uppercase;
   padding: 5px;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
 }
 .iadvices .starterPack .writeUp h4 {
   color: #727272;
-  font-size: 16px;
-  text-align: center;
+  font-size: 25px;
   margin-top: 10px;
-  font-family: "Arial";
+  font-family: "Poppins";
 }
 .iadvices .starterPack .writeUp h4 span {
   color: #cc3c3c;
@@ -352,13 +356,117 @@
 .iadvices .starterPack .writeUp h4 .max {
   color: #60dd60;
 }
+.iadvices .starterPack .writeUp h4 .normal {
+  color: #1740D8;
+}
+.iadvices .advancePack {
+  width: 100%;
+  height: 25%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.iadvices .advancePack .image {
+  width: 50%;
+  height: 100%;
+  background-image: url("/assets/images/logo.JPG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.iadvices .advancePack .writeUp {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.iadvices .advancePack .writeUp h1 {
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  padding: 5px;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+}
+.iadvices .advancePack .writeUp h4 {
+  color: #727272;
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: "Poppins";
+}
+.iadvices .advancePack .writeUp h4 span {
+  color: #cc3c3c;
+  margin-left: 10px;
+}
+.iadvices .advancePack .writeUp h4 .max {
+  color: #60dd60;
+}
+.iadvices .advancePack .writeUp h4 .normal {
+  color: #1740D8;
+}
+.iadvices .goldPack {
+  width: 100%;
+  height: 25%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.iadvices .goldPack .image {
+  width: 50%;
+  height: 100%;
+  background-image: url("/assets/images/logo.JPG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.iadvices .goldPack .writeUp {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.iadvices .goldPack .writeUp h1 {
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  padding: 5px;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+}
+.iadvices .goldPack .writeUp h4 {
+  color: #727272;
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: "Poppins";
+}
+.iadvices .goldPack .writeUp h4 span {
+  color: #cc3c3c;
+  margin-left: 10px;
+}
+.iadvices .goldPack .writeUp h4 .max {
+  color: #60dd60;
+}
+.iadvices .goldPack .writeUp h4 .normal {
+  color: #1740D8;
+}
 
 .iadvices_head, .iadvices_title {
   display: flex;
   justify-content: center;
 }
 
-.faq {
+.contact {
   height: 100vh;
   background-color: pink;
 }
