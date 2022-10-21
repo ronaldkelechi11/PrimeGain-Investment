@@ -335,6 +335,22 @@
   text-align: center;
   margin-top: 10px;
   font-family: "Poppins";
+  text-transform: uppercase;
+  padding: 5px;
+}
+.iadvices .starterPack .writeUp h4 {
+  color: #727272;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Arial";
+}
+.iadvices .starterPack .writeUp h4 span {
+  color: #cc3c3c;
+  margin-left: 10px;
+}
+.iadvices .starterPack .writeUp h4 .max {
+  color: #60dd60;
 }
 
 .iadvices_head, .iadvices_title {

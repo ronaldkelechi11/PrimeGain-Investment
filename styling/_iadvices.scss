@@ -44,10 +44,26 @@
             flex-direction: column;
             h1{
                 color: $primaryBlack;
-                font-size: $largeFontSize;
+                font-size: $largeFontSize; 
                 text-align: center;
                 margin-top: 10px;
                 font-family: $mainFontFamily;
+                text-transform: uppercase;
+                padding: 5px;
+            }
+            h4{
+                color: $primaryGrey;
+                font-size: $smallFontSize; 
+                text-align: center;
+                margin-top: 10px;
+                font-family: $secondaryFontFamily; 
+                span{
+                    color: $errorColor;
+                    margin-left: 10px;
+                } 
+                .max{
+                    color: $successColor;
+                }
             }
         }
     }
