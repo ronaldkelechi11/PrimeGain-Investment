@@ -175,5 +175,20 @@
         }
     }
 
-.advices
+    .advice{
+        margin-top: 50px;
+        text-align: center;
+        font-family: $mainFontFamily;
+        font-size: $smallFontSize;
+        color: $primaryBlack;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 2px dashed $primaryColor;
+        border-bottom: 2px dashed $primaryColor;
+        span{
+            color: $errorColor;
+            font-weight: bold;
+            text-transform: uppercase
+        }
+    }
 }

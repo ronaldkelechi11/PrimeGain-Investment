@@ -460,6 +460,22 @@
 .iadvices .goldPack .writeUp h4 .normal {
   color: #1740D8;
 }
+.iadvices .advice {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px dashed #e29b00;
+  border-bottom: 2px dashed #e29b00;
+}
+.iadvices .advice span {
+  color: #cc3c3c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 .iadvices_head, .iadvices_title {
   display: flex;
@@ -468,7 +484,7 @@
 
 .contact {
   height: 100vh;
-  background-color: pink;
+  background-color: white;
 }
 
 * {
@@ -485,9 +501,10 @@ body {
 body .backbutton {
   width: 50px;
   height: 50px;
-  background-color: #1740D8;
-  background-image: url("/assets/images/no_left.png");
-  transform: rotate(90deg);
+  background-image: url("/node_modules/bootstrap-icons/icons/arrow-up-square.svg");
+  border-radius: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 5px;
   position: fixed;
   right: 15px;
@@ -497,6 +514,6 @@ body .backbutton {
 }
 body .backbutton:hover {
   transform: scale(1.2);
-  transform: rotate(450deg);
+  transform: rotate(360deg);
   transition: ease-out 1s;
 }/*# sourceMappingURL=index.css.map */
