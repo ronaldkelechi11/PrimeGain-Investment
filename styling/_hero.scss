@@ -37,8 +37,8 @@
 
     .userButtons{
         display: flex;
-        flex-direction: row;
         justify-content: center;
+        margin-right: 100px;
         align-items: center;
         overflow: hidden;
         margin-top: 30px;
@@ -55,26 +55,7 @@
         font-weight: bold;
         &:hover{
             transform: scale(1.2); 
-            transition: 1s;
-        }
-       }
-
-       .lin{
-        border-radius: 5px;
-        border-color: $primaryWhite;
-        border-width: 2px;
-        background-color: transparent;
-        margin-left: 10px;
-        margin-right: 10px;
-        height: 50px;
-        width: 150px;
-        font-weight: bold;
-        color: $primaryWhite;
-        font-family: $mainFontFamily;
-        font-size: $smallFontSize;
-        &:hover{
-            transform: scale(1.2); 
-            transition: 1s;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
         }
        }
     }

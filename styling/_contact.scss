@@ -1,6 +1,30 @@
 @import 'variables';
 
 .contact{
+    background-color: $primaryWhite;
     height: 100vh;
-    background-color: white;
+    overflow: hidden;
+    padding: 30px;
+    &_head{
+        display: flex;
+        flex-direction: row;
+        font-family: $mainFontFamily;
+        font-size: $smallFontSize;
+        color: $light;
+        .slah{
+            margin-left: 10px;
+            color: $secondaryColor;
+        }
+    }
+    &_title{
+        font-size: $largestFontSize;
+        color: $primaryBlack;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: $mainFontFamily;
+    }
+    &_vid{
+        width: 50%;
+        height: 50%;
+    }
 }
