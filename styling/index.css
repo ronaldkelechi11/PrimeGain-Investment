@@ -465,7 +465,7 @@
 
 .contact {
   background-color: #ffffff;
-  height: 140vh;
+  height: 100vh;
   overflow: hidden;
   padding: 30px;
 }
@@ -487,139 +487,192 @@
   text-transform: uppercase;
   font-family: "Poppins";
 }
-.contact .horizontal {
-  display: flex;
-  flex-direction: row;
-  height: 50%;
-  width: 100%;
-  padding: 10px;
-}
-.contact .horizontal .info {
+.contact .info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 50%;
+  height: 40%;
+  padding: 10px;
 }
-.contact .horizontal .info .number {
+.contact .info .number {
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: 70px;
 }
-.contact .horizontal .info .number .icon {
+.contact .info .number .icon {
   display: flex;
   height: 100%;
-  width: 80px;
+  width: 70px;
   justify-content: center;
   align-items: center;
   background-color: #1740D8;
   border-radius: 5px;
 }
-.contact .horizontal .info .number .icon .img {
-  height: 80px;
-  width: 80px;
+.contact .info .number .icon .img {
+  height: 70px;
+  width: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../node_modules/bootstrap-icons/icons/phone.svg");
 }
-.contact .horizontal .info .number .text {
+.contact .info .number .text {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
-.contact .horizontal .info .number .text h1 {
+.contact .info .number .text h1 {
   font-family: "Poppins";
   color: #000000;
   size: 30px;
 }
-.contact .horizontal .info .number .text h4 {
+.contact .info .number .text h4 {
   margin-top: 10px;
   font-family: "Arial";
   color: #727272;
   size: 30px;
   font-weight: lighter;
 }
-.contact .horizontal .info .address {
+.contact .info .address {
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: 70px;
   display: flex;
   flex-direction: row;
-  height: 80px;
 }
-.contact .horizontal .info .address .icon {
+.contact .info .address .icon {
   display: flex;
   height: 100%;
-  width: 80px;
+  width: 70px;
   justify-content: center;
   align-items: center;
   background-color: #1740D8;
   border-radius: 5px;
 }
-.contact .horizontal .info .address .icon .img {
-  height: 80px;
-  width: 80px;
+.contact .info .address .icon .img {
+  height: 70px;
+  width: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../node_modules/bootstrap-icons/icons/map.svg");
 }
-.contact .horizontal .info .address .text {
+.contact .info .address .text {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
-.contact .horizontal .info .address .text h1 {
+.contact .info .address .text h1 {
   font-family: "Poppins";
   color: #000000;
   size: 30px;
 }
-.contact .horizontal .info .address .text h4 {
+.contact .info .address .text h4 {
   margin-top: 10px;
   font-family: "Arial";
   color: #727272;
   size: 30px;
   font-weight: lighter;
 }
-.contact .horizontal .info .email {
+.contact .info .email {
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: 70px;
   display: flex;
   flex-direction: row;
-  height: 80px;
 }
-.contact .horizontal .info .email .icon {
+.contact .info .email .icon {
   display: flex;
   height: 100%;
-  width: 80px;
+  width: 70px;
   justify-content: center;
   align-items: center;
   background-color: #1740D8;
   border-radius: 5px;
 }
-.contact .horizontal .info .email .icon .img {
-  height: 80px;
-  width: 80px;
+.contact .info .email .icon .img {
+  height: 70px;
+  width: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../node_modules/bootstrap-icons/icons/envelope.svg");
 }
-.contact .horizontal .info .email .text {
+.contact .info .email .text {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
-.contact .horizontal .info .email .text h1 {
+.contact .info .email .text h1 {
   font-family: "Poppins";
   color: #000000;
   size: 30px;
 }
-.contact .horizontal .info .email .text h4 {
+.contact .info .email .text h4 {
   margin-top: 10px;
   font-family: "Arial";
   color: #727272;
   size: 30px;
   font-weight: lighter;
+}
+
+.iadvices_head, .iadvices_title {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  height: 7vh;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 130;
+}
+.footer .logo {
+  overflow-y: hidden;
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bolder;
+  height: 50px;
+}
+.footer .logo span {
+  color: #1740D8;
+}
+.footer .socialLinks {
+  margin-right: 20px;
+  align-items: center;
+}
+.footer .socialLinks .instagram {
+  width: 25px;
+  height: 100%;
+}
+.footer .socialLinks .skype {
+  width: 25px;
+  height: 100%;
+}
+.footer .socialLinks .twitter {
+  width: 25px;
+  height: 100%;
+}
+.footer .mailAddress {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+}
+.footer .mailAddress span {
+  color: #ffffff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.footer .mailAddress h1 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: "Poppins";
 }
 
 * {
@@ -636,7 +689,7 @@ body {
 body .backbutton {
   width: 50px;
   height: 50px;
-  background-image: url("../node_modules/bootstrap-icons/icons/arrow-up-square.svg");
+  background-color: #1740D8;
   border-radius: 10px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -646,11 +699,21 @@ body .backbutton {
   bottom: 15px;
   display: flex;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .backbutton:hover {
   transform: scale(1.2);
   transform: rotate(360deg);
   transition: ease-out 1s;
+}
+body .backbutton .img {
+  width: 25px;
+  height: 25px;
+  background-image: url("../node_modules/bootstrap-icons/icons/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 body .createanaccount {
   width: 100vw;

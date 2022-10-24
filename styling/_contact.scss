@@ -2,7 +2,7 @@
 
 .contact{
     background-color: $primaryWhite;
-    height: 140vh;
+    height: 100vh;
     overflow: hidden;
     padding: 30px;
     &_head{
@@ -23,33 +23,28 @@
         text-transform: uppercase;
         font-family: $mainFontFamily;
     }
-    .horizontal{
-        display: flex;
-        flex-direction: row;
-        height: 50%;
-        width: 100%;
-        padding: 10px;
         .info{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 100%;
-            height: 50%;
+            height: 40%;
+            padding: 10px;
             .number{
                 display: flex;
                 flex-direction: row;
-                height: 80px;
+                height: 70px;
                 .icon{
                     display: flex;
                     height: 100%;
-                    width: 80px;
+                    width: 70px;
                     justify-content: center;
                     align-items: center;
                     background-color: $secondaryColor;
                     border-radius: 5px;
                     .img{
-                        height: 80px;
-                        width: 80px;
+                        height: 70px;
+                        width: 70px;
                         background-repeat: no-repeat;
                         background-position: center;
                         background-image: url("../node_modules/bootstrap-icons/icons/phone.svg");
@@ -79,21 +74,20 @@
             .address{
                 display: flex;
                 flex-direction: row;
-                height: 80px;
+                height: 70px;
                 display: flex;
                 flex-direction: row;
-                height: 80px;
                 .icon{
                     display: flex;
                     height: 100%;
-                    width: 80px;
+                    width: 70px;
                     justify-content: center;
                     align-items: center;
                     background-color: $secondaryColor;
                     border-radius: 5px;
                     .img{
-                        height: 80px;
-                        width: 80px;
+                        height: 70px;
+                        width: 70px;
                         background-repeat: no-repeat;
                         background-position: center;
                         background-image: url("../node_modules/bootstrap-icons/icons/map.svg");
@@ -122,21 +116,20 @@
     
             .email{ display: flex;
                 flex-direction: row;
-                height: 80px;
+                height: 70px;
                 display: flex;
                 flex-direction: row;
-                height: 80px;
                 .icon{
                     display: flex;
                     height: 100%;
-                    width: 80px;
+                    width: 70px;
                     justify-content: center;
                     align-items: center;
                     background-color: $secondaryColor;
                     border-radius: 5px;
                     .img{
-                        height: 80px;
-                        width: 80px;
+                        height: 70px;
+                        width: 70px;
                         background-repeat: no-repeat;
                         background-position: center;
                         background-image: url("../node_modules/bootstrap-icons/icons/envelope.svg");
@@ -162,5 +155,5 @@
                 }
             }
         }
-    }
+    
 }

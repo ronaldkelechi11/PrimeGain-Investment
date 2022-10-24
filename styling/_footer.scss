@@ -1,0 +1,60 @@
+@import 'variables';
+
+.footer{
+    height: 7vh;
+    width: 100%;
+    background-color: $primaryBlack;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 130;
+
+    .logo{
+        overflow-y: hidden;
+        text-decoration: none;
+        font-family: $mainFontFamily;
+        color: $primaryWhite;
+        font-size: 32px;
+        font-weight: bolder;
+        height: 50px;
+        span{
+            color: $secondaryColor;
+        }
+    }
+
+    .socialLinks{
+        margin-right: 20px;
+        align-items: center;
+        .instagram{
+            width: 25px;
+            height: 100%;
+        }
+        .skype{
+            width: 25px;
+            height: 100%;
+        }
+        .twitter{
+            width: 25px;
+            height: 100%;
+        }
+    }
+    .mailAddress{
+        display: flex;
+        flex-direction: row;
+        margin-right: 50px;
+        span{
+            color: $primaryWhite;
+            font-size: $smallFontSize;
+            margin-right: 10px;
+        }
+        h1{
+          color: $primaryWhite;
+        font-size: $smallFontSize;
+        font-weight: lighter;
+        font-family: $mainFontFamily;  
+        }
+        
+    }
+}

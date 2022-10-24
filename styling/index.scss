@@ -6,6 +6,7 @@
 @import 'aboutUs';
 @import 'iadvices';
 @import 'contact';
+@import 'footer';
 
 *{
     margin: 0;
@@ -22,7 +23,7 @@ body{
     .backbutton{
         width: 50px;
         height: 50px;
-        background-image: url("../node_modules/bootstrap-icons/icons/arrow-up-square.svg");
+        background-color: $secondaryColor;
         border-radius: 10px;
         background-size: contain;
         background-repeat: no-repeat;
@@ -32,10 +33,20 @@ body{
         bottom: 15px;
         display: flex;
         z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover{
             transform: scale(1.2);
             transform: rotate(360deg);
             transition: ease-out 1s;
+        }
+        .img{
+            width: 25px;
+            height: 25px;
+            background-image: url("../node_modules/bootstrap-icons/icons/arrow-up.svg");
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 
