@@ -14,13 +14,13 @@
     overflow-x: hidden;
 }
 body{
-    background-image: url("/assets/images/bg_hero.JPG");
+    background-image: url("../assets/images/bg_hero.JPG");
     background-color: opacity($color: #000000);
     // Back to top Button
     .backbutton{
         width: 50px;
         height: 50px;
-        background-image: url("/node_modules/bootstrap-icons/icons/arrow-up-square.svg");
+        background-image: url("../node_modules/bootstrap-icons/icons/arrow-up-square.svg");
         border-radius: 10px;
         background-size: contain;
         background-repeat: no-repeat;

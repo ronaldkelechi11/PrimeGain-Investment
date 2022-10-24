@@ -162,7 +162,7 @@
   width: 400px;
   background-position: center;
   background-size: cover;
-  background-image: url("/assets/images/company_profile.jpg");
+  background-image: url("../assets/images/company_profile.jpg");
 }
 .aboutUs_aboutus1 .company_profile .title {
   font-size: 25px;
@@ -199,7 +199,7 @@
   width: 400px;
   background-position: center;
   background-size: cover;
-  background-image: url("/assets/images/cp_mission.jpg");
+  background-image: url("../assets/images/cp_mission.jpg");
 }
 .aboutUs_aboutus1 .company_mission .title {
   font-size: 25px;
@@ -239,7 +239,7 @@
   width: 400px;
   background-position: center;
   background-size: cover;
-  background-image: url("/assets/images/cp_vision.jpg");
+  background-image: url("../assets/images/cp_vision.jpg");
 }
 .aboutUs_aboutus1 .company_vision .title {
   font-size: 25px;
@@ -301,7 +301,7 @@
 .iadvices .starterPack .image {
   width: 50%;
   height: 100%;
-  background: url("/assets/images/logo.JPG");
+  background: url("../assets/images/logo.JPG");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -351,7 +351,7 @@
 .iadvices .advancePack .image {
   width: 50%;
   height: 100%;
-  background-image: url("/assets/images/logo.JPG");
+  background-image: url("../assets/images/logo.JPG");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -401,7 +401,7 @@
 .iadvices .goldPack .image {
   width: 50%;
   height: 100%;
-  background-image: url("/assets/images/logo.JPG");
+  background-image: url("../assets/images/logo.JPG");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -488,11 +488,6 @@
   text-transform: uppercase;
   font-family: "Poppins";
 }
-.contact_vid {
-  width: 50%;
-  height: 50%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -501,13 +496,13 @@
 }
 
 body {
-  background-image: url("/assets/images/bg_hero.JPG");
+  background-image: url("../assets/images/bg_hero.JPG");
   background-color: 1;
 }
 body .backbutton {
   width: 50px;
   height: 50px;
-  background-image: url("/node_modules/bootstrap-icons/icons/arrow-up-square.svg");
+  background-image: url("../node_modules/bootstrap-icons/icons/arrow-up-square.svg");
   border-radius: 10px;
   background-size: contain;
   background-repeat: no-repeat;
