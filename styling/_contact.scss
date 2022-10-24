@@ -2,7 +2,7 @@
 
 .contact{
     background-color: $primaryWhite;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
     padding: 30px;
     &_head{
@@ -23,6 +23,12 @@
         text-transform: uppercase;
         font-family: $mainFontFamily;
     }
-    &_vid{
+    &_info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 50%;
+        height: 50%;
+        background-color: red;
     }
 }
