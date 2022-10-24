@@ -93,7 +93,6 @@
 .hero .userButtons {
   display: flex;
   justify-content: center;
-  margin-right: 100px;
   align-items: center;
   overflow: hidden;
   margin-top: 30px;
@@ -466,7 +465,7 @@
 
 .contact {
   background-color: #ffffff;
-  height: 150vh;
+  height: 140vh;
   overflow: hidden;
   padding: 30px;
 }
@@ -488,13 +487,139 @@
   text-transform: uppercase;
   font-family: "Poppins";
 }
-.contact_info {
+.contact .horizontal {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 100%;
+  padding: 10px;
+}
+.contact .horizontal .info {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  width: 50%;
+  justify-content: space-between;
+  width: 100%;
   height: 50%;
-  background-color: red;
+}
+.contact .horizontal .info .number {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+.contact .horizontal .info .number .icon {
+  display: flex;
+  height: 100%;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1740D8;
+  border-radius: 5px;
+}
+.contact .horizontal .info .number .icon .img {
+  height: 80px;
+  width: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../node_modules/bootstrap-icons/icons/phone.svg");
+}
+.contact .horizontal .info .number .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.contact .horizontal .info .number .text h1 {
+  font-family: "Poppins";
+  color: #000000;
+  size: 30px;
+}
+.contact .horizontal .info .number .text h4 {
+  margin-top: 10px;
+  font-family: "Arial";
+  color: #727272;
+  size: 30px;
+  font-weight: lighter;
+}
+.contact .horizontal .info .address {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+.contact .horizontal .info .address .icon {
+  display: flex;
+  height: 100%;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1740D8;
+  border-radius: 5px;
+}
+.contact .horizontal .info .address .icon .img {
+  height: 80px;
+  width: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../node_modules/bootstrap-icons/icons/map.svg");
+}
+.contact .horizontal .info .address .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.contact .horizontal .info .address .text h1 {
+  font-family: "Poppins";
+  color: #000000;
+  size: 30px;
+}
+.contact .horizontal .info .address .text h4 {
+  margin-top: 10px;
+  font-family: "Arial";
+  color: #727272;
+  size: 30px;
+  font-weight: lighter;
+}
+.contact .horizontal .info .email {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+.contact .horizontal .info .email .icon {
+  display: flex;
+  height: 100%;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1740D8;
+  border-radius: 5px;
+}
+.contact .horizontal .info .email .icon .img {
+  height: 80px;
+  width: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../node_modules/bootstrap-icons/icons/envelope.svg");
+}
+.contact .horizontal .info .email .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.contact .horizontal .info .email .text h1 {
+  font-family: "Poppins";
+  color: #000000;
+  size: 30px;
+}
+.contact .horizontal .info .email .text h4 {
+  margin-top: 10px;
+  font-family: "Arial";
+  color: #727272;
+  size: 30px;
+  font-weight: lighter;
 }
 
 * {
@@ -526,4 +651,50 @@ body .backbutton:hover {
   transform: scale(1.2);
   transform: rotate(360deg);
   transition: ease-out 1s;
+}
+body .createanaccount {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  visibility: hidden;
+  display: flex;
+  z-index: 150;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.3;
+}
+body .createanaccount .cancelButton {
+  width: 50px;
+  height: 50px;
+  background-color: #cc3c3c;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: "Arial";
+}
+body .createanaccount .cancelButton:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+body .createanaccount .cancelButton .img {
+  width: 25px;
+  height: 25px;
+  background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
+}
+body .createanaccount .center {
+  background-color: #ffffff;
+  opacity: 1;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1740D8;
 }/*# sourceMappingURL=index.css.map */

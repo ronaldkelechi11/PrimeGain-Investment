@@ -1,12 +1,21 @@
-let backtotop = select('.backbutton')
-if (backtotop) {
-  const toggleBacktotop = () => {
-    if (window.scrollY > 100) {
-      backtotop.classList.add('active')
-    } else {
-      backtotop.classList.remove('active')
-    }
+function createAccountAppear() {
+  var screen = document.getElementById("createanaccount");
+  var isVisibile = screen.style.visibility="hidden";
+  
+  
+  if(isVisibile){
+    screen.style.visibility = "visible";
   }
-  window.addEventListener('load', toggleBacktotop)
-  onscroll(document, toggleBacktotop)
+  return false;
+}
+
+function hideScreen() {
+  var screen = document.getElementById("createanaccount");
+  var isVisibile = screen.style.visibility="visible";
+  
+  
+  if(isVisibile){
+    screen.style.visibility = "hidden";
+  }
+  return false;
 }

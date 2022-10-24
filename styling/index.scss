@@ -16,6 +16,8 @@
 body{
     background-image: url("../assets/images/bg_hero.JPG");
     background-color: opacity($color: #000000);
+
+
     // Back to top Button
     .backbutton{
         width: 50px;
@@ -34,6 +36,54 @@ body{
             transform: scale(1.2);
             transform: rotate(360deg);
             transition: ease-out 1s;
+        }
+    }
+
+    .createanaccount{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        visibility: hidden;
+        display: flex;
+        z-index: 150;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: 0.3;
+        .cancelButton{
+            width: 50px;
+            height: 50px;
+            background-color: $errorColor;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 5px;
+            color: $primaryWhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $largestFontSize;
+            font-family: $secondaryFontFamily;
+             &:hover{
+                transform: scale(1.1);
+                transition: 0.7s;
+            }
+            .img{
+                width: 25px;
+                height: 25px;
+                background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
+            }
+        }
+        .center{
+            background-color: $primaryWhite;
+            opacity: 1;
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $secondaryColor;
+           
         }
     }
     

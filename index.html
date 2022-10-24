@@ -18,6 +18,14 @@
         <a href="#hero" class="backbutton" id="backToTopButton">
         </a>
 
+        <!-- Login Display -->
+        <div class="createanaccount" id="createanaccount">
+            <div class="cancelButton" id="cancelButton" onclick="hideScreen()">
+                <div class="img"></div>
+            </div>
+            <div class="center"></div>
+        </div>
+
     
         <!--Nav bar-->
         <div class="navbar" id="navbar">
@@ -26,10 +34,10 @@
                 <a href="#hero" class="navbar__bars_a">Home</a>
                 <a href="#iadvices" class="navbar__bars_a">Investment Plans</a>
                 <a href="#aboutUs" class="navbar__bars_a">About Us</a>
-                <!-- <a href="#faq" class="navbar__bars_a">FAQ</a> -->
                 <a href="#contact" class="navbar__bars_a">Contact</a>
             </div>
         </div>
+
 
         <!-- Hero Section -->
         <div class="hero" id="hero">
@@ -42,7 +50,7 @@
             </div>
          
             <div class="userButtons">
-                <button class="sup">Get Started
+                <button class="sup" onclick="createAccountAppear()" id="sup">Get Started
                 </button>
             </div>
 
@@ -148,10 +156,41 @@
             referrerpolicy="no-referrer-when-downgrade"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDyIFdhSuIt8BkB_FJggFGqoduqdZ39neE&q=No+215.+Ademola+Adetokumbo+Cresent,Wuse+2,Abuja+Nigeria"
             ></iframe>
-            <div class="contact_info">
-
+            <div class="horizontal">
+                <div class="info">
+                    <div class="number">
+                        <div class="icon">
+                            <div class="img"></div>
+                        </div>
+                        <div class="text">
+                            <h1>Phone Number:</h1>
+                            <h4>+233 690 030 3939</h4>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="icon">
+                            <div class="img"></div>
+                        </div>
+                        <div class="text">
+                            <h1>Location:</h1>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div class="icon">
+                            <div class="img"></div>
+                        </div>
+                        <div class="text">
+                            <h1>Email:</h1>
+                            <h4>Primegaininvestment@gmail.com</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Footer Section -->
+        <div class="footer"></div>
         
     </body>
 </html>

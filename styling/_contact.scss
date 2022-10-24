@@ -2,7 +2,7 @@
 
 .contact{
     background-color: $primaryWhite;
-    height: 150vh;
+    height: 140vh;
     overflow: hidden;
     padding: 30px;
     &_head{
@@ -23,12 +23,144 @@
         text-transform: uppercase;
         font-family: $mainFontFamily;
     }
-    &_info{
+    .horizontal{
         display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        width: 50%;
+        flex-direction: row;
         height: 50%;
-        background-color: red;
+        width: 100%;
+        padding: 10px;
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: 50%;
+            .number{
+                display: flex;
+                flex-direction: row;
+                height: 80px;
+                .icon{
+                    display: flex;
+                    height: 100%;
+                    width: 80px;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $secondaryColor;
+                    border-radius: 5px;
+                    .img{
+                        height: 80px;
+                        width: 80px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-image: url("../node_modules/bootstrap-icons/icons/phone.svg");
+                    }
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 20px;
+                    h1{
+                        font-family: $mainFontFamily;
+                        color: $primaryBlack;
+                        size: $largeFontSize;
+    
+                    }
+                    h4{
+                        margin-top: 10px;
+                        font-family: $secondaryFontFamily;
+                        color: $primaryGrey;
+                        size: $largeFontSize;
+                        font-weight: lighter;
+                    }
+                }
+            }
+    
+    
+            .address{
+                display: flex;
+                flex-direction: row;
+                height: 80px;
+                display: flex;
+                flex-direction: row;
+                height: 80px;
+                .icon{
+                    display: flex;
+                    height: 100%;
+                    width: 80px;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $secondaryColor;
+                    border-radius: 5px;
+                    .img{
+                        height: 80px;
+                        width: 80px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-image: url("../node_modules/bootstrap-icons/icons/map.svg");
+                    }
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 20px;
+                    h1{
+                        font-family: $mainFontFamily;
+                        color: $primaryBlack;
+                        size: $largeFontSize;
+    
+                    }
+                    h4{
+                        margin-top: 10px;
+                        font-family: $secondaryFontFamily;
+                        color: $primaryGrey;
+                        size: $largeFontSize;
+                        font-weight: lighter;
+                    }
+                }
+            }
+    
+    
+            .email{ display: flex;
+                flex-direction: row;
+                height: 80px;
+                display: flex;
+                flex-direction: row;
+                height: 80px;
+                .icon{
+                    display: flex;
+                    height: 100%;
+                    width: 80px;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $secondaryColor;
+                    border-radius: 5px;
+                    .img{
+                        height: 80px;
+                        width: 80px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-image: url("../node_modules/bootstrap-icons/icons/envelope.svg");
+                    }
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 20px;
+                    h1{
+                        font-family: $mainFontFamily;
+                        color: $primaryBlack;
+                        size: $largeFontSize;
+    
+                    }
+                    h4{
+                        margin-top: 10px;
+                        font-family: $secondaryFontFamily;
+                        color: $primaryGrey;
+                        size: $largeFontSize;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
     }
 }
