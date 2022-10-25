@@ -643,20 +643,40 @@
   color: #1740D8;
 }
 .footer .socialLinks {
-  margin-right: 20px;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
 }
 .footer .socialLinks .instagram {
   width: 25px;
   height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer .socialLinks .instagram:hover {
+  transform: scale(1.2);
+  transition: ease-in 0.5s;
 }
 .footer .socialLinks .skype {
   width: 25px;
   height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer .socialLinks .skype:hover {
+  transform: scale(1.2);
+  transition: ease-in 0.5s;
 }
 .footer .socialLinks .twitter {
   width: 25px;
   height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer .socialLinks .twitter:hover {
+  transform: scale(1.2);
+  transition: ease-in 0.5s;
 }
 .footer .mailAddress {
   display: flex;
@@ -704,9 +724,9 @@ body .backbutton {
   align-items: center;
 }
 body .backbutton:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
   transform: rotate(360deg);
-  transition: ease-out 1s;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
 }
 body .backbutton .img {
   width: 25px;
@@ -752,12 +772,60 @@ body .createanaccount .cancelButton .img {
   background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
 }
 body .createanaccount .center {
+  overflow: hidden;
   background-color: #ffffff;
   opacity: 1;
   width: 500px;
   height: 500px;
+  padding: 5px;
   border-radius: 10px;
   border-width: 5px;
   border-style: solid;
-  border-color: #1740D8;
+  border-color: #000000;
+}
+body .createanaccount .center .head {
+  background-color: #c9c9c9;
+  border-radius: 5px 5px 0px 0px;
+  height: 7%;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .createanaccount .center .head .txt {
+  font-weight: bold;
+  color: #727272;
+  font-family: "Poppins";
+  font-size: 25px;
+}
+body .createanaccount .center .form {
+  overflow-y: hidden;
+  display: flex;
+  margin: 2px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body .createanaccount .center .form h3 {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+body .createanaccount .center .form input {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border-color: #000000;
+  height: 30px;
+  color: #000000;
+  padding: 5px;
+  font-size: 11px;
+  font-family: "Poppins";
+}
+body .createanaccount .center .form button {
+  border-radius: 5px;
+  border-color: transparent;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #1740D8;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #ffffff;
 }/*# sourceMappingURL=index.css.map */

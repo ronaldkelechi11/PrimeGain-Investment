@@ -37,9 +37,9 @@ body{
         justify-content: center;
         align-items: center;
         &:hover{
-            transform: scale(1.2);
+            transform: scale(1.5);
             transform: rotate(360deg);
-            transition: ease-out 1s;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
         }
         .img{
             width: 25px;
@@ -86,16 +86,65 @@ body{
             }
         }
         .center{
+            overflow: hidden;
             background-color: $primaryWhite;
             opacity: 1;
             width: 500px;
             height: 500px;
+            padding: 5px;
             border-radius: 10px;
             border-width: 5px;
             border-style: solid;
-            border-color: $secondaryColor;
-           
+            border-color: $primaryBlack;
+            .head{
+                background-color: $light;
+                border-radius: 5px  5px 0px 0px;
+                height: 7%;
+                overflow-y: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    .txt{
+                        font-weight: bold;
+                        color: $primaryGrey;
+                        font-family: $mainFontFamily;
+                        font-size: $mediumFontSize;
+                    }
+            }
+            .form{
+                overflow-y: hidden;
+                display: flex;
+                margin: 2px;
+                justify-content: space-between;
+                flex-direction: column;
+                h3{
+                    font-family: $mainFontFamily;
+                    font-size: $smallFontSize;
+                }
+                input{
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    border-color: $primaryBlack;
+                    height: 30px;
+                    color: $primaryBlack;
+                    padding: 5px;
+                    font-size: 11px;
+                    font-family: $mainFontFamily;
+                }
+                button{
+                    border-radius: 5px;
+                    border-color: transparent;
+                    border-radius: 5px;
+                    height: 40px;
+                    background-color: $secondaryColor;
+                    font-size: $smallFontSize;
+                    font-family: $mainFontFamily;
+                    color: $primaryWhite;
+                }
+            }
         }
+
+
     }
     
 }

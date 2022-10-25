@@ -19,3 +19,8 @@ function hideScreen() {
   }
   return false;
 }
+
+function createNewUser() {
+  
+  return false;
+}
