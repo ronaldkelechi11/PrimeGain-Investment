@@ -642,42 +642,6 @@
 .footer .logo span {
   color: #1740D8;
 }
-.footer .socialLinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-}
-.footer .socialLinks .instagram {
-  width: 25px;
-  height: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.footer .socialLinks .instagram:hover {
-  transform: scale(1.2);
-  transition: ease-in 0.5s;
-}
-.footer .socialLinks .skype {
-  width: 25px;
-  height: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.footer .socialLinks .skype:hover {
-  transform: scale(1.2);
-  transition: ease-in 0.5s;
-}
-.footer .socialLinks .twitter {
-  width: 25px;
-  height: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.footer .socialLinks .twitter:hover {
-  transform: scale(1.2);
-  transition: ease-in 0.5s;
-}
 .footer .mailAddress {
   display: flex;
   flex-direction: row;
@@ -828,4 +792,10 @@ body .createanaccount .center .form button {
   font-size: 16px;
   font-family: "Poppins";
   color: #ffffff;
+}
+body .createanaccount .center .form button:hover {
+  background-color: rgb(3, 177, 119);
+  color: black;
+  font-weight: bold;
+  transition: 1s;
 }/*# sourceMappingURL=index.css.map */

@@ -1,18 +1,28 @@
+
 function createAccountAppear() {
   var screen = document.getElementById("createanaccount");
-  var isVisibile = screen.style.visibility="hidden";
-  
-  
+  var isVisibile = screen.style.visibility="visible";
+
+      //To make sure that input is always blank
+ document.getElementById("username").value = null;
+ document.getElementById("number").value = null;
+ document.getElementById("email").value = null;
+ document.getElementById("password").value = null;
+ document.getElementById("re_password").value = null;
+ console.log("Cleared");
+
+
   if(isVisibile){
     screen.style.visibility = "visible";
   }
   return false;
 }
 
+
+// HideScreen Funcition
 function hideScreen() {
   var screen = document.getElementById("createanaccount");
   var isVisibile = screen.style.visibility="visible";
-  
   
   if(isVisibile){
     screen.style.visibility = "hidden";
@@ -38,6 +48,9 @@ function createNewUser() {
   var emailtxt = document.getElementById("email").value;
   var passwordtxt = document.getElementById("password").value;
   var re_passwordtxt = document.getElementById("re_password").value;
+
+  //Redirection 
+  window.location.href = 'dashboard.html';
 
   return false;
 }

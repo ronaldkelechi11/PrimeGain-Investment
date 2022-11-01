@@ -24,42 +24,6 @@
         }
     }
 
-    .socialLinks{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        overflow: hidden;
-        .instagram{
-            width: 25px;
-            height: 100%;
-            margin-left: 10px;
-            margin-right: 10px;
-            &:hover{
-                transform: scale(1.2);
-                transition: ease-in 0.5s;
-            }
-        }
-        .skype{
-            width: 25px;
-            height: 100%;
-            margin-left: 10px;
-            margin-right: 10px;
-            &:hover{
-                transform: scale(1.2);
-                transition: ease-in 0.5s;
-            }
-        }
-        .twitter{
-            width: 25px;
-            height: 100%;
-            margin-left: 10px;
-            margin-right: 10px;
-            &:hover{
-                transform: scale(1.2);
-                transition: ease-in 0.5s;
-            }
-        }
-    }
     .mailAddress{
         display: flex;
         flex-direction: row;

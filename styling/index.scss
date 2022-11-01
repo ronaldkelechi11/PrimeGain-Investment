@@ -140,6 +140,12 @@ body{
                     font-size: $smallFontSize;
                     font-family: $mainFontFamily;
                     color: $primaryWhite;
+                    &:hover{
+                      background-color: rgb(3, 177, 119); 
+                      color: black;
+                      font-weight: bold;
+                      transition: 1s; 
+                    }
                 }
             }
         }
