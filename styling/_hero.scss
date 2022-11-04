@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mediaqueries';
 
 .hero{
     height: 100vh;
@@ -41,7 +42,7 @@
         align-items: center;
         overflow: hidden;
         margin-top: 30px;
-       .sup{
+       .reg{
         border-radius: 5px;
         border-color: transparent;
         margin-left: 10px;
@@ -53,9 +54,107 @@
         font-size: $smallFontSize;
         font-weight: bold;
         &:hover{
-            transform: scale(1.2); 
+            transform: scale(1.1); 
             transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
         }
        }
+       .log{
+        border-radius: 5px;
+        border-color: $primaryWhite;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: $primaryWhite;
+        background-color: transparent;
+        height: 50px;
+        width: 150px;
+        font-family: $mainFontFamily;
+        font-size: $smallFontSize;
+        font-weight: bold;
+        &:hover{
+            transform: scale(1.1); 
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+        }
+       }
+    }
+}
+
+
+
+@include mobile{
+    .hero{
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: center;
+    
+        &__headText{
+            text-align: center;
+            font-size: $mediumFontSize;
+            font-family: $mainFontFamily;
+            font-weight: bold;
+            color: $primaryWhite;
+            animation: scaling 2s infinite;
+            span{
+                color: $secondaryColor;
+            }
+            @keyframes scaling {
+                0%{
+    
+                }
+                100%{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    
+        &__smallText{
+            text-align: center;
+            font-size: $smallFontSize;
+            font-family: $mainFontFamily;
+            color: $light;
+        }
+    
+        .userButtons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin-top: 30px;
+           .reg{
+            border-radius: 5px;
+            border-color: transparent;
+            margin-left: 10px;
+            margin-right: 10px;
+            color: $primaryBlack;
+            height: 50px;
+            width: 100px;
+            font-family: $mainFontFamily;
+            font-size: $smallFontSize;
+            font-weight: bold;
+            &:hover{
+                transform: scale(1.1); 
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+            }
+           }
+           .log{
+            border-radius: 5px;
+            border-color: $primaryWhite;
+            margin-left: 10px;
+            margin-right: 10px;
+            color: $primaryWhite;
+            background-color: transparent;
+            height: 50px;
+            width: 100px;
+            font-family: $mainFontFamily;
+            font-size: $smallFontSize;
+            font-weight: bold;
+            &:hover{
+                transform: scale(1.1); 
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+            }
+           }
+        }
     }
 }

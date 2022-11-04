@@ -1,5 +1,6 @@
 // All impoerts are accesory files required to facilitate the project broken down into variable files and Ln2 then categories from Ln4 to 
 @import "variables";
+@import 'mediaqueries';
 
 @import 'navbar';
 @import 'hero';
@@ -151,6 +152,15 @@ body{
         }
 
 
+    }   
+}
+
+
+// Media Query
+@include mobile{
+    body{
+    background-image: url("../assets/images/bg_hero.JPG");
+    background-color: opacity($color: #000000);
+    background-position: center;
     }
-    
 }

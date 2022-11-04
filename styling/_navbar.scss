@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mediaqueries';
 
 .navbar{
     padding: 10px;
@@ -41,4 +42,44 @@
             }
         }
     }
+}
+@include mobile{
+    
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+
+    &__logo{
+        overflow-y: hidden;
+        text-decoration: none;
+        font-family: $mainFontFamily;
+        color: $primaryWhite;
+        font-size: $mediumFontSize;
+        font-weight: bolder;
+        span{
+            color: $secondaryColor;
+        }
+    }
+
+    &__bars{
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        &_a{
+            text-decoration: none;
+            font-size: $smallFontSize;
+            font-family: $mainFontFamily;
+            margin-left: 10px;
+            margin-right: 10px;
+            color: $primaryWhite;
+            &:hover{
+                transform: scale(1.05);
+                color: $secondaryColor;
+                transition: 0.3s;
+            }
+        }
+    }
+}
 }

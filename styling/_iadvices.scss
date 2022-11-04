@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mediaqueries';
 
 .iadvices{
     background-color: $primaryWhite;
@@ -192,3 +193,201 @@
         }
     }
 }
+
+//Media Query
+@mixin mobile {
+    
+.iadvices{
+    background-color: $primaryWhite;
+    height: 160vh;
+    overflow: hidden;
+    padding: 30px;
+    &_head{
+        display: flex;
+        @extend %centerVertical;
+        text-transform: uppercase;
+        font-family: $mainFontFamily;
+        font-size: $largestFontSize;
+        font-weight: bold;
+        color: $primaryBlack;
+    }
+    &_title{
+        margin-top: 10px;
+        display: flex;
+        text-align: center;
+        @extend %centerVertical;
+        font-family: $mainFontFamily;
+        font-size: $smallFontSize;
+        color: $primaryGrey;
+    }
+    .starterPack{
+        width: 100%;
+        height: 25%;
+        margin-top: 20px;
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        .image{
+            width: 50%;
+            height: 100%;
+            background: url("../assets/images/logo.JPG");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .writeUp{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                color: $primaryBlack;
+                font-size: $largestFontSize; 
+                text-align: center;
+                margin-top: 10px;
+                font-family: $mainFontFamily;
+                text-transform: uppercase;
+                padding: 5px;
+                text-decoration: dashed;
+            }
+            h4{
+                color: $primaryGrey;
+                font-size: $mediumFontSize;
+                margin-top: 10px;
+                font-family: $mainFontFamily; 
+                span{
+                    color: $errorColor;
+                    margin-left: 10px;
+                } 
+                .max{
+                    color: $successColor;
+                }
+                .normal{
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+
+    .advancePack{
+        width: 100%;
+        height: 25%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        .image{
+            width: 50%;
+            height: 100%;
+            background-image: url("../assets/images/logo.JPG");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .writeUp{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                color: $primaryBlack;
+                font-size: $largestFontSize; 
+                text-align: center;
+                margin-top: 10px;
+                font-family: $mainFontFamily;
+                text-transform: uppercase;
+                padding: 5px;
+                text-decoration: dashed;
+            }
+            h4{
+                color: $primaryGrey;
+                font-size: $mediumFontSize;
+                margin-top: 10px;
+                font-family: $mainFontFamily; 
+                span{
+                    color: $errorColor;
+                    margin-left: 10px;
+                } 
+                .max{
+                    color: $successColor;
+                }
+                .normal{
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+
+    .goldPack{
+        width: 100%;
+        height: 25%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        .image{
+            width: 50%;
+            height: 100%;
+            background-image: url("../assets/images/logo.JPG");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .writeUp{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                color: $primaryBlack;
+                font-size: $largestFontSize; 
+                font-weight: bold;
+                text-align: center;
+                margin-top: 10px;
+                font-family: $mainFontFamily;
+                text-transform: uppercase;
+                padding: 5px;
+                text-decoration: dashed;
+            }
+            h4{
+                color: $primaryGrey;
+                font-size: $mediumFontSize;
+                margin-top: 10px;
+                font-family: $mainFontFamily; 
+                span{
+                    color: $errorColor;
+                    margin-left: 10px;
+                } 
+                .max{
+                    color: $successColor;
+                }
+                .normal{
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+
+    .advice{
+        margin-top: 50px;
+        text-align: center;
+        font-family: $mainFontFamily;
+        font-size: $smallFontSize;
+        color: $primaryBlack;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 2px dashed $primaryColor;
+        border-bottom: 2px dashed $primaryColor;
+        span{
+            color: $errorColor;
+            font-weight: bold;
+            text-transform: uppercase
+        }
+    }
+}
+}
+
