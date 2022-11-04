@@ -1,9 +1,9 @@
-
-function createAccountAppear() {
+document.getElementById("sup").addEventListener("click", appear);
+function appear() {
   var screen = document.getElementById("createanaccount");
   var isVisibile = screen.style.visibility="visible";
 
-      //To make sure that input is always blank
+  //To make sure that input is always blank
  document.getElementById("username").value = null;
  document.getElementById("number").value = null;
  document.getElementById("email").value = null;
@@ -19,7 +19,8 @@ function createAccountAppear() {
 }
 
 
-// HideScreen Funcition
+
+document.getElementById("cancelButton").addEventListener("click", hideScreen);
 function hideScreen() {
   var screen = document.getElementById("createanaccount");
   var isVisibile = screen.style.visibility="visible";
@@ -30,27 +31,17 @@ function hideScreen() {
   return false;
 }
 
-function createNewUser() {
-  //Variable Colors
-  var red = "#cc3c3c";
-  var green = "#60dd60"; 
+doneButton.addEventListener("click", (e) =>{
+  alert("Do you agree to our terms and conditions?")
+  window.location = "/dashboard.html";
+});
 
-  //Initialization
-  var username = document.getElementById("username");
-  var number = document.getElementById("number");
-  var email = document.getElementById("email");
-  var password = document.getElementById("password");
-  var re_password = document.getElementById("re_password");
 
-  // Value
-  var usernametxt = document.getElementById("username").value;
-  var numbertxt = document.getElementById("number").value;
-  var emailtxt = document.getElementById("email").value;
-  var passwordtxt = document.getElementById("password").value;
-  var re_passwordtxt = document.getElementById("re_password").value;
 
-  //Redirection 
-  window.location.href = 'dashboard.html';
 
-  return false;
-}
+
+
+
+
+
+

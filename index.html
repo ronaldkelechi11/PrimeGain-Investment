@@ -5,38 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Firebase Initialization -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyBYBN1JHtnQnBj8Jt7a58je2uaufbKT0qU",
-          authDomain: "primegaininvestment-bc2ba.firebaseapp.com",
-          projectId: "primegaininvestment-bc2ba",
-          storageBucket: "primegaininvestment-bc2ba.appspot.com",
-          messagingSenderId: "295060299707",
-          appId: "1:295060299707:web:7b80894f9bc5398d53ee9e",
-          measurementId: "G-1CJD0M074F"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
-
-
-
-    <title>No.1 Crypto Investment site in Africa | Prime GAIN Investment</title>
+       <title>No.1 Crypto Investment site in Africa | Prime GAIN Investment</title>
 
     <!--Favicon and Stylesheet -->
         <link rel="stylesheet" href="./styling/index.css">
-        <script src="./js/index.js"></script>
+        <script src="./js/index.js" type="module"></script>
         <link rel="shortcut icon" href="/assets/images/logo.JPG" type="image/x-icon">
 </head>
     <body>
@@ -48,7 +21,7 @@
 
         <!-- Login Display -->
         <div class="createanaccount" id="createanaccount">
-            <div class="cancelButton" id="cancelButton" onclick="hideScreen()">
+            <div class="cancelButton" id="cancelButton">
                 <div class="img"></div>
             </div>
             <div class="center">
@@ -57,21 +30,31 @@
                 </div>
                     <div class="form">
                         <h3>Username:</h3>
-                        <input type="text" name="username" id="username" value placeholder="Username">
+                        <input type="text" name="username" required
+                        maxlength="20"
+                        id="username" value placeholder="Username">
 
                         <h3>Telephone:</h3>
-                        <input type="tel" name="phoneNumber" id="number" placeholder="Telephone number" value>
+                        <input type="tel" name="phoneNumber" id="number" 
+                        maxlength="15"
+                        placeholder="Telephone number" value>
 
                         <h3>Email:</h3>
-                        <input type="email" name="email" id="email" placeholder="Email" value>
+                        <input type="email" 
+                        required
+                        name="email" id="email" placeholder="Email" value>
 
                         <h3>Password:</h3>
-                        <input type="password" name="password" id="password" placeholder="Password" value>
+                        <input type="password" name="password" id="password" 
+                        required
+                        maxlength="15"
+                        minlength="6"
+                        placeholder="Password" value>
 
                         <h3>Re-type Password:</h3>
                         <input type="password" name="password" id="re_password" placeholder="Re-Type Password" value>
 
-                        <button onclick="createNewUser()" >Done</button>
+                        <button id="doneButton">Done</button>
                     </div>
             </div>
         </div>
@@ -100,8 +83,7 @@
             </div>
          
             <div class="userButtons">
-                <button class="sup" onclick="createAccountAppear()" id="sup">Create Account
-                </button>
+                <button class="sup" id="sup" onclick="">Create Account</button>
             </div>
 
         </div>
@@ -250,6 +232,50 @@
 
         </div>
 
+        <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBYBN1JHtnQnBj8Jt7a58je2uaufbKT0qU",
+            authDomain: "primegaininvestment-bc2ba.firebaseapp.com",
+            projectId: "primegaininvestment-bc2ba",
+            storageBucket: "primegaininvestment-bc2ba.appspot.com",
+            messagingSenderId: "295060299707",
+            appId: "1:295060299707:web:7b80894f9bc5398d53ee9e",
+            measurementId: "G-1CJD0M074F"
+        };
+
+        const auth = getAuth();
+    function createNewUser() {
+        // Value
+        let usernametxt = document.getElementById("username").value;
+        let numbertxt = document.getElementById("number").value;
+        let emailtxt = document.getElementById("email").value;
+        let passwordtxt = document.getElementById("password").value;
+        let re_passwordtxt = document.getElementById("re_password").value;
+
+        createUserWithEmailAndPassword(auth,emailtxt,passwordtxt)
+        .then((userCredential) => {
+            console.log("Signing In");
+            const user = userCredential.user;
+            window.location.href = '/dashboard';
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(errorMessage)
+        }); 
+    }
+
+    doneButton.addEventListener("click", (e) =>{
+        alert("Do you agree to our Terms and Conditions?")
+    createNewUser();
+        });
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+</script>
         
     </body>
 </html>

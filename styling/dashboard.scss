@@ -9,5 +9,103 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+    background-position: center;
+    background-repeat: no-repeat;
+    .header{
+        height: 10%;
+        width: 100vw;
+        font-size: $largestFontSize;
+        background-color: $secondaryColor;
+        color: $primaryWhite;
+        font-family: $mainFontFamily;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .accountInfo{
+        height: 35%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .balance{
+            width: 30%;
+            border-radius: 10px;
+            background-color: $secondaryColor;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-size: 60px;
+                color: $primaryWhite;
+                font-family: $mainFontFamily;
+                text-align: center;
+                width: 100%;
+            }
+            h4{
+                margin-top: 30px;
+                font-size: $smallFontSize;
+                color: $primaryWhite;
+                font-family: $secondaryFontFamily;
+                text-align: center;
+                width: 100%;  
+            }
+        }
+        .deposit{ 
+            width: 30%;
+            border-radius: 10px;
+            background-color: $secondaryColor;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-size: 60px;
+                color: $primaryWhite;
+                font-family: $mainFontFamily;
+                text-align: center;
+                width: 100%;
+            }
+            h4{
+                margin-top: 30px;
+                font-size: $smallFontSize;
+                color: $primaryWhite;
+                font-family: $secondaryFontFamily;
+                text-align: center;
+                width: 100%;  
+            }
+        }
+        .total{
+            width: 30%;
+            border-radius: 10px;
+            background-color: $secondaryColor;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-size: 60px;
+                color: $primaryWhite;
+                font-family: $mainFontFamily;
+                text-align: center;
+                width: 100%;
+            }
+            h4{
+                margin-top: 30px;
+                font-size: $smallFontSize;
+                color: $primaryWhite;
+                font-family: $secondaryFontFamily;
+                text-align: center;
+                width: 100%;  
+            }
+        }
+    }
+    .userinfo{
+        width: 100vw;
+        height: 20%;
+        background-color: red;
+    }
 }

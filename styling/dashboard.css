@@ -8,5 +8,103 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: aqua;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body .header {
+  height: 10%;
+  width: 100vw;
+  font-size: 40px;
+  background-color: #1740D8;
+  color: #ffffff;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body .accountInfo {
+  height: 35%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body .accountInfo .balance {
+  width: 30%;
+  border-radius: 10px;
+  background-color: #1740D8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .accountInfo .balance h1 {
+  font-size: 60px;
+  color: #ffffff;
+  font-family: "Poppins";
+  text-align: center;
+  width: 100%;
+}
+body .accountInfo .balance h4 {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Arial";
+  text-align: center;
+  width: 100%;
+}
+body .accountInfo .deposit {
+  width: 30%;
+  border-radius: 10px;
+  background-color: #1740D8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .accountInfo .deposit h1 {
+  font-size: 60px;
+  color: #ffffff;
+  font-family: "Poppins";
+  text-align: center;
+  width: 100%;
+}
+body .accountInfo .deposit h4 {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Arial";
+  text-align: center;
+  width: 100%;
+}
+body .accountInfo .total {
+  width: 30%;
+  border-radius: 10px;
+  background-color: #1740D8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .accountInfo .total h1 {
+  font-size: 60px;
+  color: #ffffff;
+  font-family: "Poppins";
+  text-align: center;
+  width: 100%;
+}
+body .accountInfo .total h4 {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Arial";
+  text-align: center;
+  width: 100%;
+}
+body .userinfo {
+  width: 100vw;
+  height: 20%;
+  background-color: red;
 }/*# sourceMappingURL=dashboard.css.map */
