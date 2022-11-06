@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mediaqueries';
 
 .aboutUs{
     background-color: $primaryWhite;
@@ -145,6 +146,146 @@
                 transform: translateY(-10px);
                 transition: 1s;
                 box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.377);
+            }
+        }
+    }
+}
+
+@include mobile{
+    .aboutUs{
+        background-color: $primaryWhite;
+        overflow: hidden;
+        padding: 30px;
+        &_head{
+            display: flex;
+            flex-direction: row;
+            font-family: $mainFontFamily;
+            font-size: $smallFontSize;
+            color: $light;
+            .slah{
+                margin-left: 10px;
+                color: $secondaryColor;
+            }
+        }
+        &_title{
+            font-size: $largeFontSize;
+            color: $primaryBlack;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: $mainFontFamily;
+        }
+    
+        &_aboutus1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .company_profile{
+                width: 100%;
+                height: 100%;
+                border-style: solid;
+                border-radius: 5px;
+                border-width: 1px;
+                border-color: $secondaryGrey;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                .img{
+                    height: 30%;
+                    width: 100%;
+                    background-position: center;
+                    background-size: cover;
+                    background-image: url('../assets/images/company_profile.jpg');
+                }
+                .title{
+                    font-size: $smallFontSize;
+                    font-family: $mainFontFamily;
+                    color: $primaryBlack;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                .wup{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    font-size:8px;
+                    font-family: $mainFontFamily;
+                    color: $primaryGrey;
+                    text-align: center;
+                }
+            }
+    
+    
+    
+            .company_mission{
+                display: none;
+                width: 100%;
+                height: 100%;
+                border-style: solid;
+                border-radius: 5px;
+                border-width: 1px;
+                border-color: $secondaryGrey;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                .img{
+                    height: 40%;
+                    width: 400px;
+                    background-position: center;
+                    background-size: cover;
+                    background-image: url('../assets/images/cp_mission.jpg');
+                }
+                .title{
+                    font-size: $mediumFontSize;
+                    font-family: $mainFontFamily;
+                    color: $primaryBlack;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                .wup{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    font-size: 8px;
+                    font-family: $mainFontFamily;
+                    color: $primaryGrey;
+                    text-align: center;
+                }
+            }
+            
+    
+    
+            .company_vision{
+                height: 100%;
+                width: 100%;
+                border-style: solid;
+                border-radius: 5px;
+                border-width: 1px;
+                border-color: $secondaryGrey;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                .img{
+                    height: 40%;
+                    width: 400px;
+                    background-position: center;
+                    background-size: cover;
+                    background-image: url('../assets/images/cp_vision.jpg');
+                }
+                .title{
+                    font-size: $mediumFontSize;
+                    font-family: $mainFontFamily;
+                    color: $primaryBlack;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                .wup{
+                    height: max-content;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    font-size: 8px;
+                    font-family: $mainFontFamily;
+                    color: $primaryGrey;
+                    text-align: center;
+                }
             }
         }
     }
