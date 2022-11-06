@@ -43,8 +43,10 @@
         }
     }
 }
-@include mobile{
-    
+
+
+//Media Query
+@include mobile{  
 .navbar{
     padding: 10px;
     display: flex;

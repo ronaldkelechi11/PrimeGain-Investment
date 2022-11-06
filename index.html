@@ -19,14 +19,14 @@
             <div class="img"></div>
         </a>
 
-        <!-- Login Display -->
+        <!-- Register Display -->
         <div class="createanaccount" id="createanaccount">
             <div class="cancelButton" id="cancelButton">
                 <div class="img"></div>
             </div>
             <div class="center">
                 <div class="head">
-                    <div class="txt">Create An Account</div>
+                    <div class="txt">Register</div>
                 </div>
                     <div class="form">
                         <h3>Username:</h3>
@@ -54,7 +54,34 @@
                         <h3>Re-type Password:</h3>
                         <input type="password" name="password" id="re_password" placeholder="Re-Type Password" value>
 
-                        <button id="doneButton">Done</button>
+                        <button id="doneButton">REGISTER</button>
+                    </div>
+            </div>
+        </div>
+
+        
+        <!-- Login Display -->
+        <div class="loginaccount" id="loginaccount">
+            <div class="cancelButtonLogin" id="cancelButtonLogin">
+                <div class="img"></div>
+            </div>
+            <div class="center">
+                <div class="head">
+                    <div class="txt">LOGIN</div>
+                </div>
+                    <div class="form">
+                        <h3>Username:</h3>
+                        <input type="text" name="username" required
+                        maxlength="20"
+                        id="username" value placeholder="Username">
+
+                        <h3>Password:</h3>
+                        <input type="password" name="password" id="password" 
+                        required
+                        maxlength="15"
+                        minlength="6"
+                        placeholder="Password" value>
+                        <button id="doneButton">LOGIN</button>
                     </div>
             </div>
         </div>
@@ -83,8 +110,8 @@
             </div>
          
             <div class="userButtons">
-                <button class="reg" id="sup" onclick="">Register</button>
-                <button class="log" id="sup" onclick="">Login</button>
+                <button class="reg" id="reg" onclick="">Register</button>
+                <button class="log" id="log" onclick="">Login</button>
             </div>
 
         </div>
@@ -233,6 +260,8 @@
 
         </div>
 
+
+        <!-- In-Screen Javascript -->
         <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
         import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js";
@@ -269,13 +298,8 @@
         }); 
     }
 
-    doneButton.addEventListener("click", (e) =>{
-        alert("Do you agree to our Terms and Conditions?")
-    createNewUser();
-        });
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+     // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
 </script>
         
     </body>

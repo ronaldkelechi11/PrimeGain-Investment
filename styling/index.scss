@@ -139,6 +139,7 @@ body{
                     height: 40px;
                     background-color: $secondaryColor;
                     font-size: $smallFontSize;
+                    font-weight: bold;
                     font-family: $mainFontFamily;
                     color: $primaryWhite;
                     &:hover{
@@ -150,9 +151,114 @@ body{
                 }
             }
         }
-
-
     }   
+
+
+
+    .loginaccount{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        visibility: hidden;
+        display: flex;
+        z-index: 150;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: 0.3;
+        .cancelButtonLogin{
+            width: 50px;
+            height: 50px;
+            background-color: $errorColor;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 5px;
+            color: $primaryWhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $largestFontSize;
+            font-family: $secondaryFontFamily;
+             &:hover{
+                transform: scale(1.1);
+                transition: 0.7s;
+            }
+            .img{
+                width: 25px;
+                height: 25px;
+                background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
+            }
+        }
+        .center{
+            overflow: hidden;
+            background-color: $primaryWhite;
+            opacity: 1;
+            width: 500px;
+            height: 250px;
+            padding: 5px;
+            border-radius: 10px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $primaryBlack;
+            .head{
+                background-color: $light;
+                border-radius: 5px  5px 0px 0px;
+                height: 11%;
+                overflow-y: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    .txt{
+                        font-weight: bold;
+                        color: $primaryGrey;
+                        font-family: $mainFontFamily;
+                        font-size: $mediumFontSize;
+                    }
+            }
+            .form{
+                overflow-y: hidden;
+                display: flex;
+                margin: 2px;
+                margin-top: 10px;
+                justify-content: space-between;
+                flex-direction: column;
+                h3{
+                    font-family: $mainFontFamily;
+                    font-size: $smallFontSize;
+                }
+                input{
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    border-color: $primaryBlack;
+                    height: 30px;
+                    color: $primaryBlack;
+                    padding: 5px;
+                    font-size: 11px;
+                    font-family: $mainFontFamily;
+                }
+                button{
+                    border-radius: 5px;
+                    border-color: transparent;
+                    border-radius: 5px;
+                    height: 40px;
+                    background-color: $secondaryColor;
+                    font-size: $smallFontSize;
+                    font-weight: bold;
+                    font-family: $mainFontFamily;
+                    color: $primaryWhite;
+                    &:hover{
+                      background-color: rgb(3, 177, 119); 
+                      color: black;
+                      font-weight: bold;
+                      transition: 1s; 
+                    }
+                }
+            }
+        }
+    }  
+
+
 }
 
 
