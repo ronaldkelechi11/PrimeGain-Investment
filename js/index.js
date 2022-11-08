@@ -35,16 +35,13 @@ function hideLogin() {
   var isVisibile = screen.style.visibility="hidden";
 
   //To make sure that input is always blank
- document.getElementById("username").value = null;
- document.getElementById("email").value = null;
- document.getElementById("password").value = null;
+ document.getElementById("emailLogin").value = null;
+ document.getElementById("passwordLogin").value = null;
  console.log("Cleared");
-
 
   if(isVisibile){
     screen.style.visibility = "visible";
   }
-
   return false;
 }
 
@@ -55,7 +52,6 @@ function hideRegisterScreen() {
   if(isVisibile){
     screen.style.visibility = "hidden";
   }
-
   return false;
 }
 
@@ -84,7 +80,6 @@ function registerUser() {
 
   //Button Declaration
   var button = document.getElementById("registerButton");
-  console.log(uname.length);
 
   //Front End Validation
   if(uname.length <= null){
@@ -99,21 +94,24 @@ function registerUser() {
   if(passwordtxt.length <= 0){
     alert(("password cannot be empty"))
   }
-  if(passwordtxt = rePassword){
-    alert("Passwords do not match")
-  }
 
-  // createUserWithEmailAndPassword(auth,emailtxt,passwordtxt)
-  //       .then((userCredential) => {
-  //           console.log("Signing In");
-  //           const user = userCredential.user;
-  //           window.location.href = '/dashboard.html';
-  //       })
-  //       .catch((error) => {
-  //           const errorCode = error.code;
-  //           const errorMessage = error.message;
-  //           alert(errorMessage)
-  //       });
+  else{
+    button.innerText = "Loading...";
+    var templateParams = {
+      username: document.getElementById("username").value,
+      email: document.getElementById("email").value,
+      phone_number: document.getElementById("number").value,
+  }; 
+  emailjs.send('gmail', 'primegain_template', templateParams)
+      .then(function(response) {
+         console.log('SUCCESS!', response.status, response.text);
+         window.location = "/dashboard.html";
+      }, function(error) {
+         console.log('FAILED...', error);
+         alert("Failed to Register User")
+      });
+  }
+  
 }
 
 

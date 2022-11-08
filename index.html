@@ -11,6 +11,17 @@
         <link rel="stylesheet" href="./styling/index.css">
         <script src="./js/index.js" type="module"></script>
         <link rel="shortcut icon" href="/assets/images/logo.JPG" type="image/x-icon">
+
+    <!--Email JS CDN  -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("OJYeijTeomJyu2NsM");
+    })();
+    </script>
+
 </head>
     <body>
 
@@ -70,13 +81,14 @@
                     <div class="txt">LOGIN</div>
                 </div>
                     <div class="form">
-                        <h3>Username:</h3>
-                        <input type="text" name="username" required
-                        maxlength="20"
-                        id="username" value placeholder="Username">
+                        <h3>Email:</h3>
+                        <input type="email" 
+                        required
+                        name="email" id="emailLogin" placeholder="Email" value>
+                        
 
                         <h3>Password:</h3>
-                        <input type="password" name="password" id="password" 
+                        <input type="password" name="password" id="passwordLogin" 
                         required
                         maxlength="15"
                         minlength="6"
@@ -259,48 +271,5 @@
             </div>
 
         </div>
-
-
-        <!-- In-Screen Javascript -->
-        <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyBYBN1JHtnQnBj8Jt7a58je2uaufbKT0qU",
-            authDomain: "primegaininvestment-bc2ba.firebaseapp.com",
-            projectId: "primegaininvestment-bc2ba",
-            storageBucket: "primegaininvestment-bc2ba.appspot.com",
-            messagingSenderId: "295060299707",
-            appId: "1:295060299707:web:7b80894f9bc5398d53ee9e",
-            measurementId: "G-1CJD0M074F"
-        };
-
-        const auth = getAuth();
-    function createNewUser() {
-        // Value
-        let usernametxt = document.getElementById("username").value;
-        let numbertxt = document.getElementById("number").value;
-        let emailtxt = document.getElementById("email").value;
-        let passwordtxt = document.getElementById("password").value;
-        let re_passwordtxt = document.getElementById("re_password").value;
-
-        createUserWithEmailAndPassword(auth,emailtxt,passwordtxt)
-        .then((userCredential) => {
-            console.log("Signing In");
-            const user = userCredential.user;
-            window.location.href = '/dashboard';
-        })
-        .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            alert(errorMessage)
-        }); 
-    }
-
-     // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-</script>
-        
     </body>
 </html>

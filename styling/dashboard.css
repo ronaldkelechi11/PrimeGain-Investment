@@ -8,8 +8,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 body .header {
   height: 10%;
@@ -103,8 +102,62 @@ body .accountInfo .total h4 {
   text-align: center;
   width: 100%;
 }
-body .userinfo {
-  width: 100vw;
-  height: 20%;
-  background-color: red;
+body .userInfo {
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 5px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: row;
+}
+body .userInfo .username {
+  width: 33.4%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid;
+  border-color: #1740D8;
+}
+body .userInfo .username h3 {
+  font-family: "Arial";
+  color: #000000;
+  font-size: 16px;
+}
+body .userInfo .emailAddress {
+  width: 33.4%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid;
+  border-color: #1740D8;
+}
+body .userInfo .emailAddress h3 {
+  font-family: "Arial";
+  color: #000000;
+  font-size: 16px;
+}
+body .userInfo .DOC {
+  width: 33.4%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid;
+  border-color: #1740D8;
+}
+body .userInfo .DOC h3 {
+  font-family: "Arial";
+  color: #000000;
+  font-size: 16px;
+}
+body .invest {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  background-color: blue;
 }/*# sourceMappingURL=dashboard.css.map */
