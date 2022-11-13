@@ -127,6 +127,7 @@ body .userInfo .username h3 {
 }
 body .userInfo .username #userUsername {
   color: #1740D8;
+  font-weight: lighter;
 }
 body .userInfo .emailAddress {
   width: 33.4%;
@@ -145,6 +146,7 @@ body .userInfo .emailAddress h3 {
 }
 body .userInfo .emailAddress #userEmailAddress {
   color: #1740D8;
+  font-weight: lighter;
 }
 body .userInfo .userNumber {
   width: 33.4%;
@@ -161,16 +163,21 @@ body .userInfo .userNumber h3 {
   color: #000000;
   font-size: 16px;
 }
+body .userInfo .userNumber h3 .img {
+  width: 25px;
+  height: 25px;
+  background-color: green;
+}
 body .userInfo .userNumber #userNumber {
   color: #1740D8;
+  font-weight: lighter;
 }
 body .invest {
   height: 300px;
-  margin-top: 20px;
   display: flex;
+  margin: 10px;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 10px;
   background-color: red;
 }
 body .invest .depositInfo {

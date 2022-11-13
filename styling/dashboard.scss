@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mediaqueries';
 
 *{
     margin: 0;
@@ -125,6 +126,7 @@ body{
             }
             #userUsername{
                 color: $secondaryColor;
+                font-weight: lighter;
             }
         }
         .emailAddress{
@@ -143,6 +145,7 @@ body{
             }
             #userEmailAddress{
                 color: $secondaryColor;
+                font-weight: lighter;
             }
         }
         .userNumber{
@@ -158,19 +161,24 @@ body{
                 font-family: $secondaryFontFamily;
                 color: $primaryBlack;
                 font-size: $smallFontSize;
+                .img{
+                    width: 25px;
+                    height: 25px;
+                    background-color: green;
+                }
             }
             #userNumber{
                 color: $secondaryColor;
+                font-weight: lighter;
             }
         }
     }
     .invest{
         height: 300px;
-        margin-top: 20px;
         display: flex;
+        margin: 10px;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 10px;
         background-color: red;
         .depositInfo{
             width: 50%;

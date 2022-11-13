@@ -508,6 +508,34 @@
     text-align: center;
   }
 }
+.affliate {
+  height: 40vh;
+  background-image: url("../assets/images/cta-bg.jpg");
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.affliate .head {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Poppins";
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.affliate .text {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Poppins";
+  width: 100%;
+  text-align: center;
+}
+
 .iadvices {
   background-color: #ffffff;
   height: 160vh;

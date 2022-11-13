@@ -1,0 +1,35 @@
+@import 'variables';
+
+.affliate{
+    height: 40vh;
+    background-image: url("../assets/images/cta-bg.jpg");
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .head{
+        color: $primaryWhite;
+        font-size: $largeFontSize;
+        font-family: $mainFontFamily;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+    .text{
+        color: $primaryWhite;
+        font-size: $smallFontSize;
+        font-family: $mainFontFamily;
+        width: 100%;
+        text-align: center;
+    }
+    .getLink{
+        border: 2px solid $primaryWhite;
+        border-radius: 10px;
+        padding: 5px;
+        color: $primaryWhite;
+    }
+}
