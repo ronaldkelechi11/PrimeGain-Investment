@@ -165,38 +165,40 @@ body{
         }
     }
     .invest{
-        height: 250px;
+        height: 300px;
         margin-top: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-left: 10px;
-        margin-right: 10px;
-        
-        .investmentInfo{
+        background-color: red;
+        .depositInfo{
             width: 50%;
             display: flex;
             flex-direction: column;
-            border: solid;
-            border-width: 2px;
-            border-radius: 10px 0px 0px 10px;
-            border-color: $primaryColor; 
-           .head{
-            text-align: center;
-            color: $primaryWhite;
-            font-family: $mainFontFamily;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: $mediumFontSize;
-           }
+            .top{
+                text-align: center;
+                font-family: $mainFontFamily;
+                font-size: $mediumFontSize;
+                background-color:$secondaryColor;
+                color: $primaryWhite;
+                width: 100%;
+                text-transform: uppercase;
+            }
         }
-        .withdrawalInfo{
-            height: 100%;
+        .withdrawInfo{
             width: 50%;
             display: flex;
             flex-direction: column;
-            padding-left: 5px;
-            padding-right: 5px;
+            .top{
+                text-align: center;
+                font-family: $mainFontFamily;
+                font-size: $mediumFontSize;
+                background-color:$primaryColor;
+                color: $primaryWhite;
+                width: 100%;
+                text-transform: uppercase;
+            }
         }
     }
 }
