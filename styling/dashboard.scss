@@ -9,13 +9,13 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $light;
     .header{
         height: 10%;
         width: 100vw;
         font-size: $largestFontSize;
-        background-color: $secondaryColor;
-        color: $primaryWhite;
+        background-color: $primaryColor;
+        color: $primaryBlack;
         font-family: $mainFontFamily;
         display: flex;
         align-items: center;
@@ -32,7 +32,7 @@ body{
         .balance{
             width: 30%;
             border-radius: 10px;
-            background-color: $secondaryColor;
+            background-color: $primaryColor;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -56,7 +56,7 @@ body{
         .deposit{ 
             width: 30%;
             border-radius: 10px;
-            background-color: $secondaryColor;
+            background-color: $primaryColor;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -80,7 +80,7 @@ body{
         .total{
             width: 30%;
             border-radius: 10px;
-            background-color: $secondaryColor;
+            background-color: $primaryColor;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -103,11 +103,11 @@ body{
         }
     }
     .userInfo{
-        width: 100%;
         margin-top: 30px;
-        padding-left: 5px;
-        padding-right: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
         display: flex;
+        justify-self: center;
         flex-direction: row;
         .username{
             width: 33.4%;
@@ -117,11 +117,14 @@ body{
             justify-content: space-between;
             flex-direction: row;
             border: 2px solid;
-            border-color: $secondaryColor;
+            border-color: $primaryColor;
             h3{
                 font-family:$secondaryFontFamily;
                 color: $primaryBlack;
                 font-size: $smallFontSize;
+            }
+            #userUsername{
+                color: $secondaryColor;
             }
         }
         .emailAddress{
@@ -132,14 +135,17 @@ body{
             justify-content: space-between;
             flex-direction: row;
             border: 2px solid;
-            border-color: $secondaryColor;
+            border-color: $primaryColor;
             h3{
                 font-family: $secondaryFontFamily;
                 color: $primaryBlack;
                 font-size: $smallFontSize;
             }
+            #userEmailAddress{
+                color: $secondaryColor;
+            }
         }
-        .DOC{
+        .userNumber{
             width: 33.4%;
             height: 100%;
             padding: 5px;
@@ -147,18 +153,50 @@ body{
             justify-content: space-between;
             flex-direction: row;
             border: 2px solid;
-            border-color: $secondaryColor;
+            border-color: $primaryColor;
             h3{
                 font-family: $secondaryFontFamily;
                 color: $primaryBlack;
                 font-size: $smallFontSize;
             }
+            #userNumber{
+                color: $secondaryColor;
+            }
         }
     }
     .invest{
-        width: 100%;
-        height: 50px;
+        height: 250px;
         margin-top: 20px;
-        background-color: blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        .investmentInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            border: solid;
+            border-width: 2px;
+            border-radius: 10px 0px 0px 10px;
+            border-color: $primaryColor; 
+           .head{
+            text-align: center;
+            color: $primaryWhite;
+            font-family: $mainFontFamily;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: $mediumFontSize;
+           }
+        }
+        .withdrawalInfo{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
     }
 }

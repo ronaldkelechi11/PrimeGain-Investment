@@ -1226,7 +1226,7 @@ body .createanaccount .center .form button {
   color: #ffffff;
 }
 body .createanaccount .center .form button:hover {
-  background-color: rgb(3, 177, 119);
+  background-color: #03b076;
   color: black;
   font-weight: bold;
   transition: 1s;

@@ -8,14 +8,14 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #c9c9c9;
 }
 body .header {
   height: 10%;
   width: 100vw;
   font-size: 40px;
-  background-color: #1740D8;
-  color: #ffffff;
+  background-color: #e29b00;
+  color: #000000;
   font-family: "Poppins";
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@ body .accountInfo {
 body .accountInfo .balance {
   width: 30%;
   border-radius: 10px;
-  background-color: #1740D8;
+  background-color: #e29b00;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -57,7 +57,7 @@ body .accountInfo .balance h4 {
 body .accountInfo .deposit {
   width: 30%;
   border-radius: 10px;
-  background-color: #1740D8;
+  background-color: #e29b00;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -81,7 +81,7 @@ body .accountInfo .deposit h4 {
 body .accountInfo .total {
   width: 30%;
   border-radius: 10px;
-  background-color: #1740D8;
+  background-color: #e29b00;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -103,11 +103,11 @@ body .accountInfo .total h4 {
   width: 100%;
 }
 body .userInfo {
-  width: 100%;
   margin-top: 30px;
-  padding-left: 5px;
-  padding-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
+  justify-self: center;
   flex-direction: row;
 }
 body .userInfo .username {
@@ -118,12 +118,15 @@ body .userInfo .username {
   justify-content: space-between;
   flex-direction: row;
   border: 2px solid;
-  border-color: #1740D8;
+  border-color: #e29b00;
 }
 body .userInfo .username h3 {
   font-family: "Arial";
   color: #000000;
   font-size: 16px;
+}
+body .userInfo .username #userUsername {
+  color: #1740D8;
 }
 body .userInfo .emailAddress {
   width: 33.4%;
@@ -133,14 +136,17 @@ body .userInfo .emailAddress {
   justify-content: space-between;
   flex-direction: row;
   border: 2px solid;
-  border-color: #1740D8;
+  border-color: #e29b00;
 }
 body .userInfo .emailAddress h3 {
   font-family: "Arial";
   color: #000000;
   font-size: 16px;
 }
-body .userInfo .DOC {
+body .userInfo .emailAddress #userEmailAddress {
+  color: #1740D8;
+}
+body .userInfo .userNumber {
   width: 33.4%;
   height: 100%;
   padding: 5px;
@@ -148,16 +154,47 @@ body .userInfo .DOC {
   justify-content: space-between;
   flex-direction: row;
   border: 2px solid;
-  border-color: #1740D8;
+  border-color: #e29b00;
 }
-body .userInfo .DOC h3 {
+body .userInfo .userNumber h3 {
   font-family: "Arial";
   color: #000000;
   font-size: 16px;
 }
+body .userInfo .userNumber #userNumber {
+  color: #1740D8;
+}
 body .invest {
-  width: 100%;
-  height: 50px;
+  height: 250px;
   margin-top: 20px;
-  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+body .invest .investmentInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-width: 2px;
+  border-radius: 10px 0px 0px 10px;
+  border-color: #e29b00;
+}
+body .invest .investmentInfo .head {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+body .invest .withdrawalInfo {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  padding-right: 5px;
 }/*# sourceMappingURL=dashboard.css.map */

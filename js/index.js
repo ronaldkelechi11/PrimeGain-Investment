@@ -68,11 +68,11 @@ function hideLoginScreen() {
 
 function registerUser() {
   //Input fields
-  var uname = document.getElementById("username").value;
-  var pnumber = document.getElementById("number").value;
-  var emailtxt = document.getElementById("email").value;
-  var passwordtxt =  document.getElementById("password").value;
-  var rePassword = document.getElementById("re_password").value;
+  var uname = document.getElementById("username");
+  var pnumber = document.getElementById("number");
+  var emailtxt = document.getElementById("email");
+  var passwordtxt =  document.getElementById("password");
+  var rePassword = document.getElementById("re_password");
 
   //Color Codes
   var errorRed = "#cc3c3c";
@@ -82,34 +82,47 @@ function registerUser() {
   var button = document.getElementById("registerButton");
 
   //Front End Validation
-  if(uname.length <= null){
+  if(uname.value.length <= null){
     alert("Username cannot be blank");
   }
-  if(pnumber.length <= null){
+  if(pnumber.value.length <= null){
     alert("Passord field cannot be blank");
   }
-  if(emailtxt.length <= 0){
+  if(pnumber.value.startsWith("0")){
+    console.log(pnumber.value.replace("0","+234"));
+    pnumber = pnumber.value.replace("0","+234");
+  }
+  if(emailtxt.value.length <= 0){
     alert("Email field cannot be empty")
   }
-  if(passwordtxt.length <= 0){
+  if(passwordtxt.value.length <= 0){
     alert(("password cannot be empty"))
   }
 
   else{
     button.innerText = "Loading...";
-    var templateParams = {
-      username: document.getElementById("username").value,
-      email: document.getElementById("email").value,
-      phone_number: document.getElementById("number").value,
-  }; 
-  emailjs.send('gmail', 'primegain_template', templateParams)
-      .then(function(response) {
-         console.log('SUCCESS!', response.status, response.text);
-         window.location = "/dashboard.html";
-      }, function(error) {
-         console.log('FAILED...', error);
-         alert("Failed to Register User")
-      });
+    button.style.backgroundColor = "#03b076";
+
+    //Storing Info in local storage
+    localStorage.setItem("userName", uname.value);
+    localStorage.setItem("userEmail", emailtxt.value);
+    localStorage.setItem("phoneNumber", pnumber);
+
+    window.location = "/dashboard.html";
+
+  //   var templateParams = {
+  //     username: document.getElementById("username").value,
+  //     email: document.getElementById("email").value,
+  //     phone_number: document.getElementById("number").value,
+  // }; 
+  // emailjs.send('gmail', 'primegain_template', templateParams)
+  //     .then(function(response) {
+  //        console.log('SUCCESS!', response.status, response.text);
+  //        window.location = "/dashboard.html";
+  //     }, function(error) {
+  //        console.log('FAILED...', error);
+  //        alert("Failed to Register User")
+  //     });
   }
   
 }
