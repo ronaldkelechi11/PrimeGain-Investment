@@ -99,11 +99,13 @@
 @-webkit-keyframes scaling {
   100% {
     transform: scale(1.05);
+    transition: ease-in-out;
   }
 }
 @keyframes scaling {
   100% {
     transform: scale(1.05);
+    transition: ease-in-out;
   }
 }
 .hero__smallText {
@@ -510,7 +512,7 @@
 }
 .affliate {
   height: 40vh;
-  background-image: url("../assets/images/cta-bg.jpg");
+  background-image: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/cta-bg.jpg");
   width: 100vw;
   background-position: center;
   background-size: cover;
@@ -527,6 +529,18 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
+  -webkit-animation: spinner 2s infinite;
+          animation: spinner 2s infinite;
+}
+@-webkit-keyframes spinner {
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes spinner {
+  100% {
+    transform: scale(0.9);
+  }
 }
 .affliate .text {
   color: #ffffff;
@@ -534,6 +548,26 @@
   font-family: "Poppins";
   width: 100%;
   text-align: center;
+}
+.affliate .getLink {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  color: #ffffff;
+  width: 150px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  margin: 10px;
+}
+.affliate .getLink:hover {
+  background-color: #1740D8;
+  color: #000000;
+  border-color: transparent;
+  transform: scale(1.1);
+  transition: 0.7s;
 }
 
 .iadvices {
@@ -927,6 +961,31 @@
     text-transform: uppercase;
   }
 }
+.cpd {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cpd .head {
+  color: #000000;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.cpd .cryptohopper-web-widget {
+  width: 90%;
+  height: 90%;
+  overflow-y: hidden;
+  visibility: visible;
+  z-index: 10;
+}
+
 .contact {
   background-color: #ffffff;
   height: 100vh;

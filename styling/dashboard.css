@@ -173,7 +173,7 @@ body .userInfo .userNumber #userNumber {
   font-weight: lighter;
 }
 body .invest {
-  height: 300px;
+  height: 270px;
   display: flex;
   margin: 10px;
   flex-direction: row;

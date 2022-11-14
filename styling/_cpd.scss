@@ -1,0 +1,25 @@
+@import 'variables';
+.cpd{
+    width: 100%;
+    height: 100vh;
+    background-color: $primaryWhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .head{
+        color:$primaryBlack;
+        font-size: $mediumFontSize;
+        text-align: center;
+        font-family: $mainFontFamily;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .cryptohopper-web-widget{
+        width: 90%;
+        height: 90%;
+        overflow-y: hidden;
+        visibility: visible;
+        z-index: 10;
+    }
+}

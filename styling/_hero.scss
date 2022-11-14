@@ -25,6 +25,7 @@
             }
             100%{
                 transform: scale(1.05);
+                transition: ease-in-out;
             }
         }
     }
