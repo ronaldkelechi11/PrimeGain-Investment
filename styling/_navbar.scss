@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
 
     &__logo{
         overflow-y: hidden;

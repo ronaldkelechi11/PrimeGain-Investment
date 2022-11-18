@@ -175,10 +175,11 @@ body .userInfo .userNumber #userNumber {
 body .invest {
   height: 270px;
   display: flex;
-  margin: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
   flex-direction: row;
   justify-content: space-between;
-  background-color: red;
 }
 body .invest .depositInfo {
   width: 50%;
@@ -194,6 +195,19 @@ body .invest .depositInfo .top {
   width: 100%;
   text-transform: uppercase;
 }
+body .invest .depositInfo .table {
+  width: 100%;
+}
+body .invest .depositInfo .table .aDeposit, body .invest .depositInfo .table .lDeposit, body .invest .depositInfo .table .tDeposit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: "Arial";
+  color: #000000;
+  font-size: 16px;
+  border: 2px solid #1740D8;
+}
 body .invest .withdrawInfo {
   width: 50%;
   display: flex;
@@ -207,4 +221,14 @@ body .invest .withdrawInfo .top {
   color: #ffffff;
   width: 100%;
   text-transform: uppercase;
+}
+body .invest .withdrawInfo .lWithdrawal, body .invest .withdrawInfo .pWithdrawal, body .invest .withdrawInfo .tWithdrawal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: "Arial";
+  color: #000000;
+  font-size: 16px;
+  border: 2px solid #e29b00;
 }/*# sourceMappingURL=dashboard.css.map */

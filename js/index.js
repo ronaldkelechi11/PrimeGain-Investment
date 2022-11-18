@@ -98,6 +98,9 @@ function registerUser() {
   if(passwordtxt.value.length <= 0){
     alert(("password cannot be empty"))
   }
+  if(passwordtxt.value != rePassword.value){
+    alert("Passwords do not match")
+  }
 
   else{
     button.innerText = "Loading...";

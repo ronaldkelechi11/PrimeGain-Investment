@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 .navbar__logo {
   overflow-y: hidden;
@@ -603,7 +604,7 @@
 .iadvices .starterPack .image {
   width: 50%;
   height: 100%;
-  background: url("../assets/images/logo.JPG");
+  background: url("../assets/images/3rd.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -653,7 +654,7 @@
 .iadvices .advancePack .image {
   width: 50%;
   height: 100%;
-  background-image: url("../assets/images/logo.JPG");
+  background-image: url("../assets/images/2nd.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -703,7 +704,7 @@
 .iadvices .goldPack .image {
   width: 50%;
   height: 100%;
-  background-image: url("../assets/images/logo.JPG");
+  background-image: url("../assets/images/1st.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -759,6 +760,12 @@
   color: #cc3c3c;
   font-weight: bold;
   text-transform: uppercase;
+}
+.iadvices .adsbygoogle {
+  margin-top: 10px;
+  height: 50px;
+  z-index: 1;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 440px) {
@@ -959,6 +966,11 @@
     color: #cc3c3c;
     font-weight: bold;
     text-transform: uppercase;
+  }
+  .iadvices .adsbygoogle {
+    margin-top: 10px;
+    height: 50px;
+    overflow: hidden;
   }
 }
 .cpd {

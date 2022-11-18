@@ -176,10 +176,11 @@ body{
     .invest{
         height: 270px;
         display: flex;
-        margin: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
         flex-direction: row;
         justify-content: space-between;
-        background-color: red;
         .depositInfo{
             width: 50%;
             display: flex;
@@ -193,6 +194,19 @@ body{
                 width: 100%;
                 text-transform: uppercase;
             }
+            .table{
+                width: 100%;
+                .aDeposit, .lDeposit, .tDeposit{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 10px;
+                    font-family: $secondaryFontFamily;
+                    color: $primaryBlack;
+                    font-size: $smallFontSize;
+                    border: 2px solid $secondaryColor;
+                }
+             }
         }
         .withdrawInfo{
             width: 50%;
@@ -206,6 +220,16 @@ body{
                 color: $primaryWhite;
                 width: 100%;
                 text-transform: uppercase;
+            }
+            .lWithdrawal,.pWithdrawal, .tWithdrawal{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 10px;
+                font-family: $secondaryFontFamily;
+                color: $primaryBlack;
+                font-size: $smallFontSize;
+                border: 2px solid $primaryColor;
             }
         }
     }
