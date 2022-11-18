@@ -52,7 +52,7 @@
     text-decoration: none;
     font-family: "Poppins";
     color: #ffffff;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: bolder;
   }
   .navbar__logo span {
@@ -111,7 +111,7 @@
 }
 .hero__smallText {
   text-align: center;
-  font-size: 25px;
+  font-size: 23px;
   font-family: "Poppins";
   color: #c9c9c9;
 }
@@ -167,7 +167,7 @@
   }
   .hero__headText {
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
     font-family: "Poppins";
     font-weight: bold;
     color: #ffffff;
@@ -279,7 +279,7 @@
   background-image: url("../assets/images/company_profile.jpg");
 }
 .aboutUs_aboutus1 .company_profile .title {
-  font-size: 25px;
+  font-size: 23px;
   font-family: "Poppins";
   color: #000000;
   font-weight: bold;
@@ -316,7 +316,7 @@
   background-image: url("../assets/images/cp_mission.jpg");
 }
 .aboutUs_aboutus1 .company_mission .title {
-  font-size: 25px;
+  font-size: 23px;
   font-family: "Poppins";
   color: #000000;
   font-weight: bold;
@@ -356,7 +356,7 @@
   background-image: url("../assets/images/cp_vision.jpg");
 }
 .aboutUs_aboutus1 .company_vision .title {
-  font-size: 25px;
+  font-size: 23px;
   font-family: "Poppins";
   color: #000000;
   font-weight: bold;
@@ -459,7 +459,7 @@
     background-image: url("../assets/images/cp_mission.jpg");
   }
   .aboutUs_aboutus1 .company_mission .title {
-    font-size: 25px;
+    font-size: 23px;
     font-family: "Poppins";
     color: #000000;
     font-weight: bold;
@@ -492,7 +492,7 @@
     background-image: url("../assets/images/cp_vision.jpg");
   }
   .aboutUs_aboutus1 .company_vision .title {
-    font-size: 25px;
+    font-size: 23px;
     font-family: "Poppins";
     color: #000000;
     font-weight: bold;
@@ -630,7 +630,7 @@
 }
 .iadvices .starterPack .writeUp h4 {
   color: #727272;
-  font-size: 25px;
+  font-size: 23px;
   margin-top: 10px;
   font-family: "Poppins";
 }
@@ -680,7 +680,7 @@
 }
 .iadvices .advancePack .writeUp h4 {
   color: #727272;
-  font-size: 25px;
+  font-size: 23px;
   margin-top: 10px;
   font-family: "Poppins";
 }
@@ -731,7 +731,7 @@
 }
 .iadvices .goldPack .writeUp h4 {
   color: #727272;
-  font-size: 25px;
+  font-size: 23px;
   margin-top: 10px;
   font-family: "Poppins";
 }
@@ -779,7 +779,7 @@
     display: flex;
     text-transform: uppercase;
     font-family: "Poppins";
-    font-size: 25px;
+    font-size: 23px;
     font-weight: bold;
     color: #000000;
     text-align: center;
@@ -984,7 +984,7 @@
 }
 .cpd .head {
   color: #000000;
-  font-size: 25px;
+  font-size: 23px;
   text-align: center;
   font-family: "Poppins";
   font-weight: bold;
@@ -1290,7 +1290,7 @@ body .createanaccount .center .head .txt {
   font-weight: bold;
   color: #727272;
   font-family: "Poppins";
-  font-size: 25px;
+  font-size: 23px;
 }
 body .createanaccount .center .form {
   overflow-y: hidden;
@@ -1391,7 +1391,7 @@ body .loginaccount .center .head .txt {
   font-weight: bold;
   color: #727272;
   font-family: "Poppins";
-  font-size: 25px;
+  font-size: 23px;
 }
 body .loginaccount .center .form {
   overflow-y: hidden;

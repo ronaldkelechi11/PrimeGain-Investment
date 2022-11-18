@@ -5,9 +5,6 @@ document.getElementById("cancelButton").addEventListener("click", hideRegisterSc
 document.getElementById("cancelButtonLogin").addEventListener("click", hideLoginScreen);
 document.getElementById("registerButton").addEventListener("click", registerUser);
 
-
-
-
 //For Register page Visibility Toggle
 function hideRegister() {
   var screen = document.getElementById("createanaccount");
