@@ -36,6 +36,7 @@
         text-align: center;
     }
     .getLink{
+        cursor: pointer;
         border: 2px solid $primaryWhite;
         border-radius: 5px;
         padding: 5px;
@@ -49,7 +50,7 @@
         margin: 10px;
         &:hover{
             background-color: $secondaryColor;
-            color: $primaryBlack;
+            color: $primaryWhite;
             border-color: transparent;
             transform: scale(1.1);
             transition: 0.7s;

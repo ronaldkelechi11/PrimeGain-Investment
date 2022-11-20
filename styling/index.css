@@ -123,6 +123,7 @@
   margin-top: 30px;
 }
 .hero .userButtons .reg {
+  cursor: pointer;
   border-radius: 5px;
   border-color: transparent;
   margin-left: 10px;
@@ -139,6 +140,7 @@
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 .hero .userButtons .log {
+  cursor: pointer;
   border-radius: 5px;
   border-color: #ffffff;
   margin-left: 10px;
@@ -551,6 +553,7 @@
   text-align: center;
 }
 .affliate .getLink {
+  cursor: pointer;
   border: 2px solid #ffffff;
   border-radius: 5px;
   padding: 5px;
@@ -565,7 +568,7 @@
 }
 .affliate .getLink:hover {
   background-color: #1740D8;
-  color: #000000;
+  color: #ffffff;
   border-color: transparent;
   transform: scale(1.1);
   transition: 0.7s;
@@ -582,6 +585,8 @@
   text-transform: uppercase;
   font-family: "Poppins";
   font-size: 40px;
+  text-align: center;
+  justify-content: center;
   font-weight: bold;
   color: #000000;
 }
@@ -1255,6 +1260,7 @@ body .createanaccount .cancelButton {
   align-items: center;
   font-size: 40px;
   font-family: "Arial";
+  cursor: pointer;
 }
 body .createanaccount .cancelButton:hover {
   transform: scale(1.1);
@@ -1314,6 +1320,7 @@ body .createanaccount .center .form input {
   font-family: "Poppins";
 }
 body .createanaccount .center .form button {
+  cursor: pointer;
   border-radius: 5px;
   border-color: transparent;
   border-radius: 5px;
@@ -1356,6 +1363,7 @@ body .loginaccount .cancelButtonLogin {
   align-items: center;
   font-size: 40px;
   font-family: "Arial";
+  cursor: pointer;
 }
 body .loginaccount .cancelButtonLogin:hover {
   transform: scale(1.1);
@@ -1416,6 +1424,7 @@ body .loginaccount .center .form input {
   font-family: "Poppins";
 }
 body .loginaccount .center .form button {
+  cursor: pointer;
   border-radius: 5px;
   border-color: transparent;
   border-radius: 5px;

@@ -78,6 +78,7 @@ body{
             align-items: center;
             font-size: $largestFontSize;
             font-family: $secondaryFontFamily;
+            cursor: pointer;
              &:hover{
                 transform: scale(1.1);
                 transition: 0.7s;
@@ -135,6 +136,7 @@ body{
                     font-family: $mainFontFamily;
                 }
                 button{
+                    cursor: pointer;
                     border-radius: 5px;
                     border-color: transparent;
                     border-radius: 5px;
@@ -182,6 +184,7 @@ body{
             align-items: center;
             font-size: $largestFontSize;
             font-family: $secondaryFontFamily;
+            cursor: pointer;
              &:hover{
                 transform: scale(1.1);
                 transition: 0.7s;
@@ -240,6 +243,7 @@ body{
                     font-family: $mainFontFamily;
                 }
                 button{
+                    cursor: pointer;
                     border-radius: 5px;
                     border-color: transparent;
                     border-radius: 5px;
