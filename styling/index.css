@@ -808,7 +808,7 @@
   .iadvices .starterPack .image {
     width: 40%;
     height: 100%;
-    background: url("../assets/images/logo.JPG");
+    background: url("../assets/images/3rd.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -861,7 +861,7 @@
   .iadvices .advancePack .image {
     width: 40%;
     height: 100%;
-    background: url("../assets/images/logo.JPG");
+    background: url("../assets/images/2nd.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -914,7 +914,7 @@
   .iadvices .goldPack .image {
     width: 40%;
     height: 100%;
-    background: url("../assets/images/logo.JPG");
+    background: url("../assets/images/1st.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

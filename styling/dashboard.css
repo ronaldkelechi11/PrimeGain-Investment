@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -197,6 +196,7 @@ body .invest .depositInfo .top {
 }
 body .invest .depositInfo .table {
   width: 100%;
+  overflow-y: hidden;
 }
 body .invest .depositInfo .table .aDeposit, body .invest .depositInfo .table .lDeposit, body .invest .depositInfo .table .tDeposit {
   display: flex;
@@ -207,6 +207,35 @@ body .invest .depositInfo .table .aDeposit, body .invest .depositInfo .table .lD
   color: #000000;
   font-size: 16px;
   border: 2px solid #1740D8;
+}
+body .invest .depositInfo .table .btnDepo {
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-family: "Arial";
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 23px;
+  background-color: #1740D8;
+  border: 2px solid #1740D8;
+}
+body .invest .depositInfo .table .btnDepo .img {
+  width: 30px;
+  height: 30px;
+  background-image: url("../node_modules/bootstrap-icons/icons/wallet2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+}
+body .invest .depositInfo .table .btnDepo:hover {
+  transform: scaleY(1.2);
+  transition: 0.3s ease-in-out;
 }
 body .invest .withdrawInfo {
   width: 50%;
@@ -231,4 +260,33 @@ body .invest .withdrawInfo .lWithdrawal, body .invest .withdrawInfo .pWithdrawal
   color: #000000;
   font-size: 16px;
   border: 2px solid #e29b00;
+}
+body .invest .withdrawInfo .btnWith {
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-family: "Arial";
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 23px;
+  background-color: #e29b00;
+  border: 2px solid #e29b00;
+}
+body .invest .withdrawInfo .btnWith .img {
+  width: 30px;
+  height: 30px;
+  background-image: url("../node_modules/bootstrap-icons/icons/credit-card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+}
+body .invest .withdrawInfo .btnWith:hover {
+  transform: scaleY(1.2);
+  transition: 0.3s ease-in-out;
 }/*# sourceMappingURL=dashboard.css.map */
