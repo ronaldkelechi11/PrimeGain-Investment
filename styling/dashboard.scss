@@ -11,6 +11,251 @@ body{
     height: 100vh;
     background-color: $light;
 
+    .depoPage{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        visibility: hidden;
+        display: flex;
+        z-index: 150;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,0.9);
+        .cancelButton{
+            width: 50px;
+            height: 50px;
+            background-color: $errorColor;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 5px;
+            color: $primaryWhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $largestFontSize;
+            font-family: $secondaryFontFamily;
+            cursor: pointer;
+             &:hover{
+                transform: scale(1.1);
+                transition: 0.7s;
+            }
+            .img{
+                width: 25px;
+                height: 25px;
+                background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
+            }
+        }
+        .grid{
+            width: 100%;
+            height: 80%;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .bronzePack{
+                height: 100%;
+                width: 30%;
+                background-color: $primaryWhite;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .img{
+                    height: 30%;
+                    width: 90%;
+                    background-image: url("../assets/images/3rd.png");
+                    background-position:center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    align-self: center;
+                }
+                .writeUp{
+                    h1{
+                        align-self: center;
+                        color: $primaryBlack;
+                        font-size:$mediumFontSize;
+                        text-align: center;
+                        margin-top: 5px;
+                        font-family: $mainFontFamily;
+                        text-transform: uppercase;
+                        padding: 5px;
+                        text-decoration: dashed;
+                        overflow-y: hidden;
+                    }
+                    h4{
+                        color: $primaryGrey;
+                        font-size:$mediumFontSize;
+                        text-align: center;
+                        margin-top: 10px;
+                        font-family: $mainFontFamily; 
+                        overflow-y: hidden;
+                        span{
+                            color: $errorColor;
+                            margin-left: 10px;
+                        } 
+                        .max{
+                            color: $successColor;
+                        }
+                        .normal{
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+                .btn{
+                cursor: pointer;
+                   background-color: $secondaryColor;
+                   font-size: $mediumFontSize;
+                   font-family: $mainFontFamily;
+                   text-transform: uppercase;
+                   margin-left: 20px;
+                   margin-right: 20px; 
+                   color: $primaryWhite;
+                   text-align: center;
+                   padding: 5px;
+                   border-radius: 5px;
+                   &:hover{
+                    transform: scale(1.05);
+                    transition: 0.9s;
+                   }
+                }
+            }
+            .silverPack{
+                height: 100%;
+                width: 30%;
+                background-color: $primaryWhite;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .img{
+                    height: 30%;
+                    width: 90%;
+                    background-image: url("../assets/images/2nd.png");
+                    background-position:center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    align-self: center;
+                }
+                .writeUp{
+                    h1{
+                        align-self: center;
+                        color: $primaryBlack;
+                        font-size:$mediumFontSize;
+                        text-align: center;
+                        margin-top: 5px;
+                        font-family: $mainFontFamily;
+                        text-transform: uppercase;
+                        padding: 5px;
+                        text-decoration: dashed;
+                        overflow-y: hidden;
+                    }
+                    h4{
+                        color: $primaryGrey;
+                        font-size:$mediumFontSize;
+                        text-align: center;
+                        margin-top: 10px;
+                        font-family: $mainFontFamily; 
+                        overflow-y: hidden;
+                        span{
+                            color: $errorColor;
+                            margin-left: 10px;
+                        } 
+                        .max{
+                            color: $successColor;
+                        }
+                        .normal{
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+                .btn{
+                    cursor: pointer;
+                   background-color: $secondaryColor;
+                   font-size: $mediumFontSize;
+                   font-family: $mainFontFamily;
+                   text-transform: uppercase;
+                   margin-left: 20px;
+                   margin-right: 20px; 
+                   color: $primaryWhite;
+                   text-align: center;
+                   padding: 5px;
+                   border-radius: 5px;
+                   &:hover{
+                    transform: scale(1.05);
+                    transition: 0.9s;
+                   }
+                }
+            }
+            .goldPack{
+                height: 100%;
+                width: 30%;
+                background-color: $primaryWhite;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .img{
+                    height: 30%;
+                    width: 90%;
+                    background-image: url("../assets/images/1st.png");
+                    background-position:center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    align-self: center;
+                }
+                .writeUp{
+                    h1{
+                        align-self: center;
+                        color: $primaryBlack;
+                        font-size:$mediumFontSize;
+                        text-align: center;
+                        margin-top: 5px;
+                        font-family: $mainFontFamily;
+                        text-transform: uppercase;
+                        padding: 5px;
+                        text-decoration: dashed;
+                        overflow-y: hidden;
+                    }
+                    h4{
+                        color: $primaryGrey;
+                        font-size:$mediumFontSize;
+                        text-align: center;
+                        margin-top: 10px;
+                        font-family: $mainFontFamily; 
+                        overflow-y: hidden;
+                        span{
+                            color: $errorColor;
+                            margin-left: 10px;
+                        } 
+                        .max{
+                            color: $successColor;
+                        }
+                        .normal{
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+                .btn{
+                    cursor: pointer;
+                   background-color: $secondaryColor;
+                   font-size: $mediumFontSize;
+                   font-family: $mainFontFamily;
+                   text-transform: uppercase;
+                   margin-left: 20px;
+                   margin-right: 20px; 
+                   color: $primaryWhite;
+                   text-align: center;
+                   padding: 5px;
+                   border-radius: 5px;
+                   &:hover{
+                    transform: scale(1.05);
+                    transition: 0.9s;
+                   }
+                }
+            }
+        }
+    }
 
     .header{
         height: 10%;

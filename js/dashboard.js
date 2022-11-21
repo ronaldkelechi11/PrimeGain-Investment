@@ -1,14 +1,15 @@
 console.log("Connected to Dashboard.js");
 
-//Button Initialization
-document.getElementById("btnDepo").addEventListener("click", deposit);
-document.getElementById("btnWith").addEventListener("click", withdraw);
+var btnDepo = document.getElementById("btnDepo");
+var closeButton = document.getElementById("cancelButton");
 
-function deposit() {
-    alert("Trying to make a deposit");
-    return false;
-}
-function withdraw() {
-    alert("Cannot Withdraw now");
-    return false;
-}
+btnDepo,addEventListener("click",function () {
+  var depoPageScreen = this.document.getElementById("depoPage");
+
+  depoPageScreen.style.visibility = "visible"
+});
+
+closeButton.addEventListener("click", function () {
+    var depoPageScreen = this.document.getElementById("depoPage");
+    depoPageScreen.style.visibility = "hidden"
+});
