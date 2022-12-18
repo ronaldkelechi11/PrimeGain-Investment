@@ -9,8 +9,14 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-image: url("../assets/images/cta-bg.jpg");
-    background: rgba(0, 0, 0, 0.3);
+    background-image: url("../assets/images/bg_hero.JPG");   
+}
+
+// The div body was to add shade to the BG_IMG
+.body{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.70);
 
     .depoPage{
         width: 100vw;
@@ -258,12 +264,15 @@ body{
         }
     }
 
+
+
+    // Header
     .header{
         height: 10%;
         width: 100vw;
         font-size: $largestFontSize;
-        background-color: $primaryColor;
-        color: $primaryBlack;
+        background-color: $secondaryColor;
+        color: $primaryWhite;
         font-family: $mainFontFamily;
         display: flex;
         align-items: center;
@@ -281,14 +290,14 @@ body{
         .balance{
             width: 30%;
             border-radius: 10px;
-            background-color: $primaryColor;
+            background-color: $primaryWhite;
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
             h1{
                 font-size: 60px;
-                color: $primaryWhite;
+                color: $secondaryColor;
                 font-family: $mainFontFamily;
                 text-align: center;
                 width: 100%;
@@ -296,7 +305,7 @@ body{
             h4{
                 margin-top: 30px;
                 font-size: $smallFontSize;
-                color: $primaryWhite;
+                color: $secondaryColor;
                 font-family: $secondaryFontFamily;
                 text-align: center;
                 width: 100%;  
@@ -305,14 +314,14 @@ body{
         .deposit{ 
             width: 30%;
             border-radius: 10px;
-            background-color: $primaryColor;
+            background-color: $primaryWhite;
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
             h1{
                 font-size: 60px;
-                color: $primaryWhite;
+                color: $secondaryColor;
                 font-family: $mainFontFamily;
                 text-align: center;
                 width: 100%;
@@ -320,7 +329,7 @@ body{
             h4{
                 margin-top: 30px;
                 font-size: $smallFontSize;
-                color: $primaryWhite;
+                color: $secondaryColor;
                 font-family: $secondaryFontFamily;
                 text-align: center;
                 width: 100%;  
@@ -329,14 +338,14 @@ body{
         .total{
             width: 30%;
             border-radius: 10px;
-            background-color: $primaryColor;
+            background-color: $primaryWhite;
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
             h1{
                 font-size: 60px;
-                color: $primaryWhite;
+                color: $secondaryColor;
                 font-family: $mainFontFamily;
                 text-align: center;
                 width: 100%;
@@ -344,7 +353,7 @@ body{
             h4{
                 margin-top: 30px;
                 font-size: $smallFontSize;
-                color: $primaryWhite;
+                color: $secondaryColor;
                 font-family: $secondaryFontFamily;
                 text-align: center;
                 width: 100%;  
@@ -366,15 +375,15 @@ body{
             justify-content: space-between;
             flex-direction: row;
             border: 2px solid;
-            border-color: $primaryColor;
+            border-color: $secondaryColor;
             h3{
                 font-family:$secondaryFontFamily;
-                color: $primaryBlack;
+                color: $primaryWhite;
                 font-size: $smallFontSize;
             }
             #userUsername{
-                color: $secondaryColor;
-                font-weight: lighter;
+                color: $primaryColor;
+                font-weight: bolder;
             }
         }
         .emailAddress{
@@ -385,15 +394,15 @@ body{
             justify-content: space-between;
             flex-direction: row;
             border: 2px solid;
-            border-color: $primaryColor;
+            border-color: $secondaryColor;
             h3{
                 font-family: $secondaryFontFamily;
-                color: $primaryBlack;
+                color: $primaryWhite;
                 font-size: $smallFontSize;
             }
             #userEmailAddress{
-                color: $secondaryColor;
-                font-weight: lighter;
+                color: $primaryColor;
+                font-weight: bolder;
             }
         }
         .userNumber{
@@ -404,10 +413,10 @@ body{
             justify-content: space-between;
             flex-direction: row;
             border: 2px solid;
-            border-color: $primaryColor;
+            border-color: $secondaryColor;
             h3{
                 font-family: $secondaryFontFamily;
-                color: $primaryBlack;
+                color: $primaryWhite;
                 font-size: $smallFontSize;
                 .img{
                     width: 25px;
@@ -416,11 +425,13 @@ body{
                 }
             }
             #userNumber{
-                color: $secondaryColor;
-                font-weight: lighter;
+                color: $primaryColor;
+                font-weight: bolder;
             }
         }
     }
+
+    // Invest Table
     .invest{
         height: 270px;
         display: flex;
@@ -435,6 +446,7 @@ body{
             flex-direction: column;
             .top{
                 text-align: center;
+                font-weight: bolder;
                 font-family: $mainFontFamily;
                 font-size: $mediumFontSize;
                 background-color:$secondaryColor;
@@ -451,7 +463,7 @@ body{
                     justify-content: space-between;
                     padding: 10px;
                     font-family: $secondaryFontFamily;
-                    color: $primaryBlack;
+                    color: $primaryWhite;
                     font-size: $smallFontSize;
                     border: 2px solid $secondaryColor;
                 }
@@ -492,6 +504,7 @@ body{
             flex-direction: column;
             .top{
                 text-align: center;
+                font-weight: bolder;
                 font-family: $mainFontFamily;
                 font-size: $mediumFontSize;
                 background-color:$primaryColor;
@@ -505,7 +518,7 @@ body{
                 justify-content: space-between;
                 padding: 10px;
                 font-family: $secondaryFontFamily;
-                color: $primaryBlack;
+                color: $primaryWhite;
                 font-size: $smallFontSize;
                 border: 2px solid $primaryColor;
             }

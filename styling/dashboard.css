@@ -7,10 +7,15 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url("../assets/images/cta-bg.jpg");
-  background: rgba(0, 0, 0, 0.3);
+  background-image: url("../assets/images/bg_hero.JPG");
 }
-body .depoPage {
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+.body .depoPage {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -21,7 +26,7 @@ body .depoPage {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
 }
-body .depoPage .cancelButton {
+.body .depoPage .cancelButton {
   width: 50px;
   height: 50px;
   background-color: #cc3c3c;
@@ -37,16 +42,16 @@ body .depoPage .cancelButton {
   font-family: "Arial";
   cursor: pointer;
 }
-body .depoPage .cancelButton:hover {
+.body .depoPage .cancelButton:hover {
   transform: scale(1.1);
   transition: 0.7s;
 }
-body .depoPage .cancelButton .img {
+.body .depoPage .cancelButton .img {
   width: 25px;
   height: 25px;
   background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
 }
-body .depoPage .grid {
+.body .depoPage .grid {
   width: 100%;
   height: 80%;
   padding: 20px;
@@ -54,7 +59,7 @@ body .depoPage .grid {
   flex-direction: row;
   justify-content: space-between;
 }
-body .depoPage .grid .bronzePack {
+.body .depoPage .grid .bronzePack {
   height: 100%;
   width: 30%;
   background-color: #ffffff;
@@ -63,7 +68,7 @@ body .depoPage .grid .bronzePack {
   flex-direction: column;
   justify-content: space-evenly;
 }
-body .depoPage .grid .bronzePack .img {
+.body .depoPage .grid .bronzePack .img {
   height: 30%;
   width: 90%;
   background-image: url("../assets/images/3rd.png");
@@ -72,7 +77,7 @@ body .depoPage .grid .bronzePack .img {
   background-size: contain;
   align-self: center;
 }
-body .depoPage .grid .bronzePack .writeUp h1 {
+.body .depoPage .grid .bronzePack .writeUp h1 {
   align-self: center;
   color: #000000;
   font-size: 23px;
@@ -85,7 +90,7 @@ body .depoPage .grid .bronzePack .writeUp h1 {
           text-decoration: dashed;
   overflow-y: hidden;
 }
-body .depoPage .grid .bronzePack .writeUp h4 {
+.body .depoPage .grid .bronzePack .writeUp h4 {
   color: #727272;
   font-size: 23px;
   text-align: center;
@@ -93,17 +98,17 @@ body .depoPage .grid .bronzePack .writeUp h4 {
   font-family: "Poppins";
   overflow-y: hidden;
 }
-body .depoPage .grid .bronzePack .writeUp h4 span {
+.body .depoPage .grid .bronzePack .writeUp h4 span {
   color: #cc3c3c;
   margin-left: 10px;
 }
-body .depoPage .grid .bronzePack .writeUp h4 .max {
+.body .depoPage .grid .bronzePack .writeUp h4 .max {
   color: #60dd60;
 }
-body .depoPage .grid .bronzePack .writeUp h4 .normal {
+.body .depoPage .grid .bronzePack .writeUp h4 .normal {
   color: #1740D8;
 }
-body .depoPage .grid .bronzePack .btn {
+.body .depoPage .grid .bronzePack .btn {
   cursor: pointer;
   background-color: #1740D8;
   font-size: 23px;
@@ -116,11 +121,11 @@ body .depoPage .grid .bronzePack .btn {
   padding: 5px;
   border-radius: 5px;
 }
-body .depoPage .grid .bronzePack .btn:hover {
+.body .depoPage .grid .bronzePack .btn:hover {
   transform: scale(1.05);
   transition: 0.9s;
 }
-body .depoPage .grid .silverPack {
+.body .depoPage .grid .silverPack {
   height: 100%;
   width: 30%;
   background-color: #ffffff;
@@ -129,7 +134,7 @@ body .depoPage .grid .silverPack {
   flex-direction: column;
   justify-content: space-evenly;
 }
-body .depoPage .grid .silverPack .img {
+.body .depoPage .grid .silverPack .img {
   height: 30%;
   width: 90%;
   background-image: url("../assets/images/2nd.png");
@@ -138,7 +143,7 @@ body .depoPage .grid .silverPack .img {
   background-size: contain;
   align-self: center;
 }
-body .depoPage .grid .silverPack .writeUp h1 {
+.body .depoPage .grid .silverPack .writeUp h1 {
   align-self: center;
   color: #000000;
   font-size: 23px;
@@ -151,7 +156,7 @@ body .depoPage .grid .silverPack .writeUp h1 {
           text-decoration: dashed;
   overflow-y: hidden;
 }
-body .depoPage .grid .silverPack .writeUp h4 {
+.body .depoPage .grid .silverPack .writeUp h4 {
   color: #727272;
   font-size: 23px;
   text-align: center;
@@ -159,17 +164,17 @@ body .depoPage .grid .silverPack .writeUp h4 {
   font-family: "Poppins";
   overflow-y: hidden;
 }
-body .depoPage .grid .silverPack .writeUp h4 span {
+.body .depoPage .grid .silverPack .writeUp h4 span {
   color: #cc3c3c;
   margin-left: 10px;
 }
-body .depoPage .grid .silverPack .writeUp h4 .max {
+.body .depoPage .grid .silverPack .writeUp h4 .max {
   color: #60dd60;
 }
-body .depoPage .grid .silverPack .writeUp h4 .normal {
+.body .depoPage .grid .silverPack .writeUp h4 .normal {
   color: #1740D8;
 }
-body .depoPage .grid .silverPack .btn {
+.body .depoPage .grid .silverPack .btn {
   cursor: pointer;
   background-color: #1740D8;
   font-size: 23px;
@@ -182,11 +187,11 @@ body .depoPage .grid .silverPack .btn {
   padding: 5px;
   border-radius: 5px;
 }
-body .depoPage .grid .silverPack .btn:hover {
+.body .depoPage .grid .silverPack .btn:hover {
   transform: scale(1.05);
   transition: 0.9s;
 }
-body .depoPage .grid .goldPack {
+.body .depoPage .grid .goldPack {
   height: 100%;
   width: 30%;
   background-color: #ffffff;
@@ -195,7 +200,7 @@ body .depoPage .grid .goldPack {
   flex-direction: column;
   justify-content: space-evenly;
 }
-body .depoPage .grid .goldPack .img {
+.body .depoPage .grid .goldPack .img {
   height: 30%;
   width: 90%;
   background-image: url("../assets/images/1st.png");
@@ -204,7 +209,7 @@ body .depoPage .grid .goldPack .img {
   background-size: contain;
   align-self: center;
 }
-body .depoPage .grid .goldPack .writeUp h1 {
+.body .depoPage .grid .goldPack .writeUp h1 {
   align-self: center;
   color: #000000;
   font-size: 23px;
@@ -217,7 +222,7 @@ body .depoPage .grid .goldPack .writeUp h1 {
           text-decoration: dashed;
   overflow-y: hidden;
 }
-body .depoPage .grid .goldPack .writeUp h4 {
+.body .depoPage .grid .goldPack .writeUp h4 {
   color: #727272;
   font-size: 23px;
   text-align: center;
@@ -225,17 +230,17 @@ body .depoPage .grid .goldPack .writeUp h4 {
   font-family: "Poppins";
   overflow-y: hidden;
 }
-body .depoPage .grid .goldPack .writeUp h4 span {
+.body .depoPage .grid .goldPack .writeUp h4 span {
   color: #cc3c3c;
   margin-left: 10px;
 }
-body .depoPage .grid .goldPack .writeUp h4 .max {
+.body .depoPage .grid .goldPack .writeUp h4 .max {
   color: #60dd60;
 }
-body .depoPage .grid .goldPack .writeUp h4 .normal {
+.body .depoPage .grid .goldPack .writeUp h4 .normal {
   color: #1740D8;
 }
-body .depoPage .grid .goldPack .btn {
+.body .depoPage .grid .goldPack .btn {
   cursor: pointer;
   background-color: #1740D8;
   font-size: 23px;
@@ -248,16 +253,16 @@ body .depoPage .grid .goldPack .btn {
   padding: 5px;
   border-radius: 5px;
 }
-body .depoPage .grid .goldPack .btn:hover {
+.body .depoPage .grid .goldPack .btn:hover {
   transform: scale(1.05);
   transition: 0.9s;
 }
-body .header {
+.body .header {
   height: 10%;
   width: 100vw;
   font-size: 40px;
-  background-color: #e29b00;
-  color: #000000;
+  background-color: #1740D8;
+  color: #ffffff;
   font-family: "Poppins";
   display: flex;
   align-items: center;
@@ -265,86 +270,86 @@ body .header {
   text-transform: uppercase;
   font-weight: bold;
 }
-body .accountInfo {
+.body .accountInfo {
   height: 35%;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-body .accountInfo .balance {
+.body .accountInfo .balance {
   width: 30%;
   border-radius: 10px;
-  background-color: #e29b00;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-body .accountInfo .balance h1 {
+.body .accountInfo .balance h1 {
   font-size: 60px;
-  color: #ffffff;
+  color: #1740D8;
   font-family: "Poppins";
   text-align: center;
   width: 100%;
 }
-body .accountInfo .balance h4 {
+.body .accountInfo .balance h4 {
   margin-top: 30px;
   font-size: 16px;
-  color: #ffffff;
+  color: #1740D8;
   font-family: "Arial";
   text-align: center;
   width: 100%;
 }
-body .accountInfo .deposit {
+.body .accountInfo .deposit {
   width: 30%;
   border-radius: 10px;
-  background-color: #e29b00;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-body .accountInfo .deposit h1 {
+.body .accountInfo .deposit h1 {
   font-size: 60px;
-  color: #ffffff;
+  color: #1740D8;
   font-family: "Poppins";
   text-align: center;
   width: 100%;
 }
-body .accountInfo .deposit h4 {
+.body .accountInfo .deposit h4 {
   margin-top: 30px;
   font-size: 16px;
-  color: #ffffff;
+  color: #1740D8;
   font-family: "Arial";
   text-align: center;
   width: 100%;
 }
-body .accountInfo .total {
+.body .accountInfo .total {
   width: 30%;
   border-radius: 10px;
-  background-color: #e29b00;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-body .accountInfo .total h1 {
+.body .accountInfo .total h1 {
   font-size: 60px;
-  color: #ffffff;
+  color: #1740D8;
   font-family: "Poppins";
   text-align: center;
   width: 100%;
 }
-body .accountInfo .total h4 {
+.body .accountInfo .total h4 {
   margin-top: 30px;
   font-size: 16px;
-  color: #ffffff;
+  color: #1740D8;
   font-family: "Arial";
   text-align: center;
   width: 100%;
 }
-body .userInfo {
+.body .userInfo {
   margin-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
@@ -352,7 +357,7 @@ body .userInfo {
   justify-self: center;
   flex-direction: row;
 }
-body .userInfo .username {
+.body .userInfo .username {
   width: 33.4%;
   height: 100%;
   padding: 5px;
@@ -360,18 +365,18 @@ body .userInfo .username {
   justify-content: space-between;
   flex-direction: row;
   border: 2px solid;
-  border-color: #e29b00;
+  border-color: #1740D8;
 }
-body .userInfo .username h3 {
+.body .userInfo .username h3 {
   font-family: "Arial";
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
 }
-body .userInfo .username #userUsername {
-  color: #1740D8;
-  font-weight: lighter;
+.body .userInfo .username #userUsername {
+  color: #e29b00;
+  font-weight: bolder;
 }
-body .userInfo .emailAddress {
+.body .userInfo .emailAddress {
   width: 33.4%;
   height: 100%;
   padding: 5px;
@@ -379,18 +384,18 @@ body .userInfo .emailAddress {
   justify-content: space-between;
   flex-direction: row;
   border: 2px solid;
-  border-color: #e29b00;
+  border-color: #1740D8;
 }
-body .userInfo .emailAddress h3 {
+.body .userInfo .emailAddress h3 {
   font-family: "Arial";
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
 }
-body .userInfo .emailAddress #userEmailAddress {
-  color: #1740D8;
-  font-weight: lighter;
+.body .userInfo .emailAddress #userEmailAddress {
+  color: #e29b00;
+  font-weight: bolder;
 }
-body .userInfo .userNumber {
+.body .userInfo .userNumber {
   width: 33.4%;
   height: 100%;
   padding: 5px;
@@ -398,23 +403,23 @@ body .userInfo .userNumber {
   justify-content: space-between;
   flex-direction: row;
   border: 2px solid;
-  border-color: #e29b00;
+  border-color: #1740D8;
 }
-body .userInfo .userNumber h3 {
+.body .userInfo .userNumber h3 {
   font-family: "Arial";
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
 }
-body .userInfo .userNumber h3 .img {
+.body .userInfo .userNumber h3 .img {
   width: 25px;
   height: 25px;
   background-color: green;
 }
-body .userInfo .userNumber #userNumber {
-  color: #1740D8;
-  font-weight: lighter;
+.body .userInfo .userNumber #userNumber {
+  color: #e29b00;
+  font-weight: bolder;
 }
-body .invest {
+.body .invest {
   height: 270px;
   display: flex;
   margin-right: 10px;
@@ -423,13 +428,14 @@ body .invest {
   flex-direction: row;
   justify-content: space-between;
 }
-body .invest .depositInfo {
+.body .invest .depositInfo {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
-body .invest .depositInfo .top {
+.body .invest .depositInfo .top {
   text-align: center;
+  font-weight: bolder;
   font-family: "Poppins";
   font-size: 23px;
   background-color: #1740D8;
@@ -437,21 +443,21 @@ body .invest .depositInfo .top {
   width: 100%;
   text-transform: uppercase;
 }
-body .invest .depositInfo .table {
+.body .invest .depositInfo .table {
   width: 100%;
   overflow-y: hidden;
 }
-body .invest .depositInfo .table .aDeposit, body .invest .depositInfo .table .lDeposit, body .invest .depositInfo .table .tDeposit {
+.body .invest .depositInfo .table .aDeposit, .body .invest .depositInfo .table .lDeposit, .body .invest .depositInfo .table .tDeposit {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
   font-family: "Arial";
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
   border: 2px solid #1740D8;
 }
-body .invest .depositInfo .table .btnDepo {
+.body .invest .depositInfo .table .btnDepo {
   margin-top: 20px;
   cursor: pointer;
   display: flex;
@@ -467,7 +473,7 @@ body .invest .depositInfo .table .btnDepo {
   background-color: #1740D8;
   border: 2px solid #1740D8;
 }
-body .invest .depositInfo .table .btnDepo .img {
+.body .invest .depositInfo .table .btnDepo .img {
   width: 30px;
   height: 30px;
   background-image: url("../node_modules/bootstrap-icons/icons/wallet2.svg");
@@ -476,17 +482,18 @@ body .invest .depositInfo .table .btnDepo .img {
   background-size: cover;
   margin-right: 10px;
 }
-body .invest .depositInfo .table .btnDepo:hover {
+.body .invest .depositInfo .table .btnDepo:hover {
   transform: scaleY(1.2);
   transition: 0.3s ease-in-out;
 }
-body .invest .withdrawInfo {
+.body .invest .withdrawInfo {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
-body .invest .withdrawInfo .top {
+.body .invest .withdrawInfo .top {
   text-align: center;
+  font-weight: bolder;
   font-family: "Poppins";
   font-size: 23px;
   background-color: #e29b00;
@@ -494,17 +501,17 @@ body .invest .withdrawInfo .top {
   width: 100%;
   text-transform: uppercase;
 }
-body .invest .withdrawInfo .lWithdrawal, body .invest .withdrawInfo .pWithdrawal, body .invest .withdrawInfo .tWithdrawal {
+.body .invest .withdrawInfo .lWithdrawal, .body .invest .withdrawInfo .pWithdrawal, .body .invest .withdrawInfo .tWithdrawal {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
   font-family: "Arial";
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
   border: 2px solid #e29b00;
 }
-body .invest .withdrawInfo .btnWith {
+.body .invest .withdrawInfo .btnWith {
   margin-top: 20px;
   cursor: pointer;
   display: flex;
@@ -520,7 +527,7 @@ body .invest .withdrawInfo .btnWith {
   background-color: #e29b00;
   border: 2px solid #e29b00;
 }
-body .invest .withdrawInfo .btnWith .img {
+.body .invest .withdrawInfo .btnWith .img {
   width: 30px;
   height: 30px;
   background-image: url("../node_modules/bootstrap-icons/icons/credit-card.svg");
@@ -529,7 +536,7 @@ body .invest .withdrawInfo .btnWith .img {
   background-size: cover;
   margin-right: 10px;
 }
-body .invest .withdrawInfo .btnWith:hover {
+.body .invest .withdrawInfo .btnWith:hover {
   transform: scaleY(1.2);
   transition: 0.3s ease-in-out;
 }/*# sourceMappingURL=dashboard.css.map */

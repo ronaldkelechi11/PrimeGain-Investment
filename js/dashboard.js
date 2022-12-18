@@ -1,3 +1,19 @@
-console.log("Connected to Dashboard.js");
+// For all the values gotten from Local Storage
+var userPhone = document.getElementById("userNumber");
+                userPhone.innerHTML = localStorage.getItem("phoneNumber");
+var userName = document.getElementById("userUsername");
+                userName.innerHTML = localStorage.getItem("userName");
+var userEmail = document.getElementById("userEmailAddress");
+userEmail.innerHTML = localStorage.getItem("userEmail");
 
 
+// Make a deposit button
+document.getElementById("btnDepo").addEventListener("click",(e)=>{
+        console.log("Working");;
+        document.getElementById("depoPage").style.visibility = "visible"});
+
+// Cancel Button
+document.getElementById("cancelButton").addEventListener("click",(e)=>{
+    console.log("Closing");
+    document.getElementById("depoPage").style.visibility = "hidden";
+});
