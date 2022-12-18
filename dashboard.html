@@ -11,12 +11,19 @@
     <link rel="stylesheet" href="./styling/dashboard.css">
     <script src="./js/dashboard.js"></script>
     <link rel="shortcut icon" href="/assets/images/logo.JPG" type="image/x-icon">
+
 </head>
 <body>
 
     <!-- Deposit Page -->
     <div class="depoPage" id="depoPage">
         <div class="cancelButton" id="cancelButton">
+            <script>
+              document.getElementById("cancelButton").addEventListener("click",(e)=>{
+                console.log("Closing");
+                document.getElementById("depoPage").style.visibility = "hidden";
+              });  
+            </script>
             <div class="img"></div>
         </div>
         <div class="grid">
@@ -128,6 +135,12 @@
                 <h3><span>$</span>0.00</h3>
             </div>
             <div class="btnDepo" id="btnDepo"><div class="img"></div>Make a Deposit</div>
+            <script>
+                btnDepo.addEventListener("click",(e)=>{
+                    console.log("Working");;
+                    document.getElementById("depoPage").style.visibility = "visible";
+                });
+            </script>
         </div>
       </div>
 

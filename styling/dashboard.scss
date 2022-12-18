@@ -9,7 +9,8 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: $light;
+    background-image: url("../assets/images/cta-bg.jpg");
+    background: rgba(0, 0, 0, 0.3);
 
     .depoPage{
         width: 100vw;
