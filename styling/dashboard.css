@@ -296,6 +296,12 @@ body {
   height: 25px;
   background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
 }
+.body .paymentCheckout .center {
+  width: 50vw;
+  height: 50vh;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
 .body .header {
   height: 10%;
   width: 100vw;

@@ -303,6 +303,12 @@ body{
                 background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
             }
         }
+        .center{
+            width: 50vw;
+            height: 50vh;
+            background-color: $primaryWhite;
+            border-radius: 10px;
+        }
     }
 
 
