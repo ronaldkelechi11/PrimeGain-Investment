@@ -457,6 +457,10 @@ body {
   font-size: 16px;
   border: 2px solid #1740D8;
 }
+.body .invest .depositInfo .table .aDeposit span, .body .invest .depositInfo .table .lDeposit span, .body .invest .depositInfo .table .tDeposit span {
+  color: #60dd60;
+  margin-right: 3px;
+}
 .body .invest .depositInfo .table .btnDepo {
   margin-top: 20px;
   cursor: pointer;
@@ -510,6 +514,10 @@ body {
   color: #ffffff;
   font-size: 16px;
   border: 2px solid #e29b00;
+}
+.body .invest .withdrawInfo .lWithdrawal span, .body .invest .withdrawInfo .pWithdrawal span, .body .invest .withdrawInfo .tWithdrawal span {
+  color: #60dd60;
+  margin-right: 3px;
 }
 .body .invest .withdrawInfo .btnWith {
   margin-top: 20px;

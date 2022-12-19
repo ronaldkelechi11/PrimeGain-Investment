@@ -430,7 +430,6 @@ body{
             }
         }
     }
-
     // Invest Table
     .invest{
         height: 270px;
@@ -466,6 +465,10 @@ body{
                     color: $primaryWhite;
                     font-size: $smallFontSize;
                     border: 2px solid $secondaryColor;
+                    span{
+                        color: $successColor;
+                        margin-right: 3px;
+                    }
                 }
                 .btnDepo{
                     margin-top: 20px;
@@ -521,6 +524,10 @@ body{
                 color: $primaryWhite;
                 font-size: $smallFontSize;
                 border: 2px solid $primaryColor;
+                span{
+                    color: $successColor;
+                    margin-right: 3px;
+                }
             }
             .btnWith{
                 margin-top: 20px;
