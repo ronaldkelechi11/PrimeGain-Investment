@@ -27,7 +27,8 @@ body{
         z-index: 150;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0,0,0,0.9);
+        background-color: $backgroundColor;
+        transition: 1.5s;
         .cancelButton{
             width: 50px;
             height: 50px;
@@ -109,7 +110,7 @@ body{
                         }
                     }
                 }
-                .btn{
+                .btnBronze{
                 cursor: pointer;
                    background-color: $secondaryColor;
                    font-size: $mediumFontSize;
@@ -176,7 +177,7 @@ body{
                         }
                     }
                 }
-                .btn{
+                .btnSilver{
                     cursor: pointer;
                    background-color: $secondaryColor;
                    font-size: $mediumFontSize;
@@ -243,7 +244,7 @@ body{
                         }
                     }
                 }
-                .btn{
+                .btnGold{
                     cursor: pointer;
                    background-color: $secondaryColor;
                    font-size: $mediumFontSize;
@@ -262,6 +263,17 @@ body{
                 }
             }
         }
+    }
+    .paymentCheckout{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        visibility: hidden;
+        display: flex;
+        z-index: 150;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
     }
 
 
@@ -560,4 +572,11 @@ body{
             }
         }
     }
+}
+
+
+
+// MediaQuery
+@include mobile{
+  
 }

@@ -25,6 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
+  transition: 1.5s;
 }
 .body .depoPage .cancelButton {
   width: 50px;
@@ -108,7 +109,7 @@ body {
 .body .depoPage .grid .bronzePack .writeUp h4 .normal {
   color: #1740D8;
 }
-.body .depoPage .grid .bronzePack .btn {
+.body .depoPage .grid .bronzePack .btnBronze {
   cursor: pointer;
   background-color: #1740D8;
   font-size: 23px;
@@ -121,7 +122,7 @@ body {
   padding: 5px;
   border-radius: 5px;
 }
-.body .depoPage .grid .bronzePack .btn:hover {
+.body .depoPage .grid .bronzePack .btnBronze:hover {
   transform: scale(1.05);
   transition: 0.9s;
 }
@@ -174,7 +175,7 @@ body {
 .body .depoPage .grid .silverPack .writeUp h4 .normal {
   color: #1740D8;
 }
-.body .depoPage .grid .silverPack .btn {
+.body .depoPage .grid .silverPack .btnSilver {
   cursor: pointer;
   background-color: #1740D8;
   font-size: 23px;
@@ -187,7 +188,7 @@ body {
   padding: 5px;
   border-radius: 5px;
 }
-.body .depoPage .grid .silverPack .btn:hover {
+.body .depoPage .grid .silverPack .btnSilver:hover {
   transform: scale(1.05);
   transition: 0.9s;
 }
@@ -240,7 +241,7 @@ body {
 .body .depoPage .grid .goldPack .writeUp h4 .normal {
   color: #1740D8;
 }
-.body .depoPage .grid .goldPack .btn {
+.body .depoPage .grid .goldPack .btnGold {
   cursor: pointer;
   background-color: #1740D8;
   font-size: 23px;
@@ -253,9 +254,20 @@ body {
   padding: 5px;
   border-radius: 5px;
 }
-.body .depoPage .grid .goldPack .btn:hover {
+.body .depoPage .grid .goldPack .btnGold:hover {
   transform: scale(1.05);
   transition: 0.9s;
+}
+.body .paymentCheckout {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  visibility: hidden;
+  display: flex;
+  z-index: 150;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
 }
 .body .header {
   height: 10%;
