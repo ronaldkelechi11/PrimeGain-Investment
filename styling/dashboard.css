@@ -25,7 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
-  transition: 1.5s;
+  transition: 1s;
 }
 .body .depoPage .cancelButton {
   width: 50px;
@@ -267,7 +267,34 @@ body {
   z-index: 150;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.9);
+  translate: 100vw;
+  transition: 1s;
+}
+.body .paymentCheckout .cancelButtonPC {
+  width: 50px;
+  height: 50px;
+  background-color: #cc3c3c;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: "Arial";
+  cursor: pointer;
+}
+.body .paymentCheckout .cancelButtonPC:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+.body .paymentCheckout .cancelButtonPC .img {
+  width: 25px;
+  height: 25px;
+  background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
 }
 .body .header {
   height: 10%;

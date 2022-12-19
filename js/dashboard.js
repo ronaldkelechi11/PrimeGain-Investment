@@ -9,11 +9,20 @@ userEmail.innerHTML = localStorage.getItem("userEmail");
 
 // Make a deposit button
 document.getElementById("btnDepo").addEventListener("click",(e)=>{
-        document.getElementById("depoPage").style.visibility = "visible"});
+    var depoPage = document.getElementById("depoPage");
+        depoPage.style.translate="0vw";
+        depoPage.style.visibility = "visible"
+});
 
-// Cancel Button
+
+// Cancel Button depoPage
 document.getElementById("cancelButton").addEventListener("click",(e)=>{
     document.getElementById("depoPage").style.visibility = "hidden";
+});
+
+// Cancel Button PC
+document.getElementById("cancelButtonPC").addEventListener("click",(e)=>{
+    document.getElementById("paymentCheckout").style.visibility = "hidden";
 });
 
 // Deposit Screen shift
@@ -21,6 +30,6 @@ document.getElementById("btnBronze").addEventListener("click",(e)=>{
    var depoPage = document.getElementById("depoPage");
    var paymentCheck = document.getElementById("paymentCheckout");
    depoPage.style.translate="-100vw";
+   paymentCheck.style.translate="0vw";
    paymentCheck.style.visibility = "visible";
-   paymentCheck.style.translate = "100vw";
 });

@@ -28,7 +28,7 @@ body{
         justify-content: center;
         align-items: center;
         background-color: $backgroundColor;
-        transition: 1.5s;
+        transition: 1s;
         .cancelButton{
             width: 50px;
             height: 50px;
@@ -264,6 +264,8 @@ body{
             }
         }
     }
+
+    // Payment Checkout
     .paymentCheckout{
         width: 100vw;
         height: 100vh;
@@ -273,7 +275,34 @@ body{
         z-index: 150;
         justify-content: center;
         align-items: center;
-        background-color: red;
+        background-color:  $backgroundColor;
+        translate: 100vw;
+        transition: 1s;
+        .cancelButtonPC{
+            width: 50px;
+            height: 50px;
+            background-color: $errorColor;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 5px;
+            color: $primaryWhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $largestFontSize;
+            font-family: $secondaryFontFamily;
+            cursor: pointer;
+             &:hover{
+                transform: scale(1.1);
+                transition: 0.7s;
+            }
+            .img{
+                width: 25px;
+                height: 25px;
+                background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
+            }
+        }
     }
 
 
