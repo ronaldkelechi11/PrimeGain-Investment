@@ -127,22 +127,6 @@ function registerUser() {
   
 }
 
-var iadvices = document.getElementById("iadvices");
-var primaryColor = "#1740D8";
-const checkVisible= (element) => {
-  var rect = element.getBoundingClientRect();
-  if(rect.bottom <= window.innerHeight){
-    console.log("Is visible");
-    document.getElementById("iadvices_link").style.color= primaryColor;
-  }
-  else{
-    document.getElementById("iadvices_link").style.color= "white";
-  }
-}
-document.addEventListener("scroll",(e)=>{
-  checkVisible(iadvices);
-});
-
 
 
 
