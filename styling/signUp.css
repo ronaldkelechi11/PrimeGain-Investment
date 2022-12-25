@@ -55,7 +55,7 @@ body .firstHalf .goToLogin {
   padding-right: 30px;
   margin-top: 30px;
   height: 30px;
-  border: 5px solid #ffffff;
+  border: 4px solid #ffffff;
   border-radius: 20px;
   text-align: center;
   color: #ffffff;
@@ -169,6 +169,7 @@ body .backButton:hover {
   justify-content: space-evenly;
 }
 .secondHalf .row .facebook, .secondHalf .row .twitter, .secondHalf .row .instagram {
+  cursor: pointer;
   height: 60px;
   width: 60px;
   border: 2px #727272;
@@ -176,7 +177,7 @@ body .backButton:hover {
 }
 .secondHalf .row .facebook:hover, .secondHalf .row .twitter:hover, .secondHalf .row .instagram:hover {
   transform: scale(1.2);
-  transition: 2s ease;
+  transition: 1s ease;
 }
 .secondHalf .row .facebook {
   color: #ffffff;

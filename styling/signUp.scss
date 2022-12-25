@@ -55,7 +55,7 @@ body{
             padding-right: 30px;
             margin-top: 30px;
             height: 30px;
-            border: 5px solid $primaryWhite;
+            border: 4px solid $primaryWhite;
             border-radius: 20px;
             text-align: center;
             color: $primaryWhite;
@@ -161,13 +161,14 @@ body{
             flex-direction: row;
             justify-content: space-evenly;
             .facebook, .twitter, .instagram{
+                cursor: pointer;
                 height: 60px;
                 width: 60px;
                 border: 2px $primaryGrey;
                 border-radius: 30px;
                 &:hover{
                     transform: scale(1.2);
-                    transition: 2s ease;
+                    transition: 1s ease;
                 }
             }
 
