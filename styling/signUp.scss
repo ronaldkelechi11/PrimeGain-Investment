@@ -31,7 +31,6 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
         h1{
             color: $primaryWhite;
             font-family: $mainFontFamily;
@@ -47,7 +46,7 @@ body{
             padding-left: 10px;
             padding-right: 10px;
         }
-        .goToLogin{
+        .goToSignIn{
             cursor: pointer;
             width: auto;
             padding: 10px;
@@ -66,6 +65,8 @@ body{
                 transition: 1s ease;
             }
         }
+    }
+        
         }
         .backButton{
             cursor: pointer;
@@ -94,6 +95,7 @@ body{
         background-color: $primaryWhite;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         h1{
             margin-top: 30px;
             width: 100%;
@@ -134,6 +136,11 @@ body{
             border: none;
             border-radius: 10px;
             text-transform: uppercase;
+            &:hover{
+                background-color: $successColor;
+                transform: scale(1.05);
+                transition: 1s;
+            }
         }
         .vertigo{
             margin: 0px;

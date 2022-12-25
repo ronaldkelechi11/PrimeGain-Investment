@@ -7,9 +7,43 @@
     <title>Log into an Account - Sign In</title>
 
     <!-- Resource Linking -->
-    <link rel="stylesheet" href="../styling/signIn.css">
+    <link rel="stylesheet" href="./styling/signIn.css">
+    <script src="./js/signIn.js" type="module"></script>
 </head>
 <body>
     
+    <div class="firstHalf">
+        <div class="body">
+            <div class="backButton" id="backToIndex">
+            </div>
+    
+            <h1> Welcome,</h1>
+            <h3>Sign Up if you don't have an account with us </h3>
+            <div class="goToSignUp" id="goToSignUp">Sign Up</div>
+        </div>
+    </div>
+
+
+    <div class="secondHalf">
+        <h1>Login</h1>
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <button id="signupButton" >Sign Up</button>
+
+        
+        <div class="vertigo">
+            <hr>
+            <h5 class="or">or</h5>
+            <hr>
+        </div>
+
+        <div class="row">
+            <div class="facebook">f</div>
+            <div class="twitter">
+                <div class="img"></div>
+            </div>
+            <div class="instagram"><div class="img"></div></div>
+        </div>
+    </div>  
 </body>
 </html>

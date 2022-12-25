@@ -2,7 +2,7 @@ document.getElementById("backToIndex").addEventListener("click",(e)=>{
     window.location = "index.html";
 });
 
-document.getElementById("goToLogin").addEventListener("click", ()=>{
+document.getElementById("goToSignIn").addEventListener("click", (e)=>{
     window.location = "signIn.html";
 });
 
@@ -18,10 +18,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 document.getElementById("signupButton").addEventListener(
     "click", (e)=>{
 
-    }
-)
-
-
+        
 //   var templateParams = {
 //     username: document.getElementById("username").value,
 //     email: document.getElementById("email").value,
@@ -35,3 +32,6 @@ document.getElementById("signupButton").addEventListener(
 //        console.log('FAILED...', error);
 //        alert("Failed to Register User")
 //     });
+    }
+);
+
