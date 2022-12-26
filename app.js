@@ -15,11 +15,21 @@ const connection = createConnection({
 
 const app = express()
 
-connection.query("SELECT * FROM users", (err,result,fields)=>{
-    if(err){
-        console.log(err);
-    }
-    return console.log(result);
+app.post("signUp.html", (req,res)=>{
+    var email = req.body.email;
+    var username = req.body.username;
+    var password = req.body.password;
+
+    connection.connect(err=>{
+        if (err) throw err;
+        console.log("connected");
+
+        var sql = "INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')";
+        con.query(sql, function (err) {
+            if (err) throw err;
+            console.log("One record inserted");
+        });
+    })
 });
 
 app.listen(port)
