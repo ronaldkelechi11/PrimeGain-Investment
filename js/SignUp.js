@@ -4,7 +4,7 @@ document.getElementById("backToIndex").addEventListener("click",(e)=>{
 
 document.getElementById("goToSignIn").addEventListener("click", ()=>{
     console.log("Go to Sign In");
-    window.location = "index.html";
+    window.location = "signIn.html";
 })
 
 // To make sure that the input fields are empty of start
