@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
 document.getElementById("signupButton").addEventListener(
     "click", (e)=>{
 
-        
 //   var templateParams = {
 //     username: document.getElementById("username").value,
 //     email: document.getElementById("email").value,

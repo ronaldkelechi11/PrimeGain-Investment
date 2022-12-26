@@ -1,5 +1,5 @@
 document.getElementById("backToIndex").addEventListener("click",(e)=>{
-    window.location = "index.html";
+    window.location = "/";
 });
 
 

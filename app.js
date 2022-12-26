@@ -1,9 +1,18 @@
+// Import Packages
 const express = require("express")
 const {createConnection} = require("mysql")
-const bodyParser = require("body-parser")
+const bodyParser = require("body-parser");
 
 const port = 3000;
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
+
+// Express App Initialization
+const app = express();
+
+// Middleware
+app.use(express.static("/"));
+app.use(express.static("./styling"));
+app.use(express.json());
+app.use(express.urlencoded());
 
 // Mysql Connection Details
 const connection = createConnection({
@@ -13,23 +22,21 @@ const connection = createConnection({
     database: "primegaininvestment"
 });
 
-const app = express()
-
-app.post("signUp.html", (req,res)=>{
-    var email = req.body.email;
-    var username = req.body.username;
-    var password = req.body.password;
-
-    connection.connect(err=>{
-        if (err) throw err;
-        console.log("connected");
-
-        var sql = "INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')";
-        con.query(sql, function (err) {
-            if (err) throw err;
-            console.log("One record inserted");
-        });
-    })
+// To test connection to Mysql Server
+connection.connect(()=>{
+    console.log("Connected to Mysql Server");
 });
 
-app.listen(port)
+// API Routes
+app.get("/",(req,res)=>{
+    res.sendFile(__dirname + '/index.html');
+});
+
+app.post("/",(req,res)=>{
+
+});
+
+// App port listen function
+app.listen(port,(res)=>{
+    console.log("Server is online");
+});

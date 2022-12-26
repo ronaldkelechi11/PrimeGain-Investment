@@ -40,73 +40,6 @@
             <div class="img"></div>
         </a>
 
-        <!-- Register Display -->
-        <div class="createanaccount" id="createanaccount">
-            <div class="cancelButton" id="cancelButton">
-                <div class="img"></div>
-            </div>
-            <div class="center">
-                <div class="head">
-                    <div class="txt">Register</div>
-                </div>
-                    <div class="form">
-                        <h3>Username:</h3>
-                        <input type="text" name="username" required
-                        maxlength="20"
-                        id="username" value placeholder="Username">
-                        
-                        <h3>Telephone:</h3>
-                        <input type="tel" name="phoneNumber" id="number" 
-                        maxlength="15"
-                        placeholder="Telephone number" value>
-
-                        <h3>Email:</h3>
-                        <input type="email" 
-                        required
-                        name="email" id="email" placeholder="Email" value>
-
-                        <h3>Password:</h3>
-                        <input type="password" name="password" id="password" 
-                        required
-                        maxlength="15"
-                        minlength="6"
-                        placeholder="Password" value>
-
-                        <h3>Re-type Password:</h3>
-                        <input type="password" name="password" id="re_password" placeholder="Re-Type Password" value>
-
-                        <button id="registerButton">REGISTER</button>
-                    </div>
-            </div>
-        </div>
-
-        
-        <!-- Login Display -->
-        <div class="loginaccount" id="loginaccount">
-            <div class="cancelButtonLogin" id="cancelButtonLogin">
-                <div class="img"></div>
-            </div>
-            <div class="center">
-                <div class="head">
-                    <div class="txt">LOGIN</div>
-                </div>
-                    <div class="form">
-                        <h3>Email:</h3>
-                        <input type="email" 
-                        required
-                        name="email" id="emailLogin" placeholder="Email" value>
-                        
-                        <h3>Password:</h3>
-                        <input type="password" name="password" id="passwordLogin" 
-                        required
-                        maxlength="15"
-                        minlength="6"
-                        placeholder="Password" value>
-                        <button id="loginButton">LOGIN</button>
-                    </div>
-            </div>
-        </div>
-
     
         <!--Nav bar-->
         <div class="navbar" id="navbar">
@@ -312,26 +245,5 @@
             </h1>
             </div>
         </div>
-
-
-        <script type="module">
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-            import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
-
-            //Web App Config
-            const firebaseConfig = {
-                apiKey: "AIzaSyBYBN1JHtnQnBj8Jt7a58je2uaufbKT0qU",
-                authDomain: "primegaininvestment-bc2ba.firebaseapp.com",
-                projectId: "primegaininvestment-bc2ba",
-                storageBucket: "primegaininvestment-bc2ba.appspot.com",
-                messagingSenderId: "295060299707",
-                appId: "1:295060299707:web:7b80894f9bc5398d53ee9e",
-                measurementId: "G-1CJD0M074F"
-            };
-
-            //Initialise Firebase
-            const auth = getAuth();
-            const app = initializeApp(firebaseConfig);
-        </script>
     </body>
 </html>
