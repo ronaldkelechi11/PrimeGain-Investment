@@ -2,9 +2,10 @@ document.getElementById("backToIndex").addEventListener("click",(e)=>{
     window.location = "index.html";
 });
 
-document.getElementById("goToSignIn").addEventListener("click", (e)=>{
-    window.location = "signIn.html";
-});
+document.getElementById("goToSignIn").addEventListener("click", ()=>{
+    console.log("Go to Sign In");
+    window.location = "index.html";
+})
 
 // To make sure that the input fields are empty of start
 document.addEventListener("DOMContentLoaded", ()=>{
