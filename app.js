@@ -9,8 +9,8 @@ const port = 3000;
 const app = express();
 
 // Middleware
-app.use(express.static("/"));
-app.use(express.static("./styling"));
+app.use(express.static("/public"));
+
 app.use(express.json());
 app.use(express.urlencoded());
 
@@ -30,6 +30,9 @@ connection.connect(()=>{
 // API Routes
 app.get("/",(req,res)=>{
     res.sendFile(__dirname + '/index.html');
+});
+app.get("signUp",(req,res)=>{
+    res.sendFile(__dirname + '/signUp.html');
 });
 
 app.post("/",(req,res)=>{
