@@ -105,6 +105,11 @@ body{
             font-size: $massiveFontSize;
             animation: heartbeatOpacity 2s infinite ease;
         }
+        form{
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+        }
         #name, #email, #tel, #password{
             margin-top: 20px;
             margin-left: 30px;

@@ -104,6 +104,11 @@ body .backButton:hover {
   -webkit-animation: heartbeatOpacity 2s infinite ease;
           animation: heartbeatOpacity 2s infinite ease;
 }
+.secondHalf form {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
 .secondHalf #name, .secondHalf #email, .secondHalf #tel, .secondHalf #password {
   margin-top: 20px;
   margin-left: 30px;

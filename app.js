@@ -40,7 +40,8 @@ app.post("/signUp.html",(req,res)=>{
     var telephone = req.body.telephone;
     var password = req.body.password;
 
-    connection.query("INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES (null,'mmerechi4','mmerechiRonald@gmail.com','09066881954','Password')", (err,result,fields)=>{
+    var query = "INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES ('id','"+ username +"','"+email+"','"+telephone+"','"+password+"')";
+    connection.query(query, (err,result,fields)=>{
         if(err){
             console.log(err);
         }
