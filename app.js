@@ -34,8 +34,14 @@ app.get("/",(req,res)=>{
 });
 
 // To input to database
-app.post("/",(req,res)=>{
-    connection.query("INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES (null,'mmerechi3','mmerechiRonald11@gmail.com','09066881954','Password')", (err,result,fields)=>{
+app.post("/signUp.html",(req,res)=>{
+    var username = req.body.name;
+    var email = req.body.email;
+    var telephone = req.body.telephone;
+    var password = req.body.password;
+
+    console.log(email);
+    connection.query("INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES (null,'mmerechi4','mmerechiRonald@gmail.com','09066881954','Password')", (err,result,fields)=>{
         if(err){
             console.log(err);
         }
