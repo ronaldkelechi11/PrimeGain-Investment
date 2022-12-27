@@ -1,7 +1,7 @@
 # ***Prime Gain Investment***
 Crypto Investment site built for a client in the Crypto Industry. Consists of the Homepage, SignUp page, SignIn page, Dashboard page.
 
-> Most assets are gotten from Unsplash and most also from my Local Device
+- *Most assets are gotten from Unsplash and most also from my Local Device*
 
 ## **Languages Used**
 - HTML
