@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 
 // Sign Up button OnClick
-document.getElementById("signupButton").addEventListener(
-    "click", (e)=>{
+document.getElementById("signupButton").addEventListener("click", (e)=>{
 
+    console.log("Still Clickable");
 //   var templateParams = {
 //     username: document.getElementById("username").value,
 //     email: document.getElementById("email").value,

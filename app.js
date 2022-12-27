@@ -37,7 +37,7 @@ app.get("/",(req,res)=>{
 app.post("/signUp.html",(req,res)=>{
     var username = req.body.name;
     var email = req.body.email;
-    var telephone = req.body.telephone;
+    var telephone = req.body.tel;
     var password = req.body.password;
 
     var query = "INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES ('id','"+ username +"','"+email+"','"+telephone+"','"+password+"')";
