@@ -24,16 +24,23 @@ const connection = createConnection({
 });
 
 // To test connection to Mysql Server
-// connection.connect(()=>{
-//     console.log("Connected to Mysql Server");
-// });
+connection.connect(()=>{
+    console.log("Connected to Mysql Server");
+});
 
 // API Routes
 app.get("/",(req,res)=>{
     res.sendFile(__dirname + '/public/index.html');
 });
-app.get("signUp",(req,res)=>{
-    res.sendFile(__dirname + '/signUp.html');
+
+// To input to database
+app.post("/",(req,res)=>{
+    connection.query("INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES (null,'mmerechi3','mmerechiRonald11@gmail.com','09066881954','Password')", (err,result,fields)=>{
+        if(err){
+            console.log(err);
+        }
+         return console.log(result);
+    });
 });
 
 
