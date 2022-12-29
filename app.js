@@ -2,8 +2,10 @@
 const express = require("express")
 const {createConnection} = require("mysql")
 const bodyParser = require("body-parser")
-const events = require("events")
+const events = require("events");
+const { json } = require("body-parser");
 
+//Personal Values
 const port = 3000;
 
 // Express App Initialization
@@ -25,8 +27,13 @@ const connection = createConnection({
 });
 
 // To test connection to Mysql Server
-connection.connect(()=>{
-    console.log("Connected to Mysql Server");
+connection.connect((err,res)=>{
+    if(err) {
+        console.log("Connection to Mysql DB failed");
+    }
+    else{
+       console.log("Connected to Mysql Server"); 
+    }
 });
 
 // API Routes
@@ -44,12 +51,12 @@ app.post("/signUp.html",(req,res)=>{
     var query = "INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES ('id','"+ username +"','"+email+"','"+telephone+"','"+password+"')";
     connection.query(query, (err,result,fields)=>{
         if(err.errno = 1620){
-            return "CREATURE";
-            // Should carry out an Event that shows that a duplicate Entry was 
+            console.log("ERROR");
+        }
+        else{
+            res.sendFile(__dirname + "/public/signIn.html");
         }
     });
-
-    res.sendFile(__dirname + "/public/signIn.html");
 });
 
 
