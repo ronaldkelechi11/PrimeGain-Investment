@@ -1,5 +1,5 @@
 document.getElementById("backToIndex").addEventListener("click",(e)=>{
-    window.location = "index.html";
+    window.location = "/";
 });
 
 document.getElementById("goToSignIn").addEventListener("click", ()=>{
@@ -15,9 +15,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.getElementById("password").value = null;
 });
 
-// Sign Up button OnClick
-document.getElementById("signupButton").addEventListener("click", (e)=>{
+fetch("http://localhost:3000/");
 
+
+// Sign Up button OnClick
+document.addEventListener("submit", (e)=>{
+    window.location = "index.html";
     console.log("Still Clickable");
 //   var templateParams = {
 //     username: document.getElementById("username").value,

@@ -1,7 +1,8 @@
 // Import Packages
 const express = require("express")
 const {createConnection} = require("mysql")
-const bodyParser = require("body-parser");
+const bodyParser = require("body-parser")
+const events = require("events")
 
 const port = 3000;
 
@@ -42,11 +43,13 @@ app.post("/signUp.html",(req,res)=>{
 
     var query = "INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES ('id','"+ username +"','"+email+"','"+telephone+"','"+password+"')";
     connection.query(query, (err,result,fields)=>{
-        if(err){
-            console.log(err);
+        if(err.errno = 1620){
+            return "CREATURE";
+            // Should carry out an Event that shows that a duplicate Entry was 
         }
-         return console.log(result);
     });
+
+    res.sendFile(__dirname + "/public/signIn.html");
 });
 
 
