@@ -7,6 +7,7 @@ const { json } = require("body-parser");
 
 //Personal Values
 const port = 3000;
+var data = [];
 
 // Express App Initialization
 const app = express();
@@ -52,10 +53,13 @@ app.post("/signUp.html",(req,res)=>{
     connection.query(query, (err,result,fields)=>{
         if(err.errno = 1620){
             console.log("ERROR");
+            data.push(err.errno) 
+            res.json(data[0])
         }
         else{
             res.sendFile(__dirname + "/public/signIn.html");
-        }
+            
+        } 
     });
 });
 

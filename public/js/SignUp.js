@@ -1,3 +1,4 @@
+
 document.getElementById("backToIndex").addEventListener("click",(e)=>{
     window.location = "/";
 });
@@ -15,17 +16,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.getElementById("password").value = null;
 });
 
-fetch("http://localhost:3000/");
 
 
 // Sign Up button OnClick
 document.addEventListener("submit", (e)=>{
-    window.location = "index.html";
     console.log("Still Clickable");
+
+    var url = "http://localhost:3000/signUp.html"
+    fetch(url)
+        .then(res => res.json())
+        .then(data => console.log(data) )
 //   var templateParams = {
 //     username: document.getElementById("username").value,
 //     email: document.getElementById("email").value,
-//     phone_number: document.getElementById("number").value,
+//     phone_number: document.getElementById("tel").value,
 // }; 
 // emailjs.send('gmail', 'primegain_template', templateParams)
 //     .then(function(response) {
