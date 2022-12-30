@@ -1,3 +1,4 @@
+const { url } = require("inspector");
 
 document.getElementById("backToIndex").addEventListener("click",(e)=>{
     window.location = "/";
@@ -22,10 +23,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
 document.addEventListener("submit", (e)=>{
     console.log("Still Clickable");
 
-    var url = "http://localhost:3000/signUp.html"
-    fetch(url)
-        .then(res => res.json())
-        .then(data => console.log(data) )
+    var url = "localhost:3000/signUp.html"
+
+    console.log(fetch(url).then(res => res.json));
+    
 //   var templateParams = {
 //     username: document.getElementById("username").value,
 //     email: document.getElementById("email").value,
