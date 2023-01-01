@@ -43,6 +43,7 @@ body .panel .items {
 body .panel .items a {
   border-bottom: 2px;
   border-top: 2px;
+  border-radius: 5px;
   border-style: solid;
   border-color: #c9c9c9;
   border-left: none;
@@ -54,8 +55,9 @@ body .panel .items a {
   font-family: "Poppins";
   font-weight: bold;
 }
-body .panel .items a img {
+body .panel .items a i {
+  width: 24px;
+  height: 24px;
+  fill: #1740D8;
   color: #1740D8;
-  height: 23px;
-  width: 23px;
 }/*# sourceMappingURL=admindash.css.map */

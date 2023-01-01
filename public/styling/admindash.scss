@@ -43,6 +43,7 @@ body{
             a{
                 border-bottom: 2px;
                 border-top: 2px;
+                border-radius: 5px;
                 border-style: solid;
                 border-color: $light;
                 border-left: none;
@@ -54,10 +55,11 @@ body{
                 font-size: $mediumFontSize;
                 font-family: $mainFontFamily;
                 font-weight: bold;
-                img{
+                i{
+                    width: 24px;
+                    height: 24px;
+                    fill: $secondaryColor;
                     color: $secondaryColor;
-                    height: $mediumFontSize;
-                    width: $mediumFontSize;
                 }
             }
         }
