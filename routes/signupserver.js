@@ -26,19 +26,22 @@ router.post("/",(req,res)=>{
     function inputData() {
     connection.query(query, (err,result,fields)=>{
         if(err && err.errno == 1620){
-            console.log("ERROR"); 
-            return "Error";
         }
         else if(err == null){
-          res.sendFile(__dirname + "/public/signIn.html");  
           return "Succesful" 
         }
     });  
     }
 
     inputData();
+    if(inputData === "Error"){
+        console.log("Error");
+    }
+    else if(inputData === "Succesful"){
+        console.log("Succesful");
+    }
     
-    return res.sendFile(__dirname + "/public/"); 
+    return res.sendFile(__dirname + "./public/"); 
 });
 
 module.exports = router;

@@ -12,9 +12,11 @@ const port = 4000;
 
 // Routes
 const signUpRoute = require("./routes/signupserver.js")
+const signInRoute = require("./routes/signinserver.js")
 
 // Assigning Routes
 app.use("/signUp.html", signUpRoute)
+app.use("/signIn.html", signInRoute)
 
 // Middleware
 app.use(express.static("./"))
@@ -22,7 +24,7 @@ app.use(express.static("./public"));
 
 app.use(express.json());
 app.use(express.urlencoded());
-
+ 
 // Mysql Connection Details
 const connection = createConnection({
     host: "localhost",
