@@ -8,16 +8,13 @@ const { json } = require("body-parser");
 const app = express();
 
 //Personal Values
-const port = 3000;
-var data = [];
+const port = 4000;
 
 // Routes
-const signUpRoute = require("./routes/signupserver")
-const signInRoute = require("./routes/signinserver")
+const signUpRoute = require("./routes/signupserver.js")
 
 // Assigning Routes
-app.use("/signUp", signUpRoute)
-app.use("/signIn", signInRoute)
+app.use("/signUp.html", signUpRoute)
 
 // Middleware
 app.use(express.static("./"))
@@ -35,16 +32,15 @@ const connection = createConnection({
 });
 
 // To test connection to Mysql Server
-connection.connect((err,res)=>{
+connection.connect((err)=>{
     if(err) {
-        console.log("Connection to Mysql DB failed");
+        console.log("Connection to Mysql DB failed" || "Please put on MySql Server");
     }
     else{
        console.log("Connected to Mysql Server"); 
     }
 });
 
-// API Routes
 app.get("/",(req,res)=>{
     res.sendFile(__dirname + '/public/index.html');
 });
