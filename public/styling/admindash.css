@@ -6,14 +6,56 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background-color: #ffffff;
 }
 body .panel {
-  width: 25%;
+  width: 20%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: #1740D8;
+  background-color: #ebebeb;
+}
+body .panel .logo {
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+body .panel .logo a {
+  text-decoration: none;
+  color: white;
+}
+body .panel .logo span {
+  margin-left: 5px;
+  color: #1740D8;
+}
+body .panel .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+  margin-top: 20px;
+}
+body .panel .items a {
+  border-bottom: 2px;
+  border-top: 2px;
+  border-style: solid;
+  border-color: #c9c9c9;
+  border-left: none;
+  border-right: none;
+  text-decoration: none;
+  padding: 10px;
+  color: #727272;
+  font-size: 23px;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+body .panel .items a img {
+  color: #1740D8;
+  height: 23px;
+  width: 23px;
 }/*# sourceMappingURL=admindash.css.map */

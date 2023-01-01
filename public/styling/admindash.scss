@@ -8,15 +8,60 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: red;
-
+    background-color: $primaryWhite; 
     .panel{
-        width: 25%;
+        width: 20%;
         height: 100%;
         position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
-        background-color: $secondaryColor;
+        background-color: $secondaryGrey;
+        .logo{
+            font-family: $mainFontFamily;
+            text-align: center;
+            font-size: $largeFontSize;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            span{
+                margin-left: 5px;
+                color: $secondaryColor;
+            }
+        }
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 60%;
+            margin-top: 20px;
+            a{
+                border-bottom: 2px;
+                border-top: 2px;
+                border-style: solid;
+                border-color: $light;
+                border-left: none;
+                border-right: none;
+
+                text-decoration: none;
+                padding: 10px;
+                color: $primaryGrey;
+                font-size: $mediumFontSize;
+                font-family: $mainFontFamily;
+                font-weight: bold;
+                img{
+                    color: $secondaryColor;
+                    height: $mediumFontSize;
+                    width: $mediumFontSize;
+                }
+            }
+        }
+
+
     }
 }
