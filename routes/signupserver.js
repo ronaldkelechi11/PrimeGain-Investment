@@ -23,25 +23,7 @@ router.post("/",(req,res)=>{
     var query = "INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES ('id','"+ username +"','"+email+"','"+telephone+"','"+password+"')";
     console.log(req.body);
 
-    function inputData() {
-    connection.query(query, (err,result,fields)=>{
-        if(err && err.errno == 1620){
-        }
-        else if(err == null){
-          return "Succesful" 
-        }
-    });  
-    }
-
-    inputData();
-    if(inputData === "Error"){
-        console.log("Error");
-    }
-    else if(inputData === "Succesful"){
-        console.log("Succesful");
-    }
-    
-    return res.sendFile(__dirname + "./public/"); 
+    //TODO: Build a function that'll return a fucntion and the function will tell if t go back to index or login page
 });
 
 module.exports = router;

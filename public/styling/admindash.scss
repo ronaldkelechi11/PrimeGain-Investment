@@ -1,0 +1,22 @@
+@import "variables";
+@import 'mediaqueries';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+
+    .panel{
+        width: 25%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $secondaryColor;
+    }
+}
