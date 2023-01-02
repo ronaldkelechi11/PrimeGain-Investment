@@ -21,8 +21,17 @@ router.post("/",(req,res)=>{
     var telephone = req.body.tel;
     var password = req.body.password;
     var query = "INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES ('id','"+ username +"','"+email+"','"+telephone+"','"+password+"')";
-    console.log(req.body);
 
+    var data = "";
+    function checkError() {
+        connection.query(query,(err,result,fields)=>{
+            result = data
+            console.log(result);
+            return data;
+        });
+    }
+
+    console.log(checkError());
     //TODO: Build a function that'll return a fucntion and the function will tell if t go back to index or login page
 });
 

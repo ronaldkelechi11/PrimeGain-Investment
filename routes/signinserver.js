@@ -1,5 +1,6 @@
 const { Router } = require("express")
 const express = require("express")
+const bodyParser = require("body-parser")
 const router = express.Router()
 const {createConnection} = require("mysql")
 
@@ -14,10 +15,6 @@ const connection = createConnection({
     password: "",
     database: "primegaininvestment"
 });
-
-router.get("/",(req,res)=>{
-    res.send("Get Request")
-})
 
 router.post("/", (req,res)=>{
     res.send("Working")
