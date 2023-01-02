@@ -38,9 +38,18 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 60%;
+            height: 50%;
             margin-top: 20px;
+            .isActive{
+                color: $secondaryColor;
+                font-weight: bold;
+                svg{
+                    stroke-width: 5px;
+                    color: $secondaryColor;
+                }
+            }
             a{
+                
                 border-bottom: 2px;
                 border-top: 2px;
                 border-radius: 5px;
@@ -48,18 +57,22 @@ body{
                 border-color: $light;
                 border-left: none;
                 border-right: none;
-
                 text-decoration: none;
-                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
                 color: $primaryGrey;
                 font-size: $mediumFontSize;
                 font-family: $mainFontFamily;
-                font-weight: bold;
-                i{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                svg{
                     width: 24px;
                     height: 24px;
-                    fill: $secondaryColor;
-                    color: $secondaryColor;
+                    color: $primaryGrey;
                 }
             }
         }

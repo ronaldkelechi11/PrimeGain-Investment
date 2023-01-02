@@ -37,8 +37,16 @@ body .panel .items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60%;
+  height: 50%;
   margin-top: 20px;
+}
+body .panel .items .isActive {
+  color: #1740D8;
+  font-weight: bold;
+}
+body .panel .items .isActive svg {
+  stroke-width: 5px;
+  color: #1740D8;
 }
 body .panel .items a {
   border-bottom: 2px;
@@ -49,15 +57,20 @@ body .panel .items a {
   border-left: none;
   border-right: none;
   text-decoration: none;
-  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: #727272;
   font-size: 23px;
   font-family: "Poppins";
-  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-body .panel .items a i {
+body .panel .items a svg {
   width: 24px;
   height: 24px;
-  fill: #1740D8;
-  color: #1740D8;
+  color: #727272;
 }/*# sourceMappingURL=admindash.css.map */
