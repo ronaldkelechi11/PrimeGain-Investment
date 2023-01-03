@@ -45,7 +45,8 @@ body .panel .items .isActive {
   font-weight: bold;
 }
 body .panel .items .isActive svg {
-  stroke-width: 5px;
+  stroke: #1740D8;
+  stroke-width: 1;
   color: #1740D8;
 }
 body .panel .items a {
@@ -57,10 +58,10 @@ body .panel .items a {
   border-left: none;
   border-right: none;
   text-decoration: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #727272;
   font-size: 23px;
   font-family: "Poppins";

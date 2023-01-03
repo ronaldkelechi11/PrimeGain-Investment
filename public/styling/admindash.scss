@@ -9,6 +9,8 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: $primaryWhite; 
+
+    // Side Nav bar
     .panel{
         width: 20%;
         height: 100%;
@@ -33,7 +35,6 @@ body{
                 color: $secondaryColor;
             }
         }
-
         .items{
             display: flex;
             flex-direction: column;
@@ -44,12 +45,12 @@ body{
                 color: $secondaryColor;
                 font-weight: bold;
                 svg{
-                    stroke-width: 5px;
+                    stroke: $secondaryColor;
+                    stroke-width: 1;
                     color: $secondaryColor;
                 }
             }
             a{
-                
                 border-bottom: 2px;
                 border-top: 2px;
                 border-radius: 5px;
@@ -58,10 +59,10 @@ body{
                 border-left: none;
                 border-right: none;
                 text-decoration: none;
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-top: 5px;
-                padding-bottom: 5px;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 color: $primaryGrey;
                 font-size: $mediumFontSize;
                 font-family: $mainFontFamily;
@@ -76,7 +77,5 @@ body{
                 }
             }
         }
-
-
     }
 }
