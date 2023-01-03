@@ -1,9 +1,14 @@
 @import "variables";
 @import 'mediaqueries';
 
+// Sub Section
+@import 'accounts';
+@import 'settings';
+
 *{
     margin: 0;
     padding: 0;
+    transition: 1s ease-in-out;
 }
 body{
     width: 100vw;
@@ -29,6 +34,7 @@ body{
             a{
                 text-decoration: none;
                 color: white;
+                transition: 1s;
             }
             span{
                 margin-left: 5px;

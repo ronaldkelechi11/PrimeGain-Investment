@@ -1,6 +1,43 @@
+.accounts {
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.accounts .top {
+  font-family: "Poppins";
+  color: #000000;
+  font-size: 62px;
+  align-self: center;
+  font-weight: bold;
+}
+
+.settings {
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.settings .top {
+  font-family: "Poppins";
+  color: #000000;
+  font-size: 62px;
+  align-self: center;
+  font-weight: bold;
+}
+
 * {
   margin: 0;
   padding: 0;
+  transition: 1s ease-in-out;
 }
 
 body {
@@ -28,6 +65,7 @@ body .panel .logo {
 body .panel .logo a {
   text-decoration: none;
   color: white;
+  transition: 1s;
 }
 body .panel .logo span {
   margin-left: 5px;
