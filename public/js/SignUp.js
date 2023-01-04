@@ -21,7 +21,14 @@ document.getElementById("goToSignIn").addEventListener("click", ()=>{
 document.addEventListener("submit", (e)=>{
     console.log("Still Clickable");
 
-    var url = "localhost:3000/signUp.html"
+    var url = "http://localhost:4000/signUp.html"
+    fetch(url,{method: 'POST'})
+        .then(res => res.json())
+        .then(data => {
+            if(data === 1620){
+                alert("Email already registered")
+            }
+        });
     
 //   var templateParams = {
 //     username: document.getElementById("username").value,

@@ -4,5 +4,6 @@ document.getElementById("backToIndex").addEventListener("click",(e)=>{
 
 
 document.getElementById("goToSignUp").addEventListener("click", (e)=>{
+    console.log("Go to SignUp");
     window.location = "signUp.html"
 });
