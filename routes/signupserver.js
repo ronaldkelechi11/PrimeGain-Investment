@@ -22,11 +22,12 @@ router.post("/",(req,res)=>{
     var password = req.body.password;
     var query = "INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES ('id','"+ username +"','"+email+"','"+telephone+"','"+password+"')";
 
+    console.log(req.body);
 
     connection.query(query,(err,result)=>{
         if(err){
             console.log(err.errno);
-            res.send("1620");
+            res.send("1620")
         }
     });
     //TODO: Build a function that'll return a fucntion and the function will tell if to go back to index or login page
