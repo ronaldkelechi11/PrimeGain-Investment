@@ -10,7 +10,9 @@ document.getElementById("goToSignIn").addEventListener("click", ()=>{
 // Sign Up button OnClick
 document.addEventListener("submit", (e)=>{
     console.log("Still Clickable");
-    localStorage.setItem("username", document.getElementById("username").value)
+    localStorage.setItem("name", document.getElementById("name").value)
+    localStorage.setItem("email", document.getElementById("email").value)
+    localStorage.setItem("tel", document.getElementById("tel").value)
 
     setTimeout(() => {
        var requestOptions = {
@@ -23,7 +25,7 @@ document.addEventListener("submit", (e)=>{
                 if(result === "Error"){
                     console.log("Displaying error");
                     document.getElementById("email").setAttribute("class","error");
-                     alert("Please change your email")
+                     alert("Email Has already registered with PrimeGain")
                         setTimeout(() => {
                             document.getElementById("email").setAttribute("class",""); 
                         }, 3000);
