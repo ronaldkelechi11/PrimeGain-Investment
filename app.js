@@ -21,7 +21,6 @@ app.use("/signIn.html", signInRoute)
 // Middleware
 app.use(express.static("./"))
 app.use(express.static("./public"));
-
 app.use(express.json());
 app.use(express.urlencoded());
  

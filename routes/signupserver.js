@@ -3,6 +3,9 @@ const {createConnection} = require("mysql")
 const bodyParser = require("body-parser")
 const router = express.Router()
 
+// Variables
+var data = "__"
+
 // Mysql Connection Details
 const connection = createConnection({
     host: "localhost",
@@ -22,15 +25,20 @@ router.post("/",(req,res)=>{
     var password = req.body.password;
     var query = "INSERT INTO `users`(`id`, `username`, `email`, `telephone`, `password`) VALUES ('id','"+ username +"','"+email+"','"+telephone+"','"+password+"')";
 
-    console.log(req.body);
-
-    connection.query(query,(err,result)=>{
+    connection.query(query,(err,result,fields)=>{
         if(err){
-            console.log(err.errno);
-            res.send("1620")
+          data = "Error"; 
+          return false;
         }
+        else{
+            console.log(__filename);
+        }  
     });
-    //TODO: Build a function that'll return a fucntion and the function will tell if to go back to index or login page
+});
+
+router.get("/api",(req,res)=>{
+    res.send(JSON.stringify(data))
+    console.log("Data Sent");
 });
 
 module.exports = router;

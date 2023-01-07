@@ -21,15 +21,17 @@ document.getElementById("goToSignIn").addEventListener("click", ()=>{
 document.addEventListener("submit", (e)=>{
     console.log("Still Clickable");
 
-    var url = "http://127.0.0.1:4000/signUp.html"
-    fetch(url,{method: 'POST'})
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            if(data === 1620){
-                alert("Email already registered")
-            }  
-        });
+    setTimeout(() => {
+       var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+          };
+          fetch("http://localhost:4000/signUp.html/api", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error)); 
+    }, 1000);
+        
     
 //   var templateParams = {
 //     username: document.getElementById("username").value,
