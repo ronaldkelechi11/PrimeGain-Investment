@@ -1,10 +1,10 @@
 // For all the values gotten from Local Storage
 var userPhone = document.getElementById("userNumber");
-                userPhone.innerHTML = localStorage.getItem("phoneNumber");
+                userPhone.innerHTML = localStorage.getItem("tel");
 var userName = document.getElementById("userUsername");
-                userName.innerHTML = localStorage.getItem("userName");
+                userName.innerHTML = localStorage.getItem("name");
 var userEmail = document.getElementById("userEmailAddress");
-userEmail.innerHTML = localStorage.getItem("userEmail");
+                userEmail.innerHTML = localStorage.getItem("email");
 
 
 // Make a deposit button
