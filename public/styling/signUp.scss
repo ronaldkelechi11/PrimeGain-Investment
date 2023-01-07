@@ -15,7 +15,6 @@ body{
         width:  50vw;
         height: 100vh;
         position: relative;
-        // background: linear-gradient(-45deg, $secondaryColor, $primaryColor, $errorColor);
         background-image: url("../assets/images/bg_hero.JPG");
         background-position: center;
         animation: vero infinite 5s ease;
@@ -75,7 +74,6 @@ body{
             position: fixed;
             top: 20px;
             left: 20px;
-            // TODO: ADD IMAGE
             background-image: url("../node_modules/bootstrap-icons/icons/arrow-up.svg");
             background-repeat: no-repeat;
             background-position: center;
@@ -123,6 +121,13 @@ body{
             outline: none;
             &::placeholder{
                 color: $primaryGrey;
+            }
+        }
+        .error{
+            border: 2px red solid !important;
+            color: red !important;
+            &::placeholder{
+                color: red;
             }
         }
         #name{
@@ -217,6 +222,7 @@ body{
             }
         }
 
+        
 
         @keyframes heartbeatOpacity {
             0%{

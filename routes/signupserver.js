@@ -31,13 +31,14 @@ router.post("/",(req,res)=>{
           return false;
         }
         else{
-            console.log(__filename);
+            data = "Succesful"
+            return false;
         }  
     });
 });
 
 router.get("/api",(req,res)=>{
-    res.send(JSON.stringify(data))
+    res.send(data)
     console.log("Data Sent");
 });
 

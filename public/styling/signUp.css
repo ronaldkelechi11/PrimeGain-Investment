@@ -130,6 +130,19 @@ body .backButton:hover {
 .secondHalf #name::placeholder, .secondHalf #email::placeholder, .secondHalf #tel::placeholder, .secondHalf #password::placeholder {
   color: #727272;
 }
+.secondHalf .error {
+  border: 2px red solid !important;
+  color: red !important;
+}
+.secondHalf .error::-moz-placeholder {
+  color: red;
+}
+.secondHalf .error:-ms-input-placeholder {
+  color: red;
+}
+.secondHalf .error::placeholder {
+  color: red;
+}
 .secondHalf #name {
   margin-top: 30px;
 }

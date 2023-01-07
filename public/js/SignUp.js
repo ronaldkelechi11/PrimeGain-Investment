@@ -7,19 +7,10 @@ document.getElementById("goToSignIn").addEventListener("click", ()=>{
     window.location = "signIn.html";
 })
 
-// To make sure that the input fields are empty of start
-// document.addEventListener("DOMContentLoaded", ()=>{
-//     document.getElementById("name").value = null;
-//     document.getElementById("email").value = null;
-//     document.getElementById("tel").value = null;
-//     document.getElementById("password").value = null;
-// });
-
-
-
 // Sign Up button OnClick
 document.addEventListener("submit", (e)=>{
     console.log("Still Clickable");
+    localStorage.setItem("username", document.getElementById("username").value)
 
     setTimeout(() => {
        var requestOptions = {
@@ -28,7 +19,20 @@ document.addEventListener("submit", (e)=>{
           };
           fetch("http://localhost:4000/signUp.html/api", requestOptions)
             .then(response => response.text())
-            .then(result => console.log(result))
+            .then(result => {
+                if(result === "Error"){
+                    console.log("Displaying error");
+                    document.getElementById("email").setAttribute("class","error");
+                     alert("Please change your email")
+                        setTimeout(() => {
+                            document.getElementById("email").setAttribute("class",""); 
+                        }, 3000);
+                    return false;
+                }
+                else if(result === "Succesful"){
+                    window.location = "dashboard.html"
+                }
+            })
             .catch(error => console.log('error', error)); 
     }, 1000);
         
