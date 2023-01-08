@@ -37,7 +37,7 @@ router.post("/",(req,res)=>{
     });
 });
 
-router.get("/api",(req,res)=>{
+router.get("/apiSignUp",(req,res)=>{
     res.send(data)
     console.log("Data Sent");
 });

@@ -9,7 +9,7 @@ document.getElementById("goToSignIn").addEventListener("click", ()=>{
 
 // Sign Up button OnClick
 document.addEventListener("submit", (e)=>{
-    console.log("Still Clickable");
+    console.log("Still Clickable"); 
     localStorage.setItem("name", document.getElementById("name").value)
     localStorage.setItem("email", document.getElementById("email").value)
     localStorage.setItem("tel", document.getElementById("tel").value)
@@ -19,7 +19,7 @@ document.addEventListener("submit", (e)=>{
             method: 'GET',
             redirect: 'follow'
           };
-          fetch("http://localhost:4000/signUp.html/api", requestOptions)
+          fetch("http://localhost:4000/signUp.html/apiSignUp", requestOptions)
             .then(response => response.text())
             .then(result => {
                 if(result === "Error"){

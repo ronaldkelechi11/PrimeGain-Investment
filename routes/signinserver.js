@@ -1,8 +1,10 @@
-const { Router } = require("express")
 const express = require("express")
 const bodyParser = require("body-parser")
 const router = express.Router()
 const {createConnection} = require("mysql")
+
+// Variables
+var data = "___"
 
 // Middleware
 router.use(express.json())
@@ -17,7 +19,14 @@ const connection = createConnection({
 });
 
 router.post("/", (req,res)=>{
-    res.send("Working")
+    var email = req.body.email;
+    var password = req.body.password;
+
+    console.log(req.body);
+})
+
+router.get("/apiSingIn",(req,res)=>{
+
 })
 
 module.exports = router
