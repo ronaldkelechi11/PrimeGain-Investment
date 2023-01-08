@@ -45,7 +45,7 @@ router.post("/", (req,res)=>{
 
 router.get("/apiSingIn",(req,res)=>{
     res.send(data)
-    console.log("Data Sent");
+    console.log("Data Sent SignIn");
 })
 
 module.exports = router

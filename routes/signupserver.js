@@ -39,7 +39,7 @@ router.post("/",(req,res)=>{
 
 router.get("/apiSignUp",(req,res)=>{
     res.send(data)
-    console.log("Data Sent");
+    console.log("Data Sent SignUp");
 });
 
 module.exports = router;
