@@ -13,7 +13,7 @@ const port = 4000;
 // Routes
 const signUpRoute = require("./routes/signupserver.js")
 const signInRoute = require("./routes/signinserver.js")
-const adminDashboardRoute = require("./routes/adminDashboard")
+const adminDashboardRoute = require("./routes/adminDashboardServer")
 
 // Assigning Routes
 app.use("/signUp.html", signUpRoute)
