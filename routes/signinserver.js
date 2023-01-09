@@ -2,7 +2,6 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const router = express.Router()
 const {createConnection} = require("mysql")
-const { table } = require("console")
 
 // Variables
 var data = "___"
