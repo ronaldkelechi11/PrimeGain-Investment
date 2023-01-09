@@ -4,7 +4,7 @@ const router = express.Router()
 const {createConnection} = require("mysql")
 
 // Variables
-var data = "___"
+var data = ""
 
 // Middleware
 router.use(express.json())

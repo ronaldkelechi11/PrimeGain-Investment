@@ -30,11 +30,16 @@ document.getElementById("signinButton").addEventListener("click",()=>{
                     } 
                 }
                 // Normal User 
-                else {
+                else if(data != null){
                     localStorage.setItem("name", data[0].username)
                     localStorage.setItem("email", data[0].email)
                     localStorage.setItem("tel", data[0].telephone)
                     window.location = "dashboard.html"
+                }
+                //If user does not exist
+                else{
+                    alert("Your Account does not seem to exist on our Database. Please create an account")
+                    window.location = "/signUp.html"
                 }
             })
             .catch(error => console.log('error', error));
