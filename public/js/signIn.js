@@ -19,8 +19,10 @@ document.getElementById("signinButton").addEventListener("click",()=>{
             .then(response => response.text())
             .then(result => {
                 var data = JSON.parse(result);
+                console.log(data);
                 //If is an admin Login
-                if(data[0].email == "admin@primegain.com" && data[0].password == "admin"){
+                if(data[0].email == "admin@primegain.com", data[0].password == "admin"){
+                    console.log('Is admin');
                     if(data[0].password != "admin"){
                         alert("You are trying to Login as a Fake admin. Your Computer will be blocked.")
                         window.location = "/"
@@ -31,17 +33,22 @@ document.getElementById("signinButton").addEventListener("click",()=>{
                 }
                 // Normal User 
                 else if(data != null){
+                    console.log('Normal User');
                     localStorage.setItem("name", data[0].username)
                     localStorage.setItem("email", data[0].email)
                     localStorage.setItem("tel", data[0].telephone)
                     window.location = "dashboard.html"
                 }
                 //If user does not exist
-                else{
+                else if(data == null){
+                    console.log('User does not exist');
                     alert("Your Account does not seem to exist on our Database. Please create an account")
                     window.location = "/signUp.html"
                 }
             })
-            .catch(error => console.log('error', error));
+            .catch(error => {
+                alert("Error Signing In");
+                window.location = "/signIn.html"
+            });
     }, 500);
 });

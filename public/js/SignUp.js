@@ -31,7 +31,7 @@ document.addEventListener("submit", (e)=>{
                     return false;
                 }
                 else if(result === "Succesful"){
-                    window.location = "dashboard.html"
+                    window.location = "signIn.html"
                 }
             })
             .catch(error => console.log('error', error)); 
