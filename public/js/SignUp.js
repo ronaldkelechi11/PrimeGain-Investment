@@ -9,7 +9,6 @@ document.getElementById("goToSignIn").addEventListener("click", ()=>{
 
 // Sign Up button OnClick
 document.addEventListener("submit", (e)=>{
-    console.log("Still Clickable"); 
     localStorage.setItem("name", document.getElementById("name").value)
     localStorage.setItem("email", document.getElementById("email").value)
     localStorage.setItem("tel", document.getElementById("tel").value)

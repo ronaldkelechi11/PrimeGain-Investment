@@ -29,21 +29,12 @@ router.post("/", (req,res)=>{
             console.log(err);
         }
         else{
-            // All i need is a way to go through the data like a forEach statement
-            // if(result == null){
-            //     data = "Error"
-            // }
-            // else if(result == ""){
-
-            // }
-            // else{
-
-            // }
+            data = JSON.parse(JSON.stringify(result))
         }
     });
 })
 
-router.get("/apiSingIn",(req,res)=>{
+router.get("/apiSignIn",(req,res)=>{
     res.send(data)
     console.log("Data Sent SignIn");
 })
