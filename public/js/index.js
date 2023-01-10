@@ -8,6 +8,13 @@ document.getElementById("log").addEventListener("click", ()=>{
   window.location = "signIn.html"
 });
 
+document.getElementById("refferalLink").addEventListener("click",()=>{
+  var refferalValue = 'localhost:4000/refferal/'+localStorage.getItem("name")+"/" + localStorage.getItem("uid");
+  console.log(refferalValue)
+});
+
+console.log();
+
 
 
 

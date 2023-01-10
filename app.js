@@ -48,6 +48,25 @@ app.get("/",(req,res)=>{
     res.sendFile(__dirname + '/public/index.html');
 });
 
+// For Refferals
+app.get("/refferal/:username/:id",(req,res)=>{
+   var id = req.params.id;
+   var username = req.params.username;
+   var data = "__"
+
+    //To first check if the User actually exists in the refferal Program    
+    // Then if not create a new user with refferalNumber 1
+   var searchQuery = "SELECT * FROM `refferals` WHERE `username` =" + " '" + username+"'";
+   var insertNewRefferal = "INSERT INTO `refferals`(`id`, `username`, `refferalAmmout`) VALUES ('" + id + "', '" + username + "', " + " '1');"
+
+
+   connection.query(insertNewRefferal,(err,result,fields)=>{
+    console.log(result);
+    console.log(fields);
+   })
+
+})
+
 // App port listen function
 app.listen(port,(res)=>{
     console.log("Server is online on port: " + port);

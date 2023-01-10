@@ -37,6 +37,7 @@ document.getElementById("signinButton").addEventListener("click",()=>{
                     localStorage.setItem("name", data[0].username)
                     localStorage.setItem("email", data[0].email)
                     localStorage.setItem("tel", data[0].telephone)
+                    localStorage.setItem("uid",data[0].id)
                     window.location = "dashboard.html"
                 }
                 //If user does not exist
