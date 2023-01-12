@@ -60,10 +60,23 @@ app.get("/refferal/:username/:id",(req,res)=>{
    var insertNewRefferal = "INSERT INTO `refferals`(`id`, `username`, `refferalAmmout`) VALUES ('" + id + "', '" + username + "', " + " '1');"
 
 
-   connection.query(insertNewRefferal,(err,result,fields)=>{
-    console.log(result);
-    console.log(fields);
-   })
+   connection.query(searchQuery,(err,result,fields)=>{
+    if(err){
+        console.log(err);
+        return true
+    }
+    else if(result = "[]"){
+        connection.query(insertNewRefferal,(err,result,fields)=>{
+            if(err){
+                console.error(err);
+            }
+            else{
+                console.log(result);
+            }
+        })
+    }
+
+   });
 
 })
 
