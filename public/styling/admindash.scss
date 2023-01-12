@@ -5,58 +5,73 @@
 @import 'accounts';
 @import 'settings';
 
-*{
+* {
     margin: 0;
     padding: 0;
     transition: 1s ease-in-out;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
-    background-color: $primaryWhite; 
+    background-color: $primaryWhite;
 
     // Side Nav bar
-    .panel{
+    .panel {
         width: 20%;
         height: 100%;
         position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
-        background-color: $secondaryGrey;
-        .logo{
+        background-color: #060e35;
+
+        .logo {
             font-family: $mainFontFamily;
             text-align: center;
             font-size: $largeFontSize;
             font-weight: bold;
             display: flex;
+            margin-top: 30px;
             justify-content: center;
-            a{
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+            }
+
+            a {
                 text-decoration: none;
                 color: white;
                 transition: 1s;
             }
-            span{
+
+            span {
                 margin-left: 5px;
                 color: $secondaryColor;
             }
         }
-        .items{
+
+        .items {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 50%;
             margin-top: 20px;
-            .isActive{
-                color: $secondaryColor;
+
+            .isActive {
+                color: $primaryWhite;
                 font-weight: bold;
-                svg{
-                    stroke: $secondaryColor;
+
+                svg {
+                    stroke: $primaryWhite;
                     stroke-width: 1;
                     color: $secondaryColor;
                 }
             }
-            a{
+
+            a {
                 border-bottom: 2px;
                 border-top: 2px;
                 border-radius: 5px;
@@ -76,11 +91,58 @@ body{
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                svg{
+
+                svg {
                     width: 24px;
                     height: 24px;
                     color: $primaryGrey;
                 }
+            }
+        }
+    }
+
+    .dashboard {
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        flex-direction: column;
+
+        .top {
+            font-family: $mainFontFamily;
+            color: $primaryBlack;
+            font-size: $massiveFontSize;
+            align-self: center;
+            font-weight: bold;
+        }
+
+        .cards {
+            height: 200px;
+            width: 100%;
+            background-color: pink;
+            display: grid;
+            grid-template-rows: repeat(3, 200px);
+            padding: 20px;
+
+            &_users {
+                height: 200px;
+                background-color: #060e35;
+                border-radius: 10px;
+            }
+
+            &_totalPayments {
+                height: 200px;
+                background-color: green;
+                border-radius: 10px;
+            }
+
+            &_totalRefferals {
+                height: 200px;
+                background-color: red;
+                border-radius: 10px;
             }
         }
     }
