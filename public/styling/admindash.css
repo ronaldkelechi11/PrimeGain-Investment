@@ -137,25 +137,25 @@ body .dashboard .top {
   font-weight: bold;
 }
 body .dashboard .cards {
-  height: 200px;
   width: 100%;
-  background-color: pink;
   display: grid;
-  grid-template-rows: repeat(3, 200px);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  grid-template-columns: repeat(3, auto);
   padding: 20px;
 }
 body .dashboard .cards_users {
-  height: 200px;
+  height: 180px;
   background-color: #060e35;
   border-radius: 10px;
 }
 body .dashboard .cards_totalPayments {
-  height: 200px;
+  height: 180px;
   background-color: green;
   border-radius: 10px;
 }
 body .dashboard .cards_totalRefferals {
-  height: 200px;
+  height: 180px;
   background-color: red;
   border-radius: 10px;
 }/*# sourceMappingURL=admindash.css.map */

@@ -1,6 +1,6 @@
 # mod_rewrite starts here
 
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} -d
 
 # Check for file with .html extension
 
