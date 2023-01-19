@@ -9,8 +9,10 @@ document.getElementById("goToSignIn").addEventListener("click", () => {
 
 // Sign Up button OnClick
 document.addEventListener("submit", (e) => {
+    var mockDate = new Date().toLocaleDateString('en-US', ({ year: 'numeric', month: 'long', day: '2-digit' }));
     localStorage.setItem("name", document.getElementById("name").value)
     localStorage.setItem("email", document.getElementById("email").value)
+    localStorage.setItem("dateCreated", mockDate)
     localStorage.setItem("tel", document.getElementById("tel").value)
 
     setTimeout(() => {
@@ -21,6 +23,7 @@ document.addEventListener("submit", (e) => {
         fetch("http://localhost:4000/signUp.html/apiSignUp", requestOptions)
             .then(response => response.text())
             .then(result => {
+                console.log(result);
                 if (result === "Error") {
                     console.log("Displaying error");
                     document.getElementById("email").setAttribute("class", "error");
@@ -31,19 +34,20 @@ document.addEventListener("submit", (e) => {
                     return false;
                 }
                 else if (result === "Succesful") {
-                    var templateParams = {
-                        username: document.getElementById("username").value,
-                        email: document.getElementById("email").value,
-                        phone_number: document.getElementById("tel").value,
-                    };
-                    emailjs.send('gmail', 'primegain_template', templateParams)
-                        .then(function (response) {
-                            console.log('SUCCESS!', response.status, response.text);
-                            window.location = "/login.html";
-                        }, function (error) {
-                            console.log('FAILED...', error);
-                            alert("Failed to Completely Register User")
-                        });
+                    window.location = 'Dashboard.html'
+                    // var templateParams = {
+                    //     username: document.getElementById("username").value,
+                    //     email: document.getElementById("email").value,
+                    //     phone_number: document.getElementById("tel").value,
+                    // };
+                    // emailjs.send('gmail', 'primegain_template', templateParams)
+                    //     .then(function (response) {
+                    //         console.log('SUCCESS!', response.status, response.text);
+                    //         window.location = "/login.html";
+                    //     }, function (error) {
+                    //         console.log('FAILED...', error);
+                    //         alert("Failed to Completely Register User")
+                    //     });
                 }
             })
             .catch(error => console.log('error', error));

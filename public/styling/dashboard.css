@@ -460,7 +460,7 @@ body {
   height: 25px;
   background-color: green;
 }
-.body .userInfo .userNumber #userNumber {
+.body .userInfo .userNumber #userDate {
   color: #e29b00;
   font-weight: bolder;
 }
@@ -492,7 +492,9 @@ body {
   width: 100%;
   overflow-y: hidden;
 }
-.body .invest .depositInfo .table .aDeposit, .body .invest .depositInfo .table .lDeposit, .body .invest .depositInfo .table .tDeposit {
+.body .invest .depositInfo .table .aDeposit,
+.body .invest .depositInfo .table .lDeposit,
+.body .invest .depositInfo .table .tDeposit {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -502,7 +504,9 @@ body {
   font-size: 16px;
   border: 2px solid #1740D8;
 }
-.body .invest .depositInfo .table .aDeposit span, .body .invest .depositInfo .table .lDeposit span, .body .invest .depositInfo .table .tDeposit span {
+.body .invest .depositInfo .table .aDeposit span,
+.body .invest .depositInfo .table .lDeposit span,
+.body .invest .depositInfo .table .tDeposit span {
   color: #60dd60;
   margin-right: 3px;
 }
@@ -550,7 +554,9 @@ body {
   width: 100%;
   text-transform: uppercase;
 }
-.body .invest .withdrawInfo .lWithdrawal, .body .invest .withdrawInfo .pWithdrawal, .body .invest .withdrawInfo .tWithdrawal {
+.body .invest .withdrawInfo .lWithdrawal,
+.body .invest .withdrawInfo .pWithdrawal,
+.body .invest .withdrawInfo .tWithdrawal {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -560,7 +566,9 @@ body {
   font-size: 16px;
   border: 2px solid #e29b00;
 }
-.body .invest .withdrawInfo .lWithdrawal span, .body .invest .withdrawInfo .pWithdrawal span, .body .invest .withdrawInfo .tWithdrawal span {
+.body .invest .withdrawInfo .lWithdrawal span,
+.body .invest .withdrawInfo .pWithdrawal span,
+.body .invest .withdrawInfo .tWithdrawal span {
   color: #60dd60;
   margin-right: 3px;
 }

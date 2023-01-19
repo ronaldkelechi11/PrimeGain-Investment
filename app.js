@@ -49,20 +49,19 @@ app.get("/", (req, res) => {
 });
 
 // For Refferals
-app.get("/refferal/:username/:id", (req, res) => {
-    var id = req.params.id;
+app.get("/refferal/:username", (req, res) => {
     var username = req.params.username;
     var data = "__"
 
     //To first check if the User actually exists in the refferal Program    
     // Then if not create a new user with refferalNumber 1
     var searchQuery = "SELECT * FROM `refferals` WHERE `username` =" + " '" + username + "'";
-    var insertNewRefferal = "INSERT INTO `refferals`(`id`, `username`, `refferalAmmout`) VALUES ('" + id + "', '" + username + "', " + " '1');"
+    var insertNewRefferal = "INSERT INTO `refferals`(`username`, `refferalAmmout`) VALUES ('" + username + "', '1');"
     var updateQuery = ""
 
 
     connection.query(searchQuery, (err, result, fields) => {
-        if (err.errno = 1620) {
+        if (err) {
             console.log(err);
             return
         }
