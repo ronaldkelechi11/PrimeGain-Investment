@@ -56,26 +56,31 @@ app.get("/refferal/:username", (req, res) => {
     //To first check if the User actually exists in the refferal Program    
     // Then if not create a new user with refferalNumber 1
     var searchQuery = "SELECT * FROM `refferals` WHERE `username` =" + " '" + username + "'";
-    var insertNewRefferal = "INSERT INTO `refferals`(`username`, `refferalAmmout`) VALUES ('" + username + "', '1');"
-    var updateQuery = ""
+    var insertNewRefferal = "INSERT INTO `refferals`(`username`, `refferalAmmout`) VALUES ('" + username + "', '1');";
+    // Increment function
+    function increment(params) {
+        return ++params;
+    }
 
 
     connection.query(searchQuery, (err, result, fields) => {
-        if (err) {
-            console.log(err);
-            return
-        }
-        else if (result = "[]") {
+        var myVar = JSON.parse(JSON.stringify(result));
+        console.log(myVar);
+        // User does not exist
+        if (myVar == "[]") {
             connection.query(insertNewRefferal, (err, result, fields) => {
-                if (err) {
-                    console.error(err);
-                }
-                else {
-                    console.log(result);
-                }
+                console.log("New Refferal Inserted");
+                res.send("Done")
+            });
+        }
+        // User exists
+        else if (myVar != "[]") {
+            var updateQuery = "UPDATE `refferals` SET `refferalAmount`= '" + increment(myVar[0].refferalAmount) + "' WHERE `username` = '" + myVar[0].username + "'";
+            connection.query(updateQuery, (err, result, fields) => {
+                console.log("Refferal Updated");
+                res.send("Updated")
             })
         }
-
     });
 
 })
