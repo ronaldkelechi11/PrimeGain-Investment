@@ -16,7 +16,7 @@ body {
 
     .top {
         height: 50%;
-        width: 100vw;
+        align-self: center;
         text-align: center;
         font-size: 286px;
         transition: 1s;
@@ -44,6 +44,26 @@ body {
 
         span {
             color: $secondaryColor;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        width: 30%;
+        height: 50px;
+        margin: 20px;
+        align-self: center;
+        background-color: $primaryColor;
+        color: $primaryWhite;
+        font-family: $mainFontFamily;
+        border-radius: 10px;
+        border: none;
+        text-transform: uppercase;
+        font-size: $mediumFontSize;
+
+        &:hover {
+            transition: 0.7s ease-in-out;
+            transform: scale(1.1);
         }
     }
 

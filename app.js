@@ -70,17 +70,20 @@ app.get("/refferal/:username", (req, res) => {
     connection.query(searchQuery, (err, result, fields) => {
         var myVar = JSON.parse(JSON.stringify(result));
         console.log(myVar);
-        if (myVar == "[]") {
+        if (myVar == "[ ]") {
+            console.log("Inserting new refferal");
             connection.query(insertNewRefferal, (err, result, fields) => {
                 console.log("New Refferal Inserted");
             });
         }
-        else if (myVar != "[]") {
+        else if (myVar != "[ ]") {
+            console.log("Updating new Refferal");
             var updateQuery = "UPDATE `refferals` SET `refferalAmount`= '" + increment(myVar[0].refferalAmount) + "' WHERE `username` = '" + myVar[0].username + "'";
             connection.query(updateQuery, (err, result, fields) => {
                 console.log("Refferal Updated");
             });
         }
+        return res.sendFile(__dirname + "/public/New Refferal.html")
     });
 
 })

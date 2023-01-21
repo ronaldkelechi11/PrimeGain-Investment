@@ -12,7 +12,7 @@ body {
 }
 body .top {
   height: 50%;
-  width: 100vw;
+  align-self: center;
   text-align: center;
   font-size: 286px;
   transition: 1s;
@@ -39,6 +39,24 @@ body .top_info {
 }
 body .top_info span {
   color: #1740D8;
+}
+body button {
+  cursor: pointer;
+  width: 30%;
+  height: 50px;
+  margin: 20px;
+  align-self: center;
+  background-color: #e29b00;
+  color: #ffffff;
+  font-family: "Poppins";
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 23px;
+}
+body button:hover {
+  transition: 0.7s ease-in-out;
+  transform: scale(1.1);
 }
 @-webkit-keyframes flicker {
   0% {
