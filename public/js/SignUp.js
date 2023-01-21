@@ -4,7 +4,7 @@ document.getElementById("backToIndex").addEventListener("click", () => {
 
 document.getElementById("goToSignIn").addEventListener("click", () => {
     console.log("Go to Sign In");
-    window.location = "signIn.html";
+    window.location = "Sign In.html";
 })
 
 // Sign Up button OnClick
@@ -20,7 +20,7 @@ document.addEventListener("submit", (e) => {
             method: 'GET',
             redirect: 'follow'
         };
-        fetch("http://localhost:4000/signUp.html/apiSignUp", requestOptions)
+        fetch("http://localhost:4000/Sign Up.html/apiSignUp", requestOptions)
             .then(response => response.text())
             .then(result => {
                 console.log(result);

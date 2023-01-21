@@ -1,0 +1,67 @@
+@import 'variables';
+@import 'mediaqueries';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        height: 50%;
+        width: 100vw;
+        text-align: center;
+        font-size: 286px;
+        transition: 1s;
+        animation: flicker 1s infinite;
+    }
+
+    .top_message {
+        width: 100%;
+        font-size: $massiveFontSize;
+        color: $primaryBlack;
+        font-family: $mainFontFamily;
+        color: $primaryBlack;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .top_info {
+        width: 100%;
+        font-size: $mediumFontSize;
+        color: $primaryBlack;
+        font-family: $mainFontFamily;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        span {
+            color: $secondaryColor;
+        }
+    }
+
+    @keyframes flicker {
+        0% {
+            transform: rotate(-30deg);
+            opacity: 0.5;
+        }
+
+        50% {
+            transform: rotate(30deg);
+            opacity: 1;
+        }
+
+        100% {
+            transform: rotate(-30deg);
+            opacity: 0.5;
+        }
+    }
+
+}

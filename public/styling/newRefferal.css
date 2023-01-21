@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body .top {
+  height: 50%;
+  width: 100vw;
+  text-align: center;
+  font-size: 286px;
+  transition: 1s;
+  -webkit-animation: flicker 1s infinite;
+          animation: flicker 1s infinite;
+}
+body .top_message {
+  width: 100%;
+  font-size: 62px;
+  color: #000000;
+  font-family: "Poppins";
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+body .top_info {
+  width: 100%;
+  font-size: 23px;
+  color: #000000;
+  font-family: "Poppins";
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .top_info span {
+  color: #1740D8;
+}
+@-webkit-keyframes flicker {
+  0% {
+    transform: rotate(-30deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: rotate(30deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-30deg);
+    opacity: 0.5;
+  }
+}
+@keyframes flicker {
+  0% {
+    transform: rotate(-30deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: rotate(30deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-30deg);
+    opacity: 0.5;
+  }
+}/*# sourceMappingURL=newRefferal.css.map */

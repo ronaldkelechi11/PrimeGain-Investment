@@ -16,9 +16,9 @@ const signInRoute = require("./routes/signinserver.js")
 const adminDashboardRoute = require("./routes/adminDashboardServer")
 
 // Assigning Routes
-app.use("/signUp.html", signUpRoute)
-app.use("/signIn.html", signInRoute)
-app.use("/adminDashboard", adminDashboardRoute)
+app.use("/Sign%20Up.html", signUpRoute)
+app.use("/Sign%20In.html", signInRoute)
+app.use("/Admin Dashboard", adminDashboardRoute)
 
 // Middleware
 app.use(express.static("./"))
