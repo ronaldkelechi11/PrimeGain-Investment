@@ -315,6 +315,20 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+.body .header .bi.bi-link {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  margin-right: 20px;
+  align-self: center;
+}
+.body .header .bi.bi-link:hover {
+  transform: scale(1.2);
+  transition: 0.7s;
+}
 .body .accountInfo {
   height: 35%;
   margin-top: 20px;

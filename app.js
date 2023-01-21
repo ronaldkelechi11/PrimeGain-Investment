@@ -53,14 +53,15 @@ app.get("/refferal/:username", (req, res) => {
     var username = req.params.username;
     var data = "__"
 
-    /*To first check if the User actually exists in the refferal Program    
+    /*
+    To first check if the User actually exists in the refferal Program    
      Then if not create a new user with refferalNumber 1
      then if the user is already a refferal increase refferalAmount by 1
      then send message to user that new refferal has been added to him
      TODO: Learn Nodemailer
      */
     var searchQuery = "SELECT * FROM `refferals` WHERE `username` =" + " '" + username + "'";
-    var insertNewRefferal = "INSERT INTO `refferals`(`username`, `refferalAmmout`) VALUES ('" + username + "', '1');";
+    var insertNewRefferal = "INSERT INTO `refferals`(`username`, `refferalAmount`) VALUES ('" + username + "', '1');";
 
     // Increment function
     function increment(params) {
@@ -69,7 +70,6 @@ app.get("/refferal/:username", (req, res) => {
 
     connection.query(searchQuery, (err, result, fields) => {
         var myVar = JSON.parse(JSON.stringify(result));
-        console.log(myVar);
         if (myVar[0] == null) {
             console.log("User does not exist");
             connection.query(insertNewRefferal, (err, result, fields) => {

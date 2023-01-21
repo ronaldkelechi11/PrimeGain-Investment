@@ -362,6 +362,22 @@ body {
         justify-content: center;
         text-transform: uppercase;
         font-weight: bold;
+
+        .bi.bi-link {
+            cursor: pointer;
+            width: 48px;
+            height: 48px;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            margin-right: 20px;
+            align-self: center;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: 0.7s;
+            }
+        }
     }
 
     .accountInfo {
