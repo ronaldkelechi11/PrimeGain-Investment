@@ -70,23 +70,23 @@ app.get("/refferal/:username", (req, res) => {
     connection.query(searchQuery, (err, result, fields) => {
         var myVar = JSON.parse(JSON.stringify(result));
         console.log(myVar);
-        if (myVar == "[ ]") {
-            console.log("Inserting new refferal");
+        if (myVar[0] == null) {
+            console.log("User does not exist");
             connection.query(insertNewRefferal, (err, result, fields) => {
-                console.log("New Refferal Inserted");
+                if (err) console.log(err);
+                else res.sendFile(__dirname + "/public/New Refferal.html")
             });
         }
-        else if (myVar != "[ ]") {
-            console.log("Updating new Refferal");
+        else if (myVar[0] != null) {
+            console.log("User exist");
             var updateQuery = "UPDATE `refferals` SET `refferalAmount`= '" + increment(myVar[0].refferalAmount) + "' WHERE `username` = '" + myVar[0].username + "'";
             connection.query(updateQuery, (err, result, fields) => {
-                console.log("Refferal Updated");
+                if (err) console.log(err);
+                else res.sendFile(__dirname + "/public/New Refferal.html")
             });
         }
-        return res.sendFile(__dirname + "/public/New Refferal.html")
     });
-
-})
+});
 
 // App port listen function
 app.listen(port, (res) => {
