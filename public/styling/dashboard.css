@@ -315,20 +315,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
-.body .header .bi.bi-link {
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  margin-right: 20px;
-  align-self: center;
-}
-.body .header .bi.bi-link:hover {
-  transform: scale(1.2);
-  transition: 0.7s;
-}
 .body .accountInfo {
   height: 35%;
   margin-top: 20px;
@@ -475,6 +461,79 @@ body {
   background-color: green;
 }
 .body .userInfo .userNumber #userDate {
+  color: #e29b00;
+  font-weight: bolder;
+}
+.body .userInfo .refferalLink {
+  width: 33.4%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid;
+  border-color: #1740D8;
+}
+.body .userInfo .refferalLink h3 {
+  font-family: "Arial";
+  color: #ffffff;
+  font-size: 16px;
+}
+.body .userInfo .refferalLink h3 .img {
+  width: 25px;
+  height: 25px;
+  background-color: green;
+}
+.body .userInfo .refferalLink #refferalLink {
+  color: #60dd60;
+  font-weight: bolder;
+  cursor: copy;
+}
+.body .userInfo .numRefferals {
+  width: 33.4%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid;
+  border-color: #1740D8;
+}
+.body .userInfo .numRefferals h3 {
+  font-family: "Arial";
+  color: #ffffff;
+  font-size: 16px;
+}
+.body .userInfo .numRefferals h3 .img {
+  width: 25px;
+  height: 25px;
+  background-color: green;
+}
+.body .userInfo .numRefferals #numRefferals {
+  color: #e29b00;
+  font-weight: bolder;
+}
+.body .userInfo .Nil {
+  width: 33.4%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid;
+  border-color: #1740D8;
+}
+.body .userInfo .Nil h3 {
+  font-family: "Arial";
+  color: #ffffff;
+  font-size: 16px;
+}
+.body .userInfo .Nil h3 .img {
+  width: 25px;
+  height: 25px;
+  background-color: green;
+}
+.body .userInfo .Nil #nil {
   color: #e29b00;
   font-weight: bolder;
 }

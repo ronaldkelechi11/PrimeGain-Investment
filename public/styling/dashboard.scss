@@ -362,22 +362,6 @@ body {
         justify-content: center;
         text-transform: uppercase;
         font-weight: bold;
-
-        .bi.bi-link {
-            cursor: pointer;
-            width: 48px;
-            height: 48px;
-            position: fixed;
-            top: 0px;
-            right: 0px;
-            margin-right: 20px;
-            align-self: center;
-
-            &:hover {
-                transform: scale(1.2);
-                transition: 0.7s;
-            }
-        }
     }
 
     .accountInfo {
@@ -544,6 +528,91 @@ body {
             }
 
             #userDate {
+                color: $primaryColor;
+                font-weight: bolder;
+            }
+        }
+
+        .refferalLink {
+            width: 33.4%;
+            height: 100%;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            border: 2px solid;
+            border-color: $secondaryColor;
+
+            h3 {
+                font-family: $secondaryFontFamily;
+                color: $primaryWhite;
+                font-size: $smallFontSize;
+
+                .img {
+                    width: 25px;
+                    height: 25px;
+                    background-color: green;
+                }
+            }
+
+            #refferalLink {
+                color: $successColor;
+                font-weight: bolder;
+                cursor: copy;
+            }
+        }
+
+        .numRefferals {
+            width: 33.4%;
+            height: 100%;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            border: 2px solid;
+            border-color: $secondaryColor;
+
+            h3 {
+                font-family: $secondaryFontFamily;
+                color: $primaryWhite;
+                font-size: $smallFontSize;
+
+                .img {
+                    width: 25px;
+                    height: 25px;
+                    background-color: green;
+                }
+            }
+
+            #numRefferals {
+                color: $primaryColor;
+                font-weight: bolder;
+            }
+        }
+
+        .Nil {
+            width: 33.4%;
+            height: 100%;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            border: 2px solid;
+            border-color: $secondaryColor;
+
+            h3 {
+                font-family: $secondaryFontFamily;
+                color: $primaryWhite;
+                font-size: $smallFontSize;
+
+                .img {
+                    width: 25px;
+                    height: 25px;
+                    background-color: green;
+                }
+            }
+
+            #nil {
                 color: $primaryColor;
                 font-weight: bolder;
             }

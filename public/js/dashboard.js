@@ -6,6 +6,12 @@ userName.innerHTML = localStorage.getItem("name");
 var userEmail = document.getElementById("userEmailAddress");
 userEmail.innerHTML = localStorage.getItem("email");
 
+var refLink = document.getElementById("refferalLink");
+refLink.innerHTML = 'localhost:4000/refferal/' + localStorage.getItem("name");
+
+// Fetch the num Refs from the mysql db 
+var numRefs = document.getElementById("numRefferals")
+
 
 // Make a deposit button
 document.getElementById("btnDepo").addEventListener("click", (e) => {
