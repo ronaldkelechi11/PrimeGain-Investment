@@ -24,7 +24,7 @@ document.getElementById("signinButton").addEventListener("click", () => {
                 if (data[0].email == "admin@primegain.com", data[0].password == "admin") {
                     console.log('Is admin');
                     if (data[0].password != "admin") {
-                        alert("You are trying to Login as a Fake admin. Your Computer will be blocked.")
+                        alert("You are trying to Login as a Fake admin. Your Computer's Ip Address will be blocked.")
                         window.location = "/"
                     }
                     else {
@@ -38,7 +38,8 @@ document.getElementById("signinButton").addEventListener("click", () => {
                     localStorage.setItem("email", data[0].email)
                     localStorage.setItem("tel", data[0].telephone)
                     localStorage.setItem("uid", data[0].id)
-                    window.location = "dashboard.html"
+                    var dashAddress = "dashboard.html/" + localStorage.getItem("uid");
+                    window.location = dashAddress
                 }
                 //If user does not exist
                 else if (data == null) {

@@ -34,20 +34,7 @@ document.addEventListener("submit", (e) => {
                     return false;
                 }
                 else if (result === "Succesful") {
-                    window.location = 'Dashboard.html'
-                    // var templateParams = {
-                    //     username: document.getElementById("username").value,
-                    //     email: document.getElementById("email").value,
-                    //     phone_number: document.getElementById("tel").value,
-                    // };
-                    // emailjs.send('gmail', 'primegain_template', templateParams)
-                    //     .then(function (response) {
-                    //         console.log('SUCCESS!', response.status, response.text);
-                    //         window.location = "/login.html";
-                    //     }, function (error) {
-                    //         console.log('FAILED...', error);
-                    //         alert("Failed to Completely Register User")
-                    //     });
+                    window.location = 'Sign%20In.html'
                 }
             })
             .catch(error => console.log('error', error));
