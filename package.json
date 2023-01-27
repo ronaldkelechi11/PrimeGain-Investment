@@ -13,7 +13,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon  app"
+    "test": "nodemon  app",
+    "dev": "pm2 start server.js --name 'my-app'"
   },
   "author": "Ronald Kelechi",
   "license": "ISC",

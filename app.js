@@ -13,12 +13,14 @@ const port = 4000;
 // Routes
 const signUpRoute = require("./routes/signupserver.js")
 const signInRoute = require("./routes/signinserver.js")
+const dashboardRoute = require("./routes/dashboardserver")
 const adminDashboardRoute = require("./routes/adminDashboardServer")
 
 // Assigning Routes
 app.use("/Sign%20Up.html", signUpRoute)
 app.use("/Sign%20In.html", signInRoute)
-app.use("/Admin Dashboard", adminDashboardRoute)
+app.use("/dashboard.html", dashboardRoute)
+app.use("/Admin Dashboard.html", adminDashboardRoute)
 
 // Middleware
 app.use(express.static("./"))
