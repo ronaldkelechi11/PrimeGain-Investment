@@ -10,7 +10,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url("../assets/images/bg_hero.JPG");
+    background-image: url("/assets/images/bg_hero.JPG");
 }
 
 // The div body was to add shade to the BG_IMG
@@ -55,7 +55,7 @@ body {
             .img {
                 width: 25px;
                 height: 25px;
-                background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
+                background-image: url("/node_modules/bootstrap-icons/icons/x-lg.svg");
             }
         }
 
@@ -79,7 +79,7 @@ body {
                 .img {
                     height: 30%;
                     width: 90%;
-                    background-image: url("../assets/images/3rd.png");
+                    background-image: url("/assets/images/3rd.png");
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: contain;
@@ -155,7 +155,7 @@ body {
                 .img {
                     height: 30%;
                     width: 90%;
-                    background-image: url("../assets/images/2nd.png");
+                    background-image: url("/assets/images/2nd.png");
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: contain;
@@ -231,7 +231,7 @@ body {
                 .img {
                     height: 30%;
                     width: 90%;
-                    background-image: url("../assets/images/1st.png");
+                    background-image: url("/assets/images/1st.png");
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: contain;
@@ -335,7 +335,7 @@ body {
             .img {
                 width: 25px;
                 height: 25px;
-                background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
+                background-image: url("/node_modules/bootstrap-icons/icons/x-lg.svg");
             }
         }
 
@@ -686,7 +686,7 @@ body {
                     .img {
                         width: 30px;
                         height: 30px;
-                        background-image: url("../node_modules/bootstrap-icons/icons/wallet2.svg");
+                        background-image: url("/node_modules/bootstrap-icons/icons/wallet2.svg");
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: cover;
@@ -754,7 +754,7 @@ body {
                 .img {
                     width: 30px;
                     height: 30px;
-                    background-image: url("../node_modules/bootstrap-icons/icons/credit-card.svg");
+                    background-image: url("/node_modules/bootstrap-icons/icons/credit-card.svg");
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;

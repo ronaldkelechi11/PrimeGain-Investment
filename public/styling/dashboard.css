@@ -7,7 +7,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url("../assets/images/bg_hero.JPG");
+  background-image: url("/assets/images/bg_hero.JPG");
 }
 
 .body {
@@ -50,7 +50,7 @@ body {
 .body .depoPage .cancelButton .img {
   width: 25px;
   height: 25px;
-  background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
+  background-image: url("/node_modules/bootstrap-icons/icons/x-lg.svg");
 }
 .body .depoPage .grid {
   width: 100%;
@@ -72,7 +72,7 @@ body {
 .body .depoPage .grid .bronzePack .img {
   height: 30%;
   width: 90%;
-  background-image: url("../assets/images/3rd.png");
+  background-image: url("/assets/images/3rd.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -138,7 +138,7 @@ body {
 .body .depoPage .grid .silverPack .img {
   height: 30%;
   width: 90%;
-  background-image: url("../assets/images/2nd.png");
+  background-image: url("/assets/images/2nd.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -204,7 +204,7 @@ body {
 .body .depoPage .grid .goldPack .img {
   height: 30%;
   width: 90%;
-  background-image: url("../assets/images/1st.png");
+  background-image: url("/assets/images/1st.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -294,7 +294,7 @@ body {
 .body .paymentCheckout .cancelButtonPC .img {
   width: 25px;
   height: 25px;
-  background-image: url("../node_modules/bootstrap-icons/icons/x-lg.svg");
+  background-image: url("/node_modules/bootstrap-icons/icons/x-lg.svg");
 }
 .body .paymentCheckout .center {
   width: 50vw;
@@ -602,7 +602,7 @@ body {
 .body .invest .depositInfo .table .btnDepo .img {
   width: 30px;
   height: 30px;
-  background-image: url("../node_modules/bootstrap-icons/icons/wallet2.svg");
+  background-image: url("/node_modules/bootstrap-icons/icons/wallet2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -664,7 +664,7 @@ body {
 .body .invest .withdrawInfo .btnWith .img {
   width: 30px;
   height: 30px;
-  background-image: url("../node_modules/bootstrap-icons/icons/credit-card.svg");
+  background-image: url("/node_modules/bootstrap-icons/icons/credit-card.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

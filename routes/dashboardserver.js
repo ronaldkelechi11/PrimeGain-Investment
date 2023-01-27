@@ -15,12 +15,13 @@ const connection = createConnection({
 });
 
 // RESTful routes
-router.put("/:username", (req, res) => {
-    var username = req.params.username;
+router.get("/:id", (req, res) => {
+    res.redirect("/public/Dashboard.html")
+    var id = req.params.id;
+    var mainQuery = "SELECT * FROM `users` WHERE id = '" + id + "'";
     var countquery = "SELECT email, COUNT(*) FROM users;"
-    connection.query(countquery, (err, result) => {
-        var JsonResult = JSON.parse(JSON.stringify(result))
-        res.send(JsonResult[0])
+    connection.query(mainQuery, (err, result) => {
+        console.table(JSON.stringify(result));
     });
 });
 

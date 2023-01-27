@@ -31,8 +31,26 @@ document.getElementById("cancelButtonPC").addEventListener("click", (e) => {
     document.getElementById("paymentCheckout").style.visibility = "hidden";
 });
 
-// Deposit Screen shift
+// Deposit Screen shift bronze
 document.getElementById("btnBronze").addEventListener("click", (e) => {
+    var depoPage = document.getElementById("depoPage");
+    var paymentCheck = document.getElementById("paymentCheckout");
+    depoPage.style.translate = "-100vw";
+    paymentCheck.style.translate = "0vw";
+    paymentCheck.style.visibility = "visible";
+});
+
+// Deposit Screen shift silver
+document.getElementById("btnSilver").addEventListener("click", () => {
+    var depoPage = document.getElementById("depoPage");
+    var paymentCheck = document.getElementById("paymentCheckout");
+    depoPage.style.translate = "-100vw";
+    paymentCheck.style.translate = "0vw";
+    paymentCheck.style.visibility = "visible";
+});
+
+// Deposit Screen shift gold
+document.getElementById("btnGold").addEventListener("click", () => {
     var depoPage = document.getElementById("depoPage");
     var paymentCheck = document.getElementById("paymentCheckout");
     depoPage.style.translate = "-100vw";
