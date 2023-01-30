@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router()
 const { createConnection } = require('mysql');
 
+// Personal Variables
+var apiTransfer = ({});
 // middleware
 router.use(express.json());
 router.use(express.urlencoded());
@@ -14,15 +16,25 @@ const connection = createConnection({
     database: "primegaininvestment",
 });
 
+
 // RESTful routes
+router.get("/", (req, res) => {
+    res.send("404- No user attached")
+})
+
 router.get("/:id", (req, res) => {
-    res.redirect("/public/Dashboard.html")
+    console.log("Badass");
     var id = req.params.id;
     var mainQuery = "SELECT * FROM `users` WHERE id = '" + id + "'";
     var countquery = "SELECT email, COUNT(*) FROM users;"
-    connection.query(mainQuery, (err, result) => {
-        console.table(JSON.stringify(result));
-    });
+
+
 });
+
+router.get("/:id/sender", (req, res) => {
+    console.log("Sending");
+    res.send("Hey")
+})
+
 
 module.exports = router
