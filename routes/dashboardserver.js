@@ -16,24 +16,28 @@ const connection = createConnection({
     database: "primegaininvestment",
 });
 
-
-// RESTful routes
-router.get("/", (req, res) => {
-    res.send("404- No user attached")
-})
-
+var jsonData = {}
 router.get("/:id", (req, res) => {
-    console.log("Badass");
     var id = req.params.id;
+    console.log(id);
+
+    // CREATE IF-ELSE TO CHECK IF ID IS STRING OR INT
+
     var mainQuery = "SELECT * FROM `users` WHERE id = '" + id + "'";
-    var countquery = "SELECT email, COUNT(*) FROM users;"
-
-
+    connection.query(mainQuery, (err, result) => {
+        jsonData = JSON.stringify(result)
+        console.log(jsonData);
+    })
+    res.redirect("../public/Dashboard.html")
 });
 
+// 404 PAGE TO SEND IF NO UID IS PROVIDED IN THE URL
+router.get("/", (req, res) => {
+    res.redirect("/404.html")
+})
+
 router.get("/:id/sender", (req, res) => {
-    console.log("Sending");
-    res.send("Hey")
+    res.send(jsonData)
 })
 
 

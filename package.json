@@ -17,7 +17,7 @@
   "main": "app.js",
   "scripts": {
     "test": "nodemon  app",
-    "dev": "pm2 start app.js --name 'my-app'"
+    "dev": "pm2 start app.js --name 'first launch'"
   },
   "author": "Ronald Kelechi",
   "license": "ISC",
