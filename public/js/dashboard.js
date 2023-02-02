@@ -57,3 +57,15 @@ document.getElementById("btnGold").addEventListener("click", () => {
     paymentCheck.style.translate = "0vw";
     paymentCheck.style.visibility = "visible";
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    fetch("http://localhost:4000/dashboard.html/111364/sender", requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+})

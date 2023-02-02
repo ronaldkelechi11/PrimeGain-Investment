@@ -3,7 +3,8 @@ const router = express.Router()
 const { createConnection } = require('mysql');
 
 // Personal Variables
-var apiTransfer = ({});
+var jsonData = {}
+
 // middleware
 router.use(express.json());
 router.use(express.urlencoded());
@@ -16,29 +17,28 @@ const connection = createConnection({
     database: "primegaininvestment",
 });
 
-var jsonData = {}
+
+
+// Restful Routes
 router.get("/:id", (req, res) => {
+    res.redirect("../public/Dashboard.html")
+});
+
+router.get("/:id/sender", (req, res) => {
     var id = req.params.id;
-    console.log(id);
-
-    // CREATE IF-ELSE TO CHECK IF ID IS STRING OR INT
-
     var mainQuery = "SELECT * FROM `users` WHERE id = '" + id + "'";
     connection.query(mainQuery, (err, result) => {
         jsonData = JSON.stringify(result)
         console.log(jsonData);
     })
-    res.redirect("../public/Dashboard.html")
-});
+    res.send(jsonData)
+})
 
 // 404 PAGE TO SEND IF NO UID IS PROVIDED IN THE URL
 router.get("/", (req, res) => {
     res.redirect("/404.html")
 })
 
-router.get("/:id/sender", (req, res) => {
-    res.send(jsonData)
-})
 
 
 module.exports = router
